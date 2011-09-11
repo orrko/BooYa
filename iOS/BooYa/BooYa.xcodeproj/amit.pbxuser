@@ -46,7 +46,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 145;
+		rLoc = 148;
 		rType = 0;
 		vrLen = 1865;
 		vrLoc = 0;
@@ -90,7 +90,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 145;
+		rLoc = 148;
 		rType = 0;
 		vrLen = 1800;
 		vrLoc = 0;
@@ -100,7 +100,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 145;
+		rLoc = 148;
 		rType = 0;
 		vrLen = 1800;
 		vrLoc = 0;
@@ -109,10 +109,50 @@
 		isa = PBXTextBookmark;
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
-		rLen = 13;
+		rLen = 16;
 		rLoc = 132;
 		rType = 0;
 		vrLen = 1809;
+		vrLoc = 0;
+	};
+	28521435141CC1B0007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA86741D141CACE100FDFE0B /* BooYaViewController.m */;
+		name = "BooYaViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1029;
+		vrLoc = 0;
+	};
+	28521436141CC1B0007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867416141CACE100FDFE0B /* BooYaAppDelegate.h */;
+		name = "BooYaAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 0;
+	};
+	28521437141CC1B0007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 35";
+		rLen = 0;
+		rLoc = 1184;
+		rType = 0;
+		vrLen = 1969;
+		vrLoc = 176;
+	};
+	28521438141CC1B0007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 7";
+		rLen = 0;
+		rLoc = 148;
+		rType = 0;
+		vrLen = 1812;
 		vrLoc = 0;
 	};
 	CA8673FA141CACE100FDFE0B /* Project object */ = {
@@ -158,6 +198,10 @@
 			2852142F141CB768007EFDBC /* PBXTextBookmark */ = 2852142F141CB768007EFDBC /* PBXTextBookmark */;
 			28521430141CB768007EFDBC /* PBXTextBookmark */ = 28521430141CB768007EFDBC /* PBXTextBookmark */;
 			28521434141CB846007EFDBC /* PBXTextBookmark */ = 28521434141CB846007EFDBC /* PBXTextBookmark */;
+			28521435141CC1B0007EFDBC /* PBXTextBookmark */ = 28521435141CC1B0007EFDBC /* PBXTextBookmark */;
+			28521436141CC1B0007EFDBC /* PBXTextBookmark */ = 28521436141CC1B0007EFDBC /* PBXTextBookmark */;
+			28521437141CC1B0007EFDBC /* PBXTextBookmark */ = 28521437141CC1B0007EFDBC /* PBXTextBookmark */;
+			28521438141CC1B0007EFDBC /* PBXTextBookmark */ = 28521438141CC1B0007EFDBC /* PBXTextBookmark */;
 		};
 		sourceControlManager = 285213CE141CAE1B007EFDBC /* Source Control */;
 		userBuildSettings = {
@@ -179,8 +223,8 @@
 	CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1965, 885}}";
-			sepNavSelRange = "{132, 13}";
-			sepNavVisRange = "{0, 1809}";
+			sepNavSelRange = "{148, 0}";
+			sepNavVisRange = "{0, 1812}";
 		};
 	};
 	CA86741D141CACE100FDFE0B /* BooYaViewController.m */ = {
