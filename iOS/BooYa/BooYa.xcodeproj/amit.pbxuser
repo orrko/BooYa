@@ -96,13 +96,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 337423869;
-			PBXWorkspaceStateSaveDate = 337423869;
+			PBXPerProjectTemplateStateSaveDate = 337425696;
+			PBXWorkspaceStateSaveDate = 337425696;
 		};
 		perUserProjectItems = {
-			285213C6141CAE1B007EFDBC /* PBXTextBookmark */ = 285213C6141CAE1B007EFDBC /* PBXTextBookmark */;
-			285213C7141CAE1B007EFDBC /* PBXBookmark */ = 285213C7141CAE1B007EFDBC /* PBXBookmark */;
-			285213C8141CAE1B007EFDBC /* PBXTextBookmark */ = 285213C8141CAE1B007EFDBC /* PBXTextBookmark */;
+			285213C6141CAE1B007EFDBC = 285213C6141CAE1B007EFDBC /* PBXTextBookmark */;
+			285213C7141CAE1B007EFDBC = 285213C7141CAE1B007EFDBC /* PBXBookmark */;
+			285213C8141CAE1B007EFDBC = 285213C8141CAE1B007EFDBC /* PBXTextBookmark */;
 		};
 		sourceControlManager = 285213CE141CAE1B007EFDBC /* Source Control */;
 		userBuildSettings = {
@@ -116,7 +116,7 @@
 	};
 	CA867416141CACE100FDFE0B /* BooYaAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 646}}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 637}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 391}";
 		};

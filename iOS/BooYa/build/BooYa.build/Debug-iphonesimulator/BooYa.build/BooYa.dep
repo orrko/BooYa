@@ -1,12 +1,12 @@
-4f2674f17643cb13dea71689f4db8d8e 5312c95cef5e29e425adab3193dc7cc5 ffffffffffffffffffffffffffffffff 204 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app
-000000004e6c7976000000000000489e f4941615caafa684eabe52e934c167dc ffffffffffffffffffffffffffffffff 2525 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/BooYaViewController.nib
-00000000000000000000000000000000 1ab2a34b561afbf8a515e626abfe3c5c ffffffffffffffffffffffffffffffff 102 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM
-d01a41e6839969867f5633150267a9d4 c79aed017d7eea405858f41351e25590 ffffffffffffffffffffffffffffffff 17468 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa
 021696610cc631aaa5af604cef421117 b27f86b0f60bdf88aea58be1484fed33 ffffffffffffffffffffffffffffffff 34456 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o
-021696610e6b6194a5af604cef421755 a9a21e9fc85ef1a9918653091eb16872 ffffffffffffffffffffffffffffffff 47192 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o
+ffffffffffffffffffffffffffffffff a9a21e9fc85ef1a9918653091eb16872 ffffffffffffffffffffffffffffffff 47192 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o
 0216966142aa47c7a5af604cef421572 c9d14fa8fdcb5063e5da8bb1bbaf8fc5 ffffffffffffffffffffffffffffffff 3084 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o
+ffffffffffffffffffffffffffffffff 1ab2a34b561afbf8a515e626abfe3c5c ffffffffffffffffffffffffffffffff 102 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM
+ffffffffffffffffffffffffffffffff 5312c95cef5e29e425adab3193dc7cc5 ffffffffffffffffffffffffffffffff 204 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app
+000000004e6c7976000000000000489e f4941615caafa684eabe52e934c167dc ffffffffffffffffffffffffffffffff 2525 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/BooYaViewController.nib
 000000004e6c76470000000000004e01 77ede465ce37ce3827ff09c965184334 ffffffffffffffffffffffffffffffff 1677 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/MainWindow.nib
 000000004e6c7647000000000000002d dbdf2a66c250591f34e88aaff6875390 ffffffffffffffffffffffffffffffff 42 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/InfoPlist.strings
+ffffffffffffffffffffffffffffffff c79aed017d7eea405858f41351e25590 ffffffffffffffffffffffffffffffff 17468 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa
 0000000002df860f0000000000000526 0216966142d89f90a5af604cef421b97 ffffffffffffffffffffffffffffffff 11992272 /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch.gch
 00000000000000000000000000000000 3292a680ae0472b797379df0e1dbff97 ffffffffffffffffffffffffffffffff 8 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/PkgInfo
 00000000000000000000000000000000 3292a680ae0472b797379df0e1dbff97 ffffffffffffffffffffffffffffffff 768 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist
