@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA9F6D74141CDD8600EBAB54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9F6D73141CDD8600EBAB54 /* UIKit.framework */; };
+		CA9F6D76141CDD8600EBAB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9F6D75141CDD8600EBAB54 /* Foundation.framework */; };
+		CA9F6D78141CDD8600EBAB54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9F6D77141CDD8600EBAB54 /* CoreGraphics.framework */; };
+		CA9F6D7E141CDD8600EBAB54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA9F6D7C141CDD8600EBAB54 /* InfoPlist.strings */; };
+		CA9F6D80141CDD8600EBAB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9F6D7F141CDD8600EBAB54 /* main.m */; };
+		CA9F6D84141CDD8600EBAB54 /* BooYaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9F6D83141CDD8600EBAB54 /* BooYaAppDelegate.m */; };
+		CA9F6D87141CDD8600EBAB54 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9F6D85141CDD8600EBAB54 /* MainWindow.xib */; };
+		CA9F6D8A141CDD8600EBAB54 /* BooYaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9F6D89141CDD8600EBAB54 /* BooYaViewController.m */; };
+		CA9F6D8D141CDD8600EBAB54 /* BooYaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9F6D8B141CDD8600EBAB54 /* BooYaViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA9F6D6F141CDD8600EBAB54 /* BooYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9F6D73141CDD8600EBAB54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA9F6D75141CDD8600EBAB54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA9F6D77141CDD8600EBAB54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA9F6D7B141CDD8600EBAB54 /* BooYa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BooYa-Info.plist"; sourceTree = "<group>"; };
+		CA9F6D7D141CDD8600EBAB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA9F6D7F141CDD8600EBAB54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA9F6D81141CDD8600EBAB54 /* BooYa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BooYa-Prefix.pch"; sourceTree = "<group>"; };
+		CA9F6D82141CDD8600EBAB54 /* BooYaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooYaAppDelegate.h; sourceTree = "<group>"; };
+		CA9F6D83141CDD8600EBAB54 /* BooYaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooYaAppDelegate.m; sourceTree = "<group>"; };
+		CA9F6D86141CDD8600EBAB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CA9F6D88141CDD8600EBAB54 /* BooYaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooYaViewController.h; sourceTree = "<group>"; };
+		CA9F6D89141CDD8600EBAB54 /* BooYaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooYaViewController.m; sourceTree = "<group>"; };
+		CA9F6D8C141CDD8600EBAB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BooYaViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9F6D6C141CDD8600EBAB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9F6D74141CDD8600EBAB54 /* UIKit.framework in Frameworks */,
+				CA9F6D76141CDD8600EBAB54 /* Foundation.framework in Frameworks */,
+				CA9F6D78141CDD8600EBAB54 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA9F6D64141CDD8600EBAB54 = {
+			isa = PBXGroup;
+			children = (
+				CA9F6D79141CDD8600EBAB54 /* BooYa */,
+				CA9F6D72141CDD8600EBAB54 /* Frameworks */,
+				CA9F6D70141CDD8600EBAB54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9F6D70141CDD8600EBAB54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9F6D6F141CDD8600EBAB54 /* BooYa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9F6D72141CDD8600EBAB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA9F6D73141CDD8600EBAB54 /* UIKit.framework */,
+				CA9F6D75141CDD8600EBAB54 /* Foundation.framework */,
+				CA9F6D77141CDD8600EBAB54 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA9F6D79141CDD8600EBAB54 /* BooYa */ = {
+			isa = PBXGroup;
+			children = (
+				CA9F6D82141CDD8600EBAB54 /* BooYaAppDelegate.h */,
+				CA9F6D83141CDD8600EBAB54 /* BooYaAppDelegate.m */,
+				CA9F6D85141CDD8600EBAB54 /* MainWindow.xib */,
+				CA9F6D88141CDD8600EBAB54 /* BooYaViewController.h */,
+				CA9F6D89141CDD8600EBAB54 /* BooYaViewController.m */,
+				CA9F6D8B141CDD8600EBAB54 /* BooYaViewController.xib */,
+				CA9F6D7A141CDD8600EBAB54 /* Supporting Files */,
+			);
+			path = BooYa;
+			sourceTree = "<group>";
+		};
+		CA9F6D7A141CDD8600EBAB54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA9F6D7B141CDD8600EBAB54 /* BooYa-Info.plist */,
+				CA9F6D7C141CDD8600EBAB54 /* InfoPlist.strings */,
+				CA9F6D7F141CDD8600EBAB54 /* main.m */,
+				CA9F6D81141CDD8600EBAB54 /* BooYa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA9F6D6E141CDD8600EBAB54 /* BooYa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9F6D90141CDD8600EBAB54 /* Build configuration list for PBXNativeTarget "BooYa" */;
+			buildPhases = (
+				CA9F6D6B141CDD8600EBAB54 /* Sources */,
+				CA9F6D6C141CDD8600EBAB54 /* Frameworks */,
+				CA9F6D6D141CDD8600EBAB54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BooYa;
+			productName = BooYa;
+			productReference = CA9F6D6F141CDD8600EBAB54 /* BooYa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9F6D66141CDD8600EBAB54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "OnO Apps";
+			};
+			buildConfigurationList = CA9F6D69141CDD8600EBAB54 /* Build configuration list for PBXProject "BooYa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA9F6D64141CDD8600EBAB54;
+			productRefGroup = CA9F6D70141CDD8600EBAB54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9F6D6E141CDD8600EBAB54 /* BooYa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA9F6D6D141CDD8600EBAB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9F6D7E141CDD8600EBAB54 /* InfoPlist.strings in Resources */,
+				CA9F6D87141CDD8600EBAB54 /* MainWindow.xib in Resources */,
+				CA9F6D8D141CDD8600EBAB54 /* BooYaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9F6D6B141CDD8600EBAB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9F6D80141CDD8600EBAB54 /* main.m in Sources */,
+				CA9F6D84141CDD8600EBAB54 /* BooYaAppDelegate.m in Sources */,
+				CA9F6D8A141CDD8600EBAB54 /* BooYaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA9F6D7C141CDD8600EBAB54 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA9F6D7D141CDD8600EBAB54 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA9F6D85141CDD8600EBAB54 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA9F6D86141CDD8600EBAB54 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CA9F6D8B141CDD8600EBAB54 /* BooYaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA9F6D8C141CDD8600EBAB54 /* en */,
+			);
+			name = BooYaViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA9F6D8E141CDD8600EBAB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA9F6D8F141CDD8600EBAB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA9F6D91141CDD8600EBAB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BooYa/BooYa-Prefix.pch";
+				INFOPLIST_FILE = "BooYa/BooYa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA9F6D92141CDD8600EBAB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BooYa/BooYa-Prefix.pch";
+				INFOPLIST_FILE = "BooYa/BooYa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9F6D69141CDD8600EBAB54 /* Build configuration list for PBXProject "BooYa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9F6D8E141CDD8600EBAB54 /* Debug */,
+				CA9F6D8F141CDD8600EBAB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9F6D90141CDD8600EBAB54 /* Build configuration list for PBXNativeTarget "BooYa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9F6D91141CDD8600EBAB54 /* Debug */,
+				CA9F6D92141CDD8600EBAB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9F6D66141CDD8600EBAB54 /* Project object */;
+}
