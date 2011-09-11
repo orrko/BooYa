@@ -1,4 +1,4 @@
-package com.booya;
+package com.onoapps.BooYa;
 
 import android.app.Activity;
 import android.os.Bundle;
