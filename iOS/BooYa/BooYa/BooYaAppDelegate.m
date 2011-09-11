@@ -4,7 +4,7 @@
 //
 //  Created by נועם מה-יפית on 11/9/11.
 //  Copyright 2011 OnO Apps. All rights reserved.
-//	Noam
+//	Amit Bar-shai
 
 #import "BooYaAppDelegate.h"
 

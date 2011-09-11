@@ -1,10 +1,10 @@
 TBooYa
 v7
 r0
-t337424633.047697
+t337426051.852832
 cCheck dependencies
 cProcessInfoPlistFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist BooYa/BooYa-Info.plist
-cProcessPCH /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch.gch BooYa/BooYa-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+cProcessPCH /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch.gch BooYa/BooYa-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
@@ -65,27 +65,27 @@ s401
 i<UIKit/UIKit.h>
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m
-c000000004E6C772A0000000000000960
-t1315731242
+c000000004E6C7CEC0000000000000960
+t1315732716
 s2400
 i"BooYaAppDelegate.h"
 i"BooYaViewController.h"
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.h
-c000000004E6C79660000000000000115
-t1315731814
+c000000004E6C79DE0000000000000115
+t1315731934
 s277
 i<UIKit/UIKit.h>
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m
-c000000004E6C794C0000000000000412
-t1315731788
-s1042
+c000000004E6C7CEC0000000000000414
+t1315732716
+s1044
 i"BooYaViewController.h"
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib
-c000000004E6C7976000000000000489E
-t1315731830
+c000000004E6C79DE000000000000489E
+t1315731934
 s18590
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/InfoPlist.strings
@@ -105,56 +105,60 @@ s354
 i<UIKit/UIKit.h>
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYa.LinkFileList
-c000000004E6C7857000000000000017A
-t1315731543
+c000000004E6C79DE000000000000017A
+t1315731934
 s378
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o
-t1315731832
+t1315733382
 s47192
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o
-t1315731832
+t1315733382
 s34456
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o
-t1315731545
+t1315733382
 s3084
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app
-t1315731833
+t1315733382
 s204
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM
-t1315731832
+t1315733251
 s102
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa
-t1315731832
+t1315733382
 s17468
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist
-t1315731543
+t1315733249
 s768
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/PkgInfo
-t1315731543
+t1315733249
 s8
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/BooYaViewController.nib
-t1315731833
+t1315733382
 s2525
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/InfoPlist.strings
-t1315731547
+t1315731934
 s42
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/MainWindow.nib
-t1315731548
+t1315733382
 s1677
 
 N/var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch.gch
 t1315731544
+s11992272
+
+N/var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch.gch
+t1315733250
 s11992272
 
 NBooYa/BooYa-Info.plist
@@ -164,11 +168,11 @@ s1186
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies337424632#337424632#0(0"0(0#1#0"3343187568374212096#0"0#
+lSLF07#2@18"Check dependencies337426049#337426049#0(0"0(0#1#0"8605124864#0"0#
 
 CCompileC build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s337424632.150642
-e337424632.296286
+s337426050.716977
+e337426050.825908
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o
@@ -177,11 +181,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@70"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m337424632#337424632#0(0"0(0#0#62"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m8604962496#2005"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o0#
+lSLF07#2@70"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m337426050#337426050#0(0"0(0#0#62"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m8604465920#2005"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaAppDelegate.o0#
 
 CCompileC build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s337424632.151591
-e337424632.276306
+s337426050.791038
+e337426050.913491
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o
@@ -190,11 +194,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m337424632#337424632#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m8604926080#2011"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o0#
+lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m337426050#337426050#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m8604264352#2011"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYaViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s337424345.088083
-e337424345.368748
+s337426050.715471
+e337426050.790928
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o
@@ -203,23 +207,23 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@58"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m337424345#337424345#0(0"0(0#0#50"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m8604143232#1981"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o0#
+lSLF07#2@58"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m337426050#337426050#0(0"0(0#0#50"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m8605436960#1981"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/main.o0#
 
 CCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib
-s337424632.395736
-e337424633.030560
+s337426051.126430
+e337426051.849777
 r1
 xCompileXIB
 x/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib
-lSLF07#2@49"CompileXIB BooYa/en.lproj/BooYaViewController.xib337424632#337424633#0(0"0(0#0#76"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib8593651744#607"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/BooYaViewController.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@49"CompileXIB BooYa/en.lproj/BooYaViewController.xib337426051#337426051#0(0"0(0#0#76"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib8604046464#607"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/BooYaViewController.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/BooYaViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/MainWindow.xib
-s337424346.086423
-e337424348.247860
+s337426051.125624
+e337426051.840082
 r1
 xCompileXIB
 x/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/MainWindow.xib
-lSLF07#2@40"CompileXIB BooYa/en.lproj/MainWindow.xib337424346#337424348#0(0"0(0#0#67"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/MainWindow.xib8604419424#589"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/MainWindow.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@40"CompileXIB BooYa/en.lproj/MainWindow.xib337426051#337426051#0(0"0(0#0#67"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/MainWindow.xib8592643968#589"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/MainWindow.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCopyStringsFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj/InfoPlist.strings BooYa/en.lproj/InfoPlist.strings
 s337424346.083836
@@ -231,32 +235,32 @@ xBooYa/en.lproj/InfoPlist.strings
 lSLF07#2@37"Copy BooYa/en.lproj/InfoPlist.strings337424346#337424347#0(0"0(0#0#70"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/en.lproj/InfoPlist.strings8603129248#485"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary BooYa/en.lproj/InfoPlist.strings --outdir /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/en.lproj0#
 
 CGenerateDSYMFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa
-s337424632.357390
-e337424632.395480
+s337426050.991331
+e337426051.125420
 r1
 xGenerateDSYMFile
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa
-lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/BooYa.app.dSYM build/Debug-iphonesimulator/BooYa.app/BooYa337424632#337424632#0(0"0(0#0#81"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa8605646432#374"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM0#
+lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/BooYa.app.dSYM build/Debug-iphonesimulator/BooYa.app/BooYa337426050#337426051#0(0"0(0#0#81"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa8605407648#374"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app.dSYM0#
 
 CLd /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa normal i386
-s337424632.296410
-e337424632.357286
+s337426050.913598
+e337426050.991220
 r1
 xLd
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa
 xnormal
 xi386
-lSLF07#2@86"Link /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa337424632#337424632#0(0"0(0#0#0"8593563520#899"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -filelist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYa.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -prebind -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa0#
+lSLF07#2@86"Link /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa337426050#337426050#0(0"0(0#0#0"8614646688#899"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -filelist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/Objects-normal/i386/BooYa.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -prebind -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/BooYa0#
 
 CProcessInfoPlistFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist BooYa/BooYa-Info.plist
-s337424343.607068
-e337424343.628674
+s337426049.795543
+e337426049.801148
 r1
 xProcessInfoPlistFile
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist
 xBooYa/BooYa-Info.plist
-lSLF07#2@30"Process BooYa/BooYa-Info.plist337424343#337424343#0(0"0(0#0#60"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Info.plist30962724186357872#476"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility BooYa/BooYa-Info.plist -genpkginfo /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist0#
+lSLF07#2@30"Process BooYa/BooYa-Info.plist337426049#337426049#0(0"0(0#0#60"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Info.plist8603400672#476"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility BooYa/BooYa-Info.plist -genpkginfo /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app/Info.plist0#
 
 CProcessPCH /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch.gch BooYa/BooYa-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
 s337424343.628817
@@ -271,11 +275,24 @@ xobjective-c
 xcom.apple.compilers.llvmgcc42
 lSLF07#2@33"Precompile BooYa/BooYa-Prefix.pch337424343#337424345#0(0"0(0#0#60"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Prefix.pch8602797600#1876"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Prefix.pch -o /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-blrrvzczwbqrsfftdusaeggjwjlu/BooYa-Prefix.pch.gch0#
 
+CProcessPCH /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch.gch BooYa/BooYa-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+s337426049.801281
+e337426050.715225
+r1
+xProcessPCH
+x/var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch.gch
+xBooYa/BooYa-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@33"Precompile BooYa/BooYa-Prefix.pch337426049#337426050#0(0"0(0#0#60"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Prefix.pch8593670112#1876"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources/i386 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphonesimulator/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Prefix.pch -o /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-edyqntohnalgrverttopydgrtkhd/BooYa-Prefix.pch.gch0#
+
 CTouch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app
-s337424633.030655
-e337424633.047641
+s337426051.849877
+e337426051.852792
 r1
 xTouch
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app
-lSLF07#2@81"Touch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app337424633#337424633#0(0"0(0#0#0"8605542080#274"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app0#
+lSLF07#2@81"Touch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app337426051#337426051#0(0"0(0#0#0"8604235520#274"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphonesimulator/BooYa.app0#
 

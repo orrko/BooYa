@@ -46,7 +46,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 136;
+		rLoc = 145;
 		rType = 0;
 		vrLen = 1865;
 		vrLoc = 0;
@@ -65,6 +65,56 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	2852142D141CB768007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA86741D141CACE100FDFE0B /* BooYaViewController.m */;
+		name = "BooYaViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1029;
+		vrLoc = 0;
+	};
+	2852142E141CB768007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867416141CACE100FDFE0B /* BooYaAppDelegate.h */;
+		name = "BooYaAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 0;
+	};
+	2852142F141CB768007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 7";
+		rLen = 0;
+		rLoc = 145;
+		rType = 0;
+		vrLen = 1800;
+		vrLoc = 0;
+	};
+	28521430141CB768007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 7";
+		rLen = 0;
+		rLoc = 145;
+		rType = 0;
+		vrLen = 1800;
+		vrLoc = 0;
+	};
+	28521434141CB846007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 7";
+		rLen = 13;
+		rLoc = 132;
+		rType = 0;
+		vrLen = 1809;
+		vrLoc = 0;
+	};
 	CA8673FA141CACE100FDFE0B /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 285213BC141CADFD007EFDBC /* BooYa */;
@@ -79,9 +129,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					833,
+					747,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -96,13 +146,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 337423869;
-			PBXWorkspaceStateSaveDate = 337423869;
+			PBXPerProjectTemplateStateSaveDate = 337426258;
+			PBXWorkspaceStateSaveDate = 337426258;
 		};
 		perUserProjectItems = {
-			285213C6141CAE1B007EFDBC /* PBXTextBookmark */ = 285213C6141CAE1B007EFDBC /* PBXTextBookmark */;
-			285213C7141CAE1B007EFDBC /* PBXBookmark */ = 285213C7141CAE1B007EFDBC /* PBXBookmark */;
-			285213C8141CAE1B007EFDBC /* PBXTextBookmark */ = 285213C8141CAE1B007EFDBC /* PBXTextBookmark */;
+			285213C6141CAE1B007EFDBC = 285213C6141CAE1B007EFDBC /* PBXTextBookmark */;
+			285213C7141CAE1B007EFDBC = 285213C7141CAE1B007EFDBC /* PBXBookmark */;
+			285213C8141CAE1B007EFDBC = 285213C8141CAE1B007EFDBC /* PBXTextBookmark */;
+			2852142D141CB768007EFDBC /* PBXTextBookmark */ = 2852142D141CB768007EFDBC /* PBXTextBookmark */;
+			2852142E141CB768007EFDBC /* PBXTextBookmark */ = 2852142E141CB768007EFDBC /* PBXTextBookmark */;
+			2852142F141CB768007EFDBC /* PBXTextBookmark */ = 2852142F141CB768007EFDBC /* PBXTextBookmark */;
+			28521430141CB768007EFDBC /* PBXTextBookmark */ = 28521430141CB768007EFDBC /* PBXTextBookmark */;
+			28521434141CB846007EFDBC /* PBXTextBookmark */ = 28521434141CB846007EFDBC /* PBXTextBookmark */;
 		};
 		sourceControlManager = 285213CE141CAE1B007EFDBC /* Source Control */;
 		userBuildSettings = {
@@ -116,16 +171,23 @@
 	};
 	CA867416141CACE100FDFE0B /* BooYaAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 646}}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 622}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 391}";
 		};
 	};
 	CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 911}}";
-			sepNavSelRange = "{136, 0}";
-			sepNavVisRange = "{234, 2052}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 885}}";
+			sepNavSelRange = "{132, 13}";
+			sepNavVisRange = "{0, 1809}";
+		};
+	};
+	CA86741D141CACE100FDFE0B /* BooYaViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {925, 651}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1029}";
 		};
 	};
 }
