@@ -10,4 +10,6 @@
 
 @interface BooYaViewController : UIViewController
 
+- (IBAction)amitsButtonPressed:(UIButton *)bttn;
+
 @end

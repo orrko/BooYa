@@ -123,9 +123,9 @@
 	};
 	CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 846}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 911}}";
 			sepNavSelRange = "{136, 0}";
-			sepNavVisRange = "{0, 1865}";
+			sepNavVisRange = "{234, 2052}";
 		};
 	};
 }

@@ -35,6 +35,11 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (IBAction)amitsButtonPressed:(UIButton *)bttn
+{
+	NSLog(@"amit's button pressed");
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
