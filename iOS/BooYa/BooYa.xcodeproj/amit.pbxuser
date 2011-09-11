@@ -1,0 +1,131 @@
+// !$*UTF8*$!
+{
+	285213BC141CADFD007EFDBC /* BooYa */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = BooYa;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	285213C6141CAE1B007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867416141CACE100FDFE0B /* BooYaAppDelegate.h */;
+		name = "BooYaAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 0;
+	};
+	285213C7141CAE1B007EFDBC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+	};
+	285213C8141CAE1B007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 7";
+		rLen = 0;
+		rLoc = 136;
+		rType = 0;
+		vrLen = 1865;
+		vrLoc = 0;
+	};
+	285213CE141CAE1B007EFDBC /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	285213CF141CAE1B007EFDBC /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	CA8673FA141CACE100FDFE0B /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 285213BC141CADFD007EFDBC /* BooYa */;
+		activeTarget = CA867402141CACE100FDFE0B /* BooYa */;
+		codeSenseManager = 285213CF141CAE1B007EFDBC /* Code sense */;
+		executables = (
+			285213BC141CADFD007EFDBC /* BooYa */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 337423869;
+			PBXWorkspaceStateSaveDate = 337423869;
+		};
+		perUserProjectItems = {
+			285213C6141CAE1B007EFDBC /* PBXTextBookmark */ = 285213C6141CAE1B007EFDBC /* PBXTextBookmark */;
+			285213C7141CAE1B007EFDBC /* PBXBookmark */ = 285213C7141CAE1B007EFDBC /* PBXBookmark */;
+			285213C8141CAE1B007EFDBC /* PBXTextBookmark */ = 285213C8141CAE1B007EFDBC /* PBXTextBookmark */;
+		};
+		sourceControlManager = 285213CE141CAE1B007EFDBC /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	CA867402141CACE100FDFE0B /* BooYa */ = {
+		activeExec = 0;
+		executables = (
+			285213BC141CADFD007EFDBC /* BooYa */,
+		);
+	};
+	CA867416141CACE100FDFE0B /* BooYaAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 646}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 391}";
+		};
+	};
+	CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 846}}";
+			sepNavSelRange = "{136, 0}";
+			sepNavVisRange = "{0, 1865}";
+		};
+	};
+}
