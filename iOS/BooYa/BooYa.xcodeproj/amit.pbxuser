@@ -46,7 +46,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 148;
+		rLoc = 160;
 		rType = 0;
 		vrLen = 1865;
 		vrLoc = 0;
@@ -90,7 +90,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 148;
+		rLoc = 160;
 		rType = 0;
 		vrLen = 1800;
 		vrLoc = 0;
@@ -100,7 +100,7 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
 		rLen = 0;
-		rLoc = 148;
+		rLoc = 160;
 		rType = 0;
 		vrLen = 1800;
 		vrLoc = 0;
@@ -109,7 +109,7 @@
 		isa = PBXTextBookmark;
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
-		rLen = 16;
+		rLen = 28;
 		rLoc = 132;
 		rType = 0;
 		vrLen = 1809;
@@ -140,12 +140,32 @@
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 35";
 		rLen = 0;
-		rLoc = 1184;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 1969;
 		vrLoc = 176;
 	};
 	28521438141CC1B0007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 7";
+		rLen = 0;
+		rLoc = 160;
+		rType = 0;
+		vrLen = 1812;
+		vrLoc = 0;
+	};
+	28521439141CC458007EFDBC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
+		name = "BooYaAppDelegate.m: 74";
+		rLen = 0;
+		rLoc = 2402;
+		rType = 0;
+		vrLen = 1800;
+		vrLoc = 0;
+	};
+	2852143A141CC458007EFDBC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = CA867417141CACE100FDFE0B /* BooYaAppDelegate.m */;
 		name = "BooYaAppDelegate.m: 7";
@@ -202,6 +222,8 @@
 			28521436141CC1B0007EFDBC /* PBXTextBookmark */ = 28521436141CC1B0007EFDBC /* PBXTextBookmark */;
 			28521437141CC1B0007EFDBC /* PBXTextBookmark */ = 28521437141CC1B0007EFDBC /* PBXTextBookmark */;
 			28521438141CC1B0007EFDBC /* PBXTextBookmark */ = 28521438141CC1B0007EFDBC /* PBXTextBookmark */;
+			28521439141CC458007EFDBC /* PBXTextBookmark */ = 28521439141CC458007EFDBC /* PBXTextBookmark */;
+			2852143A141CC458007EFDBC /* PBXTextBookmark */ = 2852143A141CC458007EFDBC /* PBXTextBookmark */;
 		};
 		sourceControlManager = 285213CE141CAE1B007EFDBC /* Source Control */;
 		userBuildSettings = {
