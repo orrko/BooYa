@@ -23,14 +23,14 @@
 		CA9F6D73141CDD8600EBAB54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA9F6D75141CDD8600EBAB54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA9F6D77141CDD8600EBAB54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CA9F6D7B141CDD8600EBAB54 /* BooYa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BooYa-Info.plist"; sourceTree = "<group>"; };
+		CA9F6D7B141CDD8600EBAB54 /* BooYa-Info.plist */ = {isa = PBXFileReference; path = "BooYa-Info.plist"; sourceTree = "<group>"; };
 		CA9F6D7D141CDD8600EBAB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA9F6D7F141CDD8600EBAB54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CA9F6D81141CDD8600EBAB54 /* BooYa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BooYa-Prefix.pch"; sourceTree = "<group>"; };
-		CA9F6D82141CDD8600EBAB54 /* BooYaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooYaAppDelegate.h; sourceTree = "<group>"; };
+		CA9F6D81141CDD8600EBAB54 /* BooYa-Prefix.pch */ = {isa = PBXFileReference; path = "BooYa-Prefix.pch"; sourceTree = "<group>"; };
+		CA9F6D82141CDD8600EBAB54 /* BooYaAppDelegate.h */ = {isa = PBXFileReference; path = BooYaAppDelegate.h; sourceTree = "<group>"; };
 		CA9F6D83141CDD8600EBAB54 /* BooYaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooYaAppDelegate.m; sourceTree = "<group>"; };
 		CA9F6D86141CDD8600EBAB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		CA9F6D88141CDD8600EBAB54 /* BooYaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooYaViewController.h; sourceTree = "<group>"; };
+		CA9F6D88141CDD8600EBAB54 /* BooYaViewController.h */ = {isa = PBXFileReference; path = BooYaViewController.h; sourceTree = "<group>"; };
 		CA9F6D89141CDD8600EBAB54 /* BooYaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooYaViewController.m; sourceTree = "<group>"; };
 		CA9F6D8C141CDD8600EBAB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BooYaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
