@@ -1288,7 +1288,7 @@
     s = 0;
 }</string>
 		</dict>
-		<real>337500291.73193002</real>
+		<real>337500723.97394198</real>
 		<string>{540, 2236}</string>
 		<string>{919, 0}</string>
 		<string>public.objective-c-source</string>
@@ -2989,8 +2989,8 @@
 		</dict>
 		<string>IDEDeviceLocation</string>
 		<string>IDEDeviceArchitecture</string>
-		<string>dvtdevice-local-computer:localhost</string>
-		<string>x86_64</string>
+		<string>dvtdevice-iphone:b63cbebff4d459180f283d72799a6f154b8f3117</string>
+		<string>armv7</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4799,7 +4799,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>337500291.729258</real>
+		<real>337500723.97068602</real>
 		<string>{540, 2236}</string>
 		<string>{919, 0}</string>
 		<dict>
@@ -6423,7 +6423,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>149</integer>
+					<integer>83</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -6687,7 +6687,7 @@
 		<string>IDEActivityReportStringSegmentType</string>
 		<string>IDEActivityReportStringSegmentTimeStyle</string>
 		<string>IDEActivityReportStringSegmentDate</string>
-		<string>Today at 9:00 AM</string>
+		<string>Today at 9:11 AM</string>
 		<real>3</real>
 		<dict>
 			<key>$class</key>
@@ -6696,7 +6696,7 @@
 				<integer>570</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>337500019.78950101</real>
+			<real>337500718.96736401</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
