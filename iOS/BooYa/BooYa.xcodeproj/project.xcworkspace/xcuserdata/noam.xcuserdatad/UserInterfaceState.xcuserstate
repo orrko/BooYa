@@ -1255,7 +1255,7 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
 		<false/>
-		<real>337530788.52424598</real>
+		<real>337531805.60143501</real>
 		<string>{3811, 2275}</string>
 		<string>{5480, 0}</string>
 		<string>public.objective-c-source</string>
@@ -5489,7 +5489,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>337530788.52160603</real>
+		<real>337531805.59771597</real>
 		<string>{3811, 2275}</string>
 		<string>{5480, 0}</string>
 		<dict>
