@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2848221C141DDC220037D1D5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848221A141DDC220037D1D5 /* LoginViewController.m */; };
+		2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2848221B141DDC220037D1D5 /* LoginViewController.xib */; };
 		CA19FA46141CE90C007D8670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA45141CE90C007D8670 /* UIKit.framework */; };
 		CA19FA48141CE90C007D8670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA47141CE90C007D8670 /* Foundation.framework */; };
 		CA19FA4A141CE90C007D8670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA49141CE90C007D8670 /* CoreGraphics.framework */; };
@@ -44,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28482219141DDC220037D1D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2848221A141DDC220037D1D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2848221B141DDC220037D1D5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CA19FA41141CE90C007D8670 /* BooYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA19FA45141CE90C007D8670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA19FA47141CE90C007D8670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,6 +176,9 @@
 				CA19FA65141CE913007D8670 /* iPad */,
 				CA19FA54141CE90C007D8670 /* BooYaAppDelegate.h */,
 				CA19FA55141CE90C007D8670 /* BooYaAppDelegate.m */,
+				28482219141DDC220037D1D5 /* LoginViewController.h */,
+				2848221A141DDC220037D1D5 /* LoginViewController.m */,
+				2848221B141DDC220037D1D5 /* LoginViewController.xib */,
 				CA19FA57141CE90C007D8670 /* MainWindow.xib */,
 				CA19FA5A141CE90C007D8670 /* RootViewController.h */,
 				CA19FA5B141CE90C007D8670 /* RootViewController.m */,
@@ -309,6 +317,7 @@
 				CA19FA68141CE915007D8670 /* MainWindow-iPad.xib in Resources */,
 				CA277D5F141CEFD100BB14EC /* BooYaViewController.xib in Resources */,
 				CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */,
+				2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +348,7 @@
 				CA277DB5141CF9AA00BB14EC /* SBJsonParser.m in Sources */,
 				CA277DB6141CF9AA00BB14EC /* SBJsonWriter.m in Sources */,
 				CA277DBC141DD3A800BB14EC /* BooYaCellView.m in Sources */,
+				2848221C141DDC220037D1D5 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +395,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noam Mayafit (2QMEHXJ6KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: orr kowarsky (FDWNJ22MBN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: orr kowarsky (FDWNJ22MBN)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -400,7 +411,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2511B21D-AB7F-4D8B-9613-409650FA925B";
+				PROVISIONING_PROFILE = "50A2ADAA-13D0-4297-921B-F71A43DD3020";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50A2ADAA-13D0-4297-921B-F71A43DD3020";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

@@ -7,6 +7,7 @@
 //
 
 #import "ConnectionManager.h"
+#import "Reachability.h"
 #import "JSON.h"
 
 static ConnectionManager *sharedConnectionManager = nil;
@@ -116,6 +117,28 @@ static ConnectionManager *sharedConnectionManager = nil;
 		[operation cancel];
 	}
 	[_queue cancelAllOperations];
+}
+
+-(BOOL)checkReachability
+{
+	Reachability* internetReachable = [[Reachability reachabilityForInternetConnection] retain];
+	NetworkStatus internetStatus = [internetReachable currentReachabilityStatus];
+	[internetReachable release];
+	switch (internetStatus)
+	
+	{
+		case NotReachable:
+		{
+			NSLog(@"The internet is down.");
+			
+			return NO;
+			break;
+		}
+		default:
+			return YES;
+			break;
+	}
+	return YES;
 }
 
 @end

@@ -17,13 +17,27 @@
 @synthesize navigationController = _navigationController;
 @synthesize _addressBookArray;
 @synthesize _commManager;
+@synthesize _deviceToken;
+@synthesize _jsonString;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
-    _commManager = [ConnectionManager sharedManager];
     
+#if !TARGET_IPHONE_SIMULATOR
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | 
+																		   UIRemoteNotificationTypeBadge |
+																		   UIRemoteNotificationTypeSound)];
+	
+#endif
+	
+	
+	
+	_commManager = [ConnectionManager sharedManager];
+    
+	// first user enter need to load the login screen
+	
     self._addressBookArray = [[NSMutableArray alloc] init];
     //get address booo
     [NSThread detachNewThreadSelector:@selector(loadAddressBook) toTarget:self withObject:nil];
@@ -32,6 +46,29 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+#pragma mark -
+#pragma mark deviceToken
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
+	
+	self._deviceToken = [[NSData alloc] initWithData:deviceToken];
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err { 
+	
+    NSString *str = [NSString stringWithFormat: @"Error: %@", err];
+    NSLog(@"did fail to register %@",str);    
+	
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+	
+    
+}
+
+#pragma mark -
+#pragma mark AddressBook
 
 -(void)loadAddressBook
 {
@@ -51,7 +88,7 @@
     			CFStringRef phone = ABMultiValueCopyValueAtIndex(phones, j);
                 [numbersArray addObject:(NSString *)phone];
     		}
-            NSDictionary *personDict = [NSDictionary dictionaryWithObjectsAndKeys:numbersArray, @"numbers", [NSNumber numberWithBool:NO], @"enrolled", @"", @"username", nil];
+//            NSDictionary *personDict = [NSDictionary dictionaryWithObjectsAndKeys:numbersArray, @"numbers", [NSNumber numberWithBool:NO], @"enrolled", @"", @"username", nil];
             
             NSString *personName = nil;
             if (ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty) == nil) {
@@ -75,8 +112,8 @@
 -(void)sendAddressBookToServer:(NSMutableArray *)addressBook
 {
     SBJsonWriter *string = [[SBJsonWriter alloc] init];
-    NSString *jsonString = [string stringWithObject:addressBook];
-    [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:[NSDictionary dictionaryWithObjectsAndKeys:jsonString, @"list", @"checkEnrolled", @"funcName", nil]];
+    self._jsonString = [string stringWithObject:addressBook];
+    [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:[NSDictionary dictionaryWithObjectsAndKeys:self._jsonString, @"list", @"checkEnrolled", @"funcName", nil]];
 }
 
 -(void)requestFailed:(ASIHTTPRequest *)request
@@ -93,6 +130,9 @@
         NSLog(@"%@\n", [response objectForKey:key]);
     }
 }
+
+#pragma mark -
+#pragma mark UIApplicationDelegate
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

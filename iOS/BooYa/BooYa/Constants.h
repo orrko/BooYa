@@ -7,3 +7,4 @@
 //
 
 #define kServerURL @"http://booya.r4r.co.il/ajax.php"
+#define kUserRegisterd @"UserRegisterd"

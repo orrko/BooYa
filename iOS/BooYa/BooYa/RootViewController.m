@@ -11,9 +11,35 @@
 @implementation RootViewController
 
 
+#pragma mark -
+#pragma mark view Life Cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+//	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:)
+//												 name: kReachabilityChangedNotification object:nil];
+	
+	_appDelegate = (BooYaAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	if (![[NSUserDefaults standardUserDefaults] objectForKey:kUserRegisterd])
+	{
+		[self loadLoginView];
+	}
+}
+
+- (void)loadLoginView
+{
+	if (_loginVC) {
+		[_loginVC release];
+		_loginVC = nil;
+	}
+	
+	_loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+	_loginVC.delegate = self;
+	_loginVC.view.frame = CGRectMake(0, 0, 320, 480);
+	[self.view addSubview:_loginVC.view];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -43,6 +69,42 @@
 	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
  */
+
+#pragma mark -
+#pragma mark LoginProtocol
+
+- (void)loginDismiss
+{
+	NSLog(@"In Login dismiss");
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yo!" 
+													message:@"Can we pleeeease use your contact list (it's the only way to play BooYA!)." 
+												   delegate:nil
+										  cancelButtonTitle:@"Ok"
+										  otherButtonTitles:@"No",nil];
+	[alert show];
+	[alert release];
+	
+}
+
+#pragma mark -
+#pragma mark UIAlertViewDelegate
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	// NO - button pressed
+	if (buttonIndex == 0) 
+	{
+		NSLog(@"NO - stay in log in screen");
+	}
+	else 
+	{ // Yes - go to home screen
+		[_loginVC.view removeFromSuperview];
+	}
+
+}
+
+#pragma mark -
+#pragma mark Memory managment
 
 
 - (void)didReceiveMemoryWarning

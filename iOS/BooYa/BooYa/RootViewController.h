@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BooYaAppDelegate.h"
+#import "LoginViewController.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController <UIAlertViewDelegate , LoginProtocol>
 {
-    
+    BooYaAppDelegate		*_appDelegate;
+	LoginViewController		*_loginVC;
 }
+
+- (void)loadLoginView;
+
 @end
