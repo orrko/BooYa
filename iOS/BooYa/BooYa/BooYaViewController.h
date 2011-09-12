@@ -10,7 +10,8 @@
 
 @interface BooYaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    UITableView *_tableView;
+    UITableView     *_tableView;
+    NSMutableArray  *_dataSource;
 }
 @property (nonatomic, retain) IBOutlet UITableView *_tableView;
 @end

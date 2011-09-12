@@ -15,17 +15,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        _dataSource = [[NSMutableArray alloc] init];
     }
     return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -36,6 +28,8 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+#pragma mark -
+#pragma mark Table view data source
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -44,7 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [_dataSource count];
 }
 
 // Customize the appearance of table view cells.
@@ -102,6 +96,8 @@
  }
  */
 
+#pragma mark -
+#pragma mark Table view delegates
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     /*
@@ -111,6 +107,16 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+}
+
+#pragma mark -
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
 }
 
 - (void)viewDidUnload
@@ -128,6 +134,7 @@
 }
 
 - (void)dealloc {
+    [_dataSource release];
     [_tableView release];
     [super dealloc];
 }

@@ -46,10 +46,23 @@
     		ABAddressBookRemoveRecord(addressBook, person, NULL);
     	}
     	else {
+            NSMutableArray *numbersArray = [NSMutableArray array];
     		for (int j = 0; j < nPhones; j++) {
     			CFStringRef phone = ABMultiValueCopyValueAtIndex(phones, j);
-                [self._addressBookArray addObject:(NSString *)phone];
+                [numbersArray addObject:(NSString *)phone];
     		}
+            NSDictionary *personDict = [NSDictionary dictionaryWithObjectsAndKeys:numbersArray, @"numbers", [NSNumber numberWithBool:NO], @"enrolled", @"", @"username", nil];
+            
+            NSString *personName = nil;
+            if (ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty) == nil) {
+                personName = [NSString stringWithFormat:@"%@", ABRecordCopyValue((ABRecordRef)person,kABPersonLastNameProperty)];
+            }
+            else if (ABRecordCopyValue((ABRecordRef)person,kABPersonLastNameProperty) == nil) {
+                personName = [NSString stringWithFormat:@"%@", ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty)];
+            }
+            else {
+                personName = [NSString stringWithFormat:@"%@ %@", ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty), ABRecordCopyValue((ABRecordRef)person,kABPersonLastNameProperty)];
+            }
     	}
     }
     [persons release];

@@ -39,6 +39,8 @@
 		CA277DB4141CF9AA00BB14EC /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277DAD141CF9AA00BB14EC /* SBJsonBase.m */; };
 		CA277DB5141CF9AA00BB14EC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277DAF141CF9AA00BB14EC /* SBJsonParser.m */; };
 		CA277DB6141CF9AA00BB14EC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277DB1141CF9AA00BB14EC /* SBJsonWriter.m */; };
+		CA277DBC141DD3A800BB14EC /* BooYaCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277DBB141DD3A800BB14EC /* BooYaCellView.m */; };
+		CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA277DBD141DD3BC00BB14EC /* BooYaCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,9 @@
 		CA277DB0141CF9AA00BB14EC /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		CA277DB1141CF9AA00BB14EC /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		CA277DB7141CFB8F00BB14EC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CA277DBA141DD3A700BB14EC /* BooYaCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooYaCellView.h; sourceTree = "<group>"; };
+		CA277DBB141DD3A800BB14EC /* BooYaCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooYaCellView.m; sourceTree = "<group>"; };
+		CA277DBD141DD3BC00BB14EC /* BooYaCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooYaCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,9 @@
 				CA277D5B141CEFD100BB14EC /* BooYaViewController.h */,
 				CA277D5C141CEFD100BB14EC /* BooYaViewController.m */,
 				CA277D5D141CEFD100BB14EC /* BooYaViewController.xib */,
+				CA277DBA141DD3A700BB14EC /* BooYaCellView.h */,
+				CA277DBB141DD3A800BB14EC /* BooYaCellView.m */,
+				CA277DBD141DD3BC00BB14EC /* BooYaCellView.xib */,
 				CA19FA4C141CE90C007D8670 /* Supporting Files */,
 				CA277DB7141CFB8F00BB14EC /* Constants.h */,
 			);
@@ -300,6 +308,7 @@
 				CA19FA5F141CE90C007D8670 /* RootViewController.xib in Resources */,
 				CA19FA68141CE915007D8670 /* MainWindow-iPad.xib in Resources */,
 				CA277D5F141CEFD100BB14EC /* BooYaViewController.xib in Resources */,
+				CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +338,7 @@
 				CA277DB4141CF9AA00BB14EC /* SBJsonBase.m in Sources */,
 				CA277DB5141CF9AA00BB14EC /* SBJsonParser.m in Sources */,
 				CA277DB6141CF9AA00BB14EC /* SBJsonWriter.m in Sources */,
+				CA277DBC141DD3A800BB14EC /* BooYaCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
