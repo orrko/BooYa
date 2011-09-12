@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "BooYaViewController.h"
 
 @implementation RootViewController
 
@@ -14,27 +15,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = @"BooYa";
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+- (IBAction)buttonPushed:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    
+    switch (button.tag) {
+        case 0:
+        {
+            BooYaViewController *booyaVC = [[BooYaViewController alloc] initWithNibName:@"BooYaViewController" bundle:nil];
+            [self.navigationController pushViewController:booyaVC animated:YES];
+            [booyaVC release];
+        }
+            break;
+            
+        case 1:
+            
+            break;
+        
+        case 2:
+            
+            break;
+            
+        case 3:
+            
+            break;
+    }
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
 
 /*
  // Override to allow orientations other than the default portrait orientation.
@@ -65,5 +76,6 @@
 {
     [super dealloc];
 }
+
 
 @end

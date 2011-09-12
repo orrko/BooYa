@@ -42,16 +42,27 @@
     for (id person in persons) {
     	ABMultiValueRef phones = ABRecordCopyValue((ABRecordRef)person,kABPersonPhoneProperty);
     	CFIndex nPhones = ABMultiValueGetCount(phones);
-    	if (nPhones == 0) {
+       
+        if (nPhones == 0) {
     		ABAddressBookRemoveRecord(addressBook, person, NULL);
     	}
     	else {
-            NSMutableArray *numbersArray = [NSMutableArray array];
+            CFStringRef phone = nil;
     		for (int j = 0; j < nPhones; j++) {
-    			CFStringRef phone = ABMultiValueCopyValueAtIndex(phones, j);
-                [numbersArray addObject:(NSString *)phone];
+                if([(NSString *)ABMultiValueCopyValueAtIndex(phones, j) isEqualToString:@"_$!<Mobile>!$_"]) {
+                    phone = ABMultiValueCopyValueAtIndex(phones, j);
+                    break;
+                }
     		}
-            NSDictionary *personDict = [NSDictionary dictionaryWithObjectsAndKeys:numbersArray, @"numbers", [NSNumber numberWithBool:NO], @"enrolled", @"", @"username", nil];
+            if (phone == nil && nPhones > 0) {
+                phone = ABMultiValueCopyValueAtIndex(phones, 0);
+            }
+            else
+            {
+                ABAddressBookRemoveRecord(addressBook, person, NULL);
+                break;
+            }
+            NSMutableDictionary *personDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:(NSString *)phone, kNumber, [NSNumber numberWithBool:NO], kEnrolled, @"", kUsername, nil];
             
             NSString *personName = nil;
             if (ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty) == nil) {
@@ -63,6 +74,8 @@
             else {
                 personName = [NSString stringWithFormat:@"%@ %@", ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty), ABRecordCopyValue((ABRecordRef)person,kABPersonLastNameProperty)];
             }
+            [self._addressBookArray addObject:[NSMutableDictionary dictionaryWithObject:personDict forKey:personName]];
+            
     	}
     }
     [persons release];
@@ -74,8 +87,15 @@
 
 -(void)sendAddressBookToServer:(NSMutableArray *)addressBook
 {
+    //create array of numbers
+    NSMutableArray *numbers = [NSMutableArray array];
+    for (NSDictionary *person in self._addressBookArray) {
+        NSString *key = [[person allKeys] objectAtIndex:0];
+        NSString *personNumber = [[person objectForKey:key] objectForKey:kNumber];
+        [numbers addObject:personNumber];
+    }
     SBJsonWriter *string = [[SBJsonWriter alloc] init];
-    NSString *jsonString = [string stringWithObject:addressBook];
+    NSString *jsonString = [string stringWithObject:numbers];
     [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:[NSDictionary dictionaryWithObjectsAndKeys:jsonString, @"list", @"checkEnrolled", @"funcName", nil]];
 }
 
@@ -89,9 +109,27 @@
     SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
     NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
     
-    for (NSString *key in response) {
-        NSLog(@"%@\n", [response objectForKey:key]);
+    int i = 0;
+    for (NSDictionary *person in [response objectForKey:@"data"]) {
+        @synchronized(self)
+        {
+            NSString *key = [[[self._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];
+            NSString *number = [[[self._addressBookArray objectAtIndex:i] objectForKey:key] objectForKey:kNumber];
+            if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
+                [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
+                [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
+            }
+            i++;
+        }
     }
+    
+    //sort
+    [self._addressBookArray sortUsingComparator:(NSComparator)^(NSDictionary *obj1, NSDictionary *obj2){
+        NSString *name1 = [[obj1 allKeys] objectAtIndex:0];
+        NSString *name2 = [[obj2 allKeys] objectAtIndex:0];
+        return [name1 caseInsensitiveCompare:name2]; }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kGotAddressBookFromServerNotification object:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

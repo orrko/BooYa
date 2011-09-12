@@ -7,3 +7,10 @@
 //
 
 #define kServerURL @"http://booya.r4r.co.il/ajax.php"
+
+//notifications
+#define kGotAddressBookFromServerNotification @"gotAddressBookFromServerNotification"
+//keys
+#define kUsername @"username"
+#define kEnrolled @"enrolled"
+#define kNumber @"number"

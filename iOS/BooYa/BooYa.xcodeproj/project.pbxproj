@@ -385,6 +385,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noam Mayafit (2QMEHXJ6KG)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noam Mayafit (2QMEHXJ6KG)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -400,7 +401,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2511B21D-AB7F-4D8B-9613-409650FA925B";
+				PROVISIONING_PROFILE = "50A2ADAA-13D0-4297-921B-F71A43DD3020";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50A2ADAA-13D0-4297-921B-F71A43DD3020";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -455,7 +457,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OnO Apps Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OnO Apps Ltd.";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -470,6 +473,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "376CB1C9-C1C0-4F04-84D9-ED775EDAA981";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "376CB1C9-C1C0-4F04-84D9-ED775EDAA981";
 				SDKROOT = iphoneos;
 			};
 			name = Adhoc;

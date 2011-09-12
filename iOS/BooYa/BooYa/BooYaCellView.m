@@ -35,6 +35,5 @@
     [_BooYaButton release];
     [super dealloc];
 }
-- (IBAction)_buttonPushed:(id)sender {
-}
+
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "BooYaViewController.h"
+#import "Constants.h"
+#import "BooYaCellView.h"
 
 @implementation BooYaViewController
 @synthesize _tableView;
@@ -15,7 +17,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _dataSource = [[NSMutableArray alloc] init];
+        _appDelegate = (BooYaAppDelegate *)[[UIApplication sharedApplication] delegate];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:kGotAddressBookFromServerNotification object:nil];
+        _dataSource = _appDelegate._addressBookArray;
     }
     return self;
 }
@@ -26,6 +30,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)reloadTableView
+{
+    [_tableView reloadData];
+}
+
+- (IBAction)booYaButtonPushed:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    int index = button.tag;
+    
+    
 }
 
 #pragma mark -
@@ -46,9 +62,23 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = (BooYaCellView *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = (BooYaCellView *)[[[NSBundle mainBundle] loadNibNamed:@"BooYaCellView" owner:self options:nil] objectAtIndex:0];
+    }
+    
+    NSDictionary *person = [_dataSource objectAtIndex:indexPath.row];
+    NSString *key = [[person allKeys] objectAtIndex:0];
+    
+    [(BooYaCellView *)cell _nameLabel].text = key;
+    [(BooYaCellView *)cell _userNameLabel].text = [[person objectForKey:key] objectForKey:kUsername];
+    
+    if ([[person objectForKey:key] objectForKey:kEnrolled] == [NSNumber numberWithBool:YES]) {
+        [[(BooYaCellView *)cell _BooYaButton] setTitle:@"BooYa" forState:UIControlStateNormal];
+    }
+    else
+    {
+        [[(BooYaCellView *)cell _BooYaButton] setTitle:@"Invite" forState:UIControlStateNormal];
     }
     
     // Configure the cell.

@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BooYaAppDelegate.h"
 
 @interface BooYaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
+    BooYaAppDelegate *_appDelegate;
     UITableView     *_tableView;
     NSMutableArray  *_dataSource;
 }
 @property (nonatomic, retain) IBOutlet UITableView *_tableView;
+
+-(void)reloadTableView;
+- (IBAction)booYaButtonPushed:(id)sender;
+
 @end

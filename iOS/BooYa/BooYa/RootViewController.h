@@ -12,4 +12,7 @@
 {
     
 }
+
+- (IBAction)buttonPushed:(id)sender;
+
 @end

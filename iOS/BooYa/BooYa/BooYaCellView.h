@@ -18,6 +18,5 @@
 @property (nonatomic, retain) IBOutlet UIButton *_BooYaButton;
 @property (nonatomic, retain) IBOutlet UILabel *_nameLabel;
 
-- (IBAction)_buttonPushed:(id)sender;
 
 @end
