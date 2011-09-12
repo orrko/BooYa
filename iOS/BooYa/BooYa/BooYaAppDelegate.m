@@ -1,0 +1,131 @@
+//
+//  BooYaAppDelegate.m
+//  BooYa
+//
+//  Created by נועם מה-יפית on 11/9/11.
+//  Copyright 2011 OnO Apps. All rights reserved.
+//
+
+#import "BooYaAppDelegate.h"
+#import <AddressBook/AddressBook.h>
+#import "SBJsonParser.h"
+#import "SBJsonWriter.h"
+
+@implementation BooYaAppDelegate
+
+@synthesize window = _window;
+@synthesize navigationController = _navigationController;
+@synthesize _addressBookArray;
+@synthesize _commManager;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+    // Add the navigation controller's view to the window and display.
+    _commManager = [ConnectionManager sharedManager];
+    
+    self._addressBookArray = [[NSMutableArray alloc] init];
+    //get address booo
+    [NSThread detachNewThreadSelector:@selector(loadAddressBook) toTarget:self withObject:nil];
+    
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+-(void)loadAddressBook
+{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    ABAddressBookRef addressBook = ABAddressBookCreate();
+    NSArray *persons = (NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBook);
+    for (id person in persons) {
+    	ABMultiValueRef phones = ABRecordCopyValue((ABRecordRef)person,kABPersonPhoneProperty);
+    	CFIndex nPhones = ABMultiValueGetCount(phones);
+    	if (nPhones == 0) {
+    		ABAddressBookRemoveRecord(addressBook, person, NULL);
+    	}
+    	else {
+    		for (int j = 0; j < nPhones; j++) {
+    			CFStringRef phone = ABMultiValueCopyValueAtIndex(phones, j);
+                [self._addressBookArray addObject:(NSString *)phone];
+    		}
+    	}
+    }
+    [persons release];
+    
+    [self performSelectorOnMainThread:@selector(sendAddressBookToServer:) withObject:self._addressBookArray waitUntilDone:NO];
+    
+    [pool drain];
+}
+
+-(void)sendAddressBookToServer:(NSMutableArray *)addressBook
+{
+    SBJsonWriter *string = [[SBJsonWriter alloc] init];
+    NSString *jsonString = [string stringWithObject:addressBook];
+    [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:[NSDictionary dictionaryWithObjectsAndKeys:jsonString, @"list", @"checkEnrolled", @"funcName", nil]];
+}
+
+-(void)requestFailed:(ASIHTTPRequest *)request
+{
+    
+}
+
+-(void)requestFinished:(ASIHTTPRequest *)request
+{
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
+    
+    for (NSString *key in response) {
+        NSLog(@"%@\n", [response objectForKey:key]);
+    }
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    /*
+     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+     */
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    /*
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+     */
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    /*
+     Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+     */
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    /*
+     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+     */
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    /*
+     Called when the application is about to terminate.
+     Save data if appropriate.
+     See also applicationDidEnterBackground:.
+     */
+}
+
+- (void)dealloc
+{
+    self._addressBookArray = nil;
+    [_window release];
+    [_navigationController release];
+    [super dealloc];
+}
+
+@end
