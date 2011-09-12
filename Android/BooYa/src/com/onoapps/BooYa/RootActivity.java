@@ -1,6 +1,20 @@
 package com.onoapps.BooYa;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import com.onoapps.BooYa.R;
 
@@ -15,11 +29,13 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.Contacts;
 import android.provider.Contacts.People;
+import android.util.Log;
 
 public class RootActivity extends Activity {
 
 	private ArrayList<ContactData> contactsArr;
 	private ContactData newContact;
+	private StringBuilder strBuilder;
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,7 +64,7 @@ public class RootActivity extends Activity {
 	        if (cur.getCount() > 0) {
 	        
 	        contactsArr = new ArrayList<ContactData>();	
-	        
+	        strBuilder = new StringBuilder();
 		     while (cur.moveToNext()) {
 		         String id = cur.getString(cur.getColumnIndex(People._ID));
 		         String name = cur.getString(cur.getColumnIndex(People.DISPLAY_NAME));
@@ -81,15 +97,71 @@ public class RootActivity extends Activity {
 			    		
 			  			// Create contcat
 			    		//TODO: for now the first phone number is taken
-		    			newContact = new ContactData(phoneNum[i],name);
-		    			
-		    			// Adding new contact to contactsArr
-		    			contactsArr.add(newContact);
+			    	    if(phoneNum[0] != null){
+			    	    	// Adding new contact to contactsArr
+			    			newContact = new ContactData(name,phoneNum[0]);
+			    			contactsArr.add(newContact);
+			    			
+			    			//create the string to send to the server inorder to recieve BY status
+			    			//TODO: delete the last comma at the strBuilder
+			    			strBuilder.append(phoneNum[0]);
+			    			if (!pCur.isLast()){
+			    				strBuilder.append(",");
+			    			}
+			    	    }
 			    	}
 		        }
-
 		     }
+		     
+		     
+				// Post to WebServer
+				HttpClient client = new DefaultHttpClient();
+				HttpPost post = new HttpPost(
+						"http://booya.r4r.co.il/ajax.php");
+
+				try {
+
+					List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+					nameValuePairs.add(new BasicNameValuePair("funcName","checkEnrolled"));
+					//nameValuePairs.add(new BasicNameValuePair("list",strBuilder.toString()));
+					
+					HttpResponse response = client.execute(post);
+					BufferedReader rd = new BufferedReader(new InputStreamReader(
+							response.getEntity().getContent(),"UTF-8"));
+								
+					StringBuilder builder = new StringBuilder();
+					for (String line = null; (line = rd.readLine()) != null;) {
+					    builder.append(line).append("\n");
+					}
+								
+					
+			        JSONObject jObject = new JSONObject(builder.toString());
+						
+//			        // Get the app's shared preferences
+//			        SharedPreferences app_preferences = 
+//			        	PreferenceManager.getDefaultSharedPreferences(activity);
+					
+			        // Set the "LOG_IN_FLAG" according to registration results
+//			        SharedPreferences.Editor editor = app_preferences.edit();
+//			        if((Boolean)jObject.get("success") == true){
+//			        	editor.putBoolean("LOG_IN_FLAG", true);
+//			        }else{
+//			        	editor.putBoolean("LOG_IN_FLAG", false);
+//			        }
+//			        
+//			        editor.commit(); // Very important
+											
+				} catch (IOException e) {
+					e.printStackTrace();
+				} catch (JSONException e1){
+					e1.printStackTrace();
+				}	
+		     
+		     
 	        }
+	        
+	        
+	        
 		     System.out.println("dudu");
         
     }
