@@ -2,4 +2,8 @@
 <resources>
     <string name="hello">Hello World, BooYaActivity!</string>
     <string name="app_name">BooYa</string>
+    <string name="booya_da_people">BooYa Da People</string>
+    <string name="booya_board">BooYa Board</string>
+    <string name="stuff">Stuff</string>
+    <string name="stats">Stats</string>
 </resources>

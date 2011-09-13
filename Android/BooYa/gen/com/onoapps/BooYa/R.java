@@ -14,13 +14,16 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
+        public static final int booYaBoardBtn=0x7f050004;
         public static final int button1=0x7f050003;
         public static final int imageButton1=0x7f050001;
         public static final int name=0x7f050000;
-        public static final int phoneNumber=0x7f050006;
-        public static final int registerBtn=0x7f050005;
+        public static final int phoneNumber=0x7f050009;
+        public static final int registerBtn=0x7f050008;
+        public static final int statsBtn=0x7f050006;
+        public static final int stuffBtn=0x7f050005;
         public static final int textView1=0x7f050002;
-        public static final int userName=0x7f050004;
+        public static final int userName=0x7f050007;
     }
     public static final class layout {
         public static final int booyalist=0x7f030000;
@@ -30,6 +33,10 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040001;
+        public static final int booya_board=0x7f040003;
+        public static final int booya_da_people=0x7f040002;
         public static final int hello=0x7f040000;
+        public static final int stats=0x7f040005;
+        public static final int stuff=0x7f040004;
     }
 }

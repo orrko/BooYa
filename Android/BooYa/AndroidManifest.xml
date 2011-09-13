@@ -18,6 +18,12 @@
         </activity>
         <activity android:name=".BooYaListActivity">
         </activity>
+        <activity android:name=".BooYaBoardActivity">
+        </activity>
+        <activity android:name=".StuffActivity">
+        </activity>  
+        <activity android:name=".StatsActivity">
+        </activity>             
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

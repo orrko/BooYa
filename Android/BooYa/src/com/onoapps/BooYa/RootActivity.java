@@ -34,6 +34,7 @@ import android.provider.Contacts;
 import android.provider.Contacts.People;
 import android.util.Log;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -47,7 +48,10 @@ public class RootActivity extends Activity {
 	
 	private Activity activity;
 	
-	private Button callListActivityBtn;
+	private Button booYaListBtn;
+	private Button booYaBoardBtn;
+	private Button stuffBtn;
+	private Button statsBtn;
 	
 	ContactsList myContacts;
 	
@@ -61,18 +65,16 @@ public class RootActivity extends Activity {
         myContacts = (ContactsList)getApplication();
         
         //
-        callListActivityBtn = (Button)findViewById(R.id.button1);
+        booYaListBtn = (Button)findViewById(R.id.button1);
+        booYaBoardBtn = (Button)findViewById(R.id.booYaBoardBtn);
+        stuffBtn = (Button)findViewById(R.id.stuffBtn);
+        statsBtn = (Button)findViewById(R.id.statsBtn);
         
-        callListActivityBtn.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				
-				Intent switchactivity = new Intent(activity,BooYaListActivity.class);
-				startActivity(switchactivity);
-			}
-		});
-        
+        booYaListBtn.setOnClickListener(myClickListener);
+        booYaBoardBtn.setOnClickListener(myClickListener);
+        stuffBtn.setOnClickListener(myClickListener);
+        statsBtn.setOnClickListener(myClickListener);
+               
         // Get the app's shared preferences
         SharedPreferences app_preferences = 
         	PreferenceManager.getDefaultSharedPreferences(this);
@@ -169,8 +171,7 @@ public class RootActivity extends Activity {
 					for (String line = null; (line = rd.readLine()) != null;) {
 					    builder.append(line).append("\n");
 					}
-								
-								       
+																       
 					JSONObject jObject = new JSONObject(builder.toString());
 					JSONArray jArray = jObject.getJSONArray("data");
 					
@@ -225,4 +226,34 @@ public class RootActivity extends Activity {
        return contact;
  	
     }
+   
+    private OnClickListener myClickListener = new OnClickListener() {
+		
+    	Intent i;
+    	
+		@Override
+		public void onClick(View v) {
+			
+			switch (v.getId()) {
+			
+			case R.id.booYaBoardBtn:
+				i = new Intent(activity, BooYaBoardActivity.class);
+				break;
+			case R.id.stuffBtn:
+				i = new Intent(activity, StuffActivity.class);
+				break;
+			case R.id.statsBtn:
+				i = new Intent(activity, StatsActivity.class);
+				break;
+			case R.id.button1:
+				i = new Intent(activity, BooYaListActivity.class);
+				break;
+			default:
+				break;
+			}
+			
+			activity.startActivity(i);		
+		}
+	};
+    
 }

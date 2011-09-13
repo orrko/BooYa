@@ -9,5 +9,8 @@
     android:layout_height="wrap_content" 
     android:text="@string/hello"
     android:id="@+id/textView1"/>
-<Button android:text="Button" android:layout_height="wrap_content" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="136dp"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_below="@+id/textView1" android:layout_centerHorizontal="true" android:layout_marginTop="52dp" android:text="@string/booya_da_people"></Button>
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/button1" android:layout_centerHorizontal="true" android:layout_marginTop="29dp" android:text="@string/booya_board" android:id="@+id/booYaBoardBtn"></Button>
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:text="@string/stuff" android:id="@+id/stuffBtn"></Button>
+<Button android:text="@string/stats" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/stuffBtn" android:layout_alignLeft="@+id/stuffBtn" android:layout_marginTop="26dp" android:id="@+id/statsBtn"></Button>
 </RelativeLayout>
