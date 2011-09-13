@@ -394,7 +394,6 @@
 				CA277D5F141CEFD100BB14EC /* BooYaViewController.xib in Resources */,
 				CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */,
 				2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */,
-<<<<<<< HEAD
 				CAEFDCF6141F47F60071EABA /* icon.png in Resources */,
 				CAEFDCF8141F47FC0071EABA /* icon@2x.png in Resources */,
 				CA24E543141F596A00CD376F /* Default.png in Resources */,
@@ -407,9 +406,7 @@
 				CA24E555141F68A900CD376F /* SF Slapstick Comic Shaded Oblique.ttf in Resources */,
 				CA24E556141F68A900CD376F /* SF Slapstick Comic Shaded.ttf in Resources */,
 				CA24E557141F68A900CD376F /* SF Slapstick Comic.ttf in Resources */,
-=======
 				28C1F6EB141F4A16000756CF /* StuffViewController.xib in Resources */,
->>>>>>> 70f73217e017b015ec1998a830959e4de22f427d
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,7 @@
 
 build/
 
+*.pbxproj
 *.pbxuser
 *.perspective
 *.perspectivev3
