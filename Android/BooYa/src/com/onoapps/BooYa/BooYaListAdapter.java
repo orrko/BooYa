@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class BooYaListAdapter extends ArrayAdapter<ContactData> {
@@ -35,7 +36,7 @@ public class BooYaListAdapter extends ArrayAdapter<ContactData> {
             ContactData o = items.get(position);
             if (o != null) {
                     TextView tt = (TextView) v.findViewById(R.id.name);
-                    ImageButton bt = (ImageButton) v.findViewById(R.id.imageButton1);
+                    ImageView bt = (ImageView) v.findViewById(R.id.imageButton1);
                     
                     if (tt != null) {
                           tt.setText(o.getFName()+ o.getIsBooYa().toString());                            }
@@ -45,7 +46,7 @@ public class BooYaListAdapter extends ArrayAdapter<ContactData> {
                 	}else{
                 		bt.setVisibility(View.INVISIBLE);
                 	}
-                    
+                 
             }
             return v;
     }

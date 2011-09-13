@@ -5,6 +5,6 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
     <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:id="@+id/name"></TextView>
-    <ImageButton android:id="@+id/imageButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"></ImageButton>
+    <ImageView android:id="@+id/imageButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:background="@drawable/icon"></ImageView>
     
 </RelativeLayout>

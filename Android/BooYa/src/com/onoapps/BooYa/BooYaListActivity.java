@@ -3,6 +3,9 @@ package com.onoapps.BooYa;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 
 public class BooYaListActivity extends ListActivity {
 
@@ -20,10 +23,22 @@ public class BooYaListActivity extends ListActivity {
 		
 		
 		adapter = new BooYaListAdapter(this, R.layout.list_view_row,myContacts.getContacts());
-                setListAdapter(this.adapter);
+                setListAdapter(this.adapter);		
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		// TODO Auto-generated method stub
+		System.out.println("dudu");
 		
 	}
 
+	private void sendPushToContact(){
+		
+		
+		
+		
+	}
 	
 	
 }
