@@ -18,3 +18,18 @@
 #define kUserRegisterd @"UserRegisterd"
 #define kUserName @"userName"
 #define kPhoneNumber @"phoneNumber"
+
+typedef enum {
+	kPauseOrResume = 1,	
+	kStop,
+	kPoints,
+	kInfo
+}kButtonTag;
+
+typedef enum {
+	kPauseBG = 1,	
+	kResumeBG,
+	kStopBG,
+	kPointsBG,
+	kInfoBG
+}kBGTag;

@@ -21,6 +21,8 @@
 	NSData					*_deviceToken;
 	NSString				*_jsonString;
 	
+	BOOL					_stoppedPressed;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -30,6 +32,8 @@
 
 @property (nonatomic, retain) NSData			*_deviceToken;
 @property (nonatomic, retain) NSString			*_jsonString;
+
+@property (nonatomic, readwrite) BOOL			_stoppedPressed;
 
 -(void)loadAddressBook;
 -(void)sendAddressBookToServer:(NSMutableArray *)addressBook;

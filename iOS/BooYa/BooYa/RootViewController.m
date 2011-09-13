@@ -48,6 +48,11 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+	
+	// the user want to stop the game
+	if (_appDelegate._stoppedPressed) {
+		[self loadLoginView];
+	}
 }
 
 - (IBAction)buttonPushed:(id)sender {
@@ -112,7 +117,21 @@
 										  otherButtonTitles:@"No",nil];
 	[alert show];
 	[alert release];
+}
+
+#pragma mark -
+#pragma mark Stuff button pressed
+
+- (IBAction)stuffButtonPressed:(UIButton *)bttn
+{
+	StuffViewController *stuffViewController = [[StuffViewController alloc] initWithNibName:@"StuffViewController" bundle:nil];
+	[self.navigationController pushViewController:stuffViewController animated:YES];
+	[stuffViewController release];
 	
+	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
+	self.navigationItem.backBarButtonItem = backButton;
+	[backButton release];
+	backButton = nil;
 }
 
 #pragma mark -

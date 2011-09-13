@@ -32,12 +32,23 @@
 }
 
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	// the user pressed stop game - so present it's saved registration details
+	if (_appDelegate._stoppedPressed) 
+	{
+		_userNameTxtFld.text = [[NSUserDefaults standardUserDefaults] objectForKey:kUsername];
+		_phoneNumberTxtFld.text =  [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber];
+		_userNameTxtFld.clearButtonMode = UITextFieldViewModeWhileEditing;
+		_phoneNumberTxtFld.clearButtonMode = UITextFieldViewModeWhileEditing;
+		
+		[_userNameTxtFld becomeFirstResponder];
+	}
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -89,7 +100,7 @@
 }
 
 - (BOOL) validateCountryCode: (NSString *) candidate {
-    NSString *Regex = @"[0-9]{10}"; 
+    NSString *Regex = @"[0-9]{9,}";
     NSPredicate *Test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", Regex]; 
 	
     return [Test evaluateWithObject:candidate];
@@ -105,45 +116,45 @@
 
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
-    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
-    NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
-    
-    for (NSString *key in response) {
-        NSLog(@"%@\n", [response objectForKey:key]);
-    }
+	SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+	NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
+	
+	for (NSString *key in response) {
+		NSLog(@"%@\n", [response objectForKey:key]);
+	}
 	if ([response objectForKey:@"success"] == [NSNumber numberWithBool:YES])
 	{
 		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kUserRegisterd];
-        [[NSUserDefaults standardUserDefaults] setObject:_userNameTxtFld.text forKey:kUsername];
-        [[NSUserDefaults standardUserDefaults] setObject:_phoneNumberTxtFld.text forKey:kPhoneNumber];
+		[[NSUserDefaults standardUserDefaults] setObject:_userNameTxtFld.text forKey:kUsername];
+		[[NSUserDefaults standardUserDefaults] setObject:_phoneNumberTxtFld.text forKey:kPhoneNumber];
 		[[NSUserDefaults standardUserDefaults] synchronize];
-        
-        SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
-        NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
-        
-        int i = 0;
-        for (NSMutableDictionary *person in [response objectForKey:@"data"]) {
-            @synchronized(self)
-            {
-                NSString *key = [[[_appDelegate._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];
-                NSString *number = [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] objectForKey:kNumber];
-                if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
-                    [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
-                    [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
-                }
-                i++;
-            }
-        }
-        
-        //sort
-        [_appDelegate._addressBookArray sortUsingComparator:(NSComparator)^(NSDictionary *obj1, NSDictionary *obj2){
-            NSString *name1 = [[obj1 allKeys] objectAtIndex:0];
-            NSString *name2 = [[obj2 allKeys] objectAtIndex:0];
-            return [name1 caseInsensitiveCompare:name2]; }];
-        
-        [[NSNotificationCenter defaultCenter] postNotificationName:kGotAddressBookFromServerNotification object:nil];
-        
-        [self.delegate loginDismiss];
+		
+		SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+		NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
+		
+		int i = 0;
+		for (NSMutableDictionary *person in [response objectForKey:@"data"]) {
+			@synchronized(self)
+			{
+				NSString *key = [[[_appDelegate._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];
+				NSString *number = [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] objectForKey:kNumber];
+				if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
+					[[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
+					[[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
+				}
+				i++;
+			}
+		}
+		
+		//sort
+		[_appDelegate._addressBookArray sortUsingComparator:(NSComparator)^(NSDictionary *obj1, NSDictionary *obj2){
+			NSString *name1 = [[obj1 allKeys] objectAtIndex:0];
+			NSString *name2 = [[obj2 allKeys] objectAtIndex:0];
+			return [name1 caseInsensitiveCompare:name2]; }];
+		
+		[[NSNotificationCenter defaultCenter] postNotificationName:kGotAddressBookFromServerNotification object:nil];
+		
+		[self.delegate loginDismiss];
 	}
 	else 
 	{
@@ -155,7 +166,7 @@
 		[alert show];
 		[alert release];
 	}
-
+	
 }
 
 
