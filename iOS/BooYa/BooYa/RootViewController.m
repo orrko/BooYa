@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "BooYaViewController.h"
+#import "StuffViewController.h"
 
 @implementation RootViewController
 
@@ -76,7 +77,16 @@
             break;
             
         case 3://More
+        {
+            StuffViewController *stuffViewController = [[StuffViewController alloc] initWithNibName:@"StuffViewController" bundle:nil];
+            [self.navigationController pushViewController:stuffViewController animated:YES];
+            [stuffViewController release];
             
+            UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
+            self.navigationItem.backBarButtonItem = backButton;
+            [backButton release];
+            backButton = nil;
+        } 
             break;
     }
 }
@@ -124,14 +134,7 @@
 
 - (IBAction)stuffButtonPressed:(UIButton *)bttn
 {
-	StuffViewController *stuffViewController = [[StuffViewController alloc] initWithNibName:@"StuffViewController" bundle:nil];
-	[self.navigationController pushViewController:stuffViewController animated:YES];
-	[stuffViewController release];
 	
-	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
-	self.navigationItem.backBarButtonItem = backButton;
-	[backButton release];
-	backButton = nil;
 }
 
 #pragma mark -

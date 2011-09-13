@@ -9,9 +9,11 @@
 #import "BooYaViewController.h"
 #import "Constants.h"
 #import "BooYaCellView.h"
+#import "SBJsonParser.h"
 
 @implementation BooYaViewController
 @synthesize _tableView;
+@synthesize _rankLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +33,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Check rank
+    _sendGetUserStat = YES;
+    NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:kUserName];
+    NSString *phone = [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber];
+    NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"getUserStat", @"funcName", username, @"userName", phone, @"phoneNumber", nil];
+    
+    [_comManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
 }
 
 -(void)reloadTableView
@@ -44,9 +54,69 @@
     
     if ([[button titleForState:UIControlStateNormal] isEqualToString:@"Invite"]) {
         //send invitation
+        if ([MFMessageComposeViewController canSendText]) { //we have the ability to send sms
+            MFMessageComposeViewController *sms = [[MFMessageComposeViewController alloc] init];
+            [sms setMessageComposeDelegate:self];
+            [sms setBody:@"This is a test sms from BooYA!!!"];
+            NSDictionary *person = [_dataSource objectAtIndex:index];
+            NSString *key = [[person allKeys] objectAtIndex:0];
+            [sms setRecipients:[NSArray arrayWithObject:[[person objectForKey:key] objectForKey:kNumber]]];
+            [self presentModalViewController:sms animated:YES];
+            [sms release];
+        }
+        else //send email
+        {
+             if ([[_dataSource objectAtIndex:index] objectForKey:[[[[_dataSource objectAtIndex:index] allKeys] objectAtIndex:0] objectForKey:kEmail]] != nil) {
+                 Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+                 
+                 if (nil != mailClass) {
+                     if ([mailClass canSendMail]) {
+                         MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+                         mailComposer.mailComposeDelegate = self;
+                         [mailComposer setToRecipients:[NSArray arrayWithObject:[[_dataSource objectAtIndex:index] objectForKey:[[[[_dataSource objectAtIndex:index] allKeys] objectAtIndex:0] objectForKey:kEmail]]]];
+                         [mailComposer setTitle:@""];
+                         [mailComposer setSubject:@"Couldn't find a stock"];
+                         NSString *messageBody = [NSString stringWithFormat:@"<html><body><p dir=\"LTR\">Please add stock name %@ to your database. Thanks.</p></body></html>", @""];
+                         [mailComposer setMessageBody:messageBody isHTML:YES];
+                         [self presentModalViewController:mailComposer animated:YES];
+                         [mailComposer release];			
+                     }
+                     else {
+                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No email configuration found" 
+                                                                         message:@"Please configure your email settings in order to send mail." 
+                                                                        delegate:nil 
+                                                               cancelButtonTitle:@"OK" 
+                                                               otherButtonTitles:nil];
+                         [alert show];
+                         [alert release];
+                     }
+                 }
+                 else
+                 {
+                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Can't send Email or SMS from this device!" 
+                                                                     message:nil 
+                                                                    delegate:nil 
+                                                           cancelButtonTitle:@"OK" 
+                                                           otherButtonTitles:nil];
+                     [alert show];
+                     [alert release];
+                 }
+             }
+             else
+             {
+                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Can't send Email or SMS to this user. No info found." 
+                                                                 message:nil 
+                                                                delegate:nil 
+                                                       cancelButtonTitle:@"OK" 
+                                                       otherButtonTitles:nil];
+                 [alert show];
+                 [alert release];
+             }
+        }
     }
     else if([[button titleForState:UIControlStateNormal] isEqualToString:@"BooYa"]){
         //send BooYa
+        _sendCheckEnrolled = YES;
         NSDictionary *person = [_dataSource objectAtIndex:index];
         NSDictionary *key = [[person allKeys] objectAtIndex:0];
         NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"sendBooYaMessage", @"funcName", @"phoneNumber", @"idTypeSrc", [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber], @"idStrSrc", @"phoneNumber", @"idTypeTarget", [[person objectForKey:key] objectForKey:kNumber], @"idStrTarget", @"", @"booYaId", nil];
@@ -54,6 +124,36 @@
         [_comManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
         
     }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+	NSString *message = nil;
+	// Notifies users about errors associated with the interface
+	switch (result)
+	{
+		case MFMailComposeResultCancelled:
+			message = @"Result: canceled";
+			break;
+		case MFMailComposeResultSaved:
+			message = @"Result: saved";
+			break;
+		case MFMailComposeResultSent:
+			message = @"Result: sent";
+			break;
+		case MFMailComposeResultFailed:
+			message = @"Result: failed";
+			break;
+		default:
+			message = @"Result: not sent";
+			break;
+	}
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 - (IBAction)backButtonPushed:(id)sender {
@@ -202,6 +302,25 @@
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
     NSLog(@"%@", [request responseString]);
+    if (_sendCheckEnrolled) {
+        _sendCheckEnrolled = NO;
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WooHoo!" 
+                                                        message:@"BooYA! sent"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK" 
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    else if(_sendGetUserStat)
+    {
+        _sendGetUserStat = NO;
+        SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+        NSDictionary *result = [jsonParser objectWithString:[request responseString]];
+        _rankLabel.text = [NSString stringWithFormat:@"Your Rank is: %@", [result objectForKey:@"rank"]];
+        
+    }
+    
 }
 
 #pragma mark -
@@ -217,6 +336,7 @@
 - (void)viewDidUnload
 {
     [self set_tableView:nil];
+    [self set_rankLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -232,6 +352,7 @@
 - (void)dealloc {
     [_dataSource release];
     [_tableView release];
+    [_rankLabel release];
     [super dealloc];
 }
 @end

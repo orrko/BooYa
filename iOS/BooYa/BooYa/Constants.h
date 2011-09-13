@@ -14,6 +14,7 @@
 #define kUsername @"username"
 #define kEnrolled @"enrolled"
 #define kNumber @"number"
+#define kEmail @"email"
 
 #define kUserRegisterd @"UserRegisterd"
 #define kUserName @"userName"

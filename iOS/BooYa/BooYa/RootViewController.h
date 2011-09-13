@@ -17,9 +17,6 @@
 }
 
 - (void)loadLoginView;
-- (IBAction)stuffButtonPressed:(UIButton *)bttn;
-
-
 - (IBAction)buttonPushed:(id)sender;
 
 @end

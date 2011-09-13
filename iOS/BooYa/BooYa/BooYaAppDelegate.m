@@ -95,7 +95,9 @@
     NSArray *persons = (NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBook);
     for (id person in persons) {
     	ABMultiValueRef phones = ABRecordCopyValue((ABRecordRef)person,kABPersonPhoneProperty);
+        ABMultiValueRef emails = ABRecordCopyValue((ABRecordRef)person, kABPersonEmailProperty);
     	CFIndex nPhones = ABMultiValueGetCount(phones);
+        CFIndex nEmails = ABMultiValueGetCount(emails);
        
         if (nPhones == 0) {
     		ABAddressBookRemoveRecord(addressBook, person, NULL);
@@ -112,7 +114,20 @@
                 ABAddressBookRemoveRecord(addressBook, person, NULL);
                 continue;
             }
-            NSMutableDictionary *personDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:(NSString *)phone, kNumber, [NSNumber numberWithBool:NO], kEnrolled, @"", kUsername, nil];
+           
+            NSMutableDictionary *personDict = nil;
+             CFStringRef email = nil;
+            if (nEmails > 0) {
+                email = ABMultiValueCopyValueAtIndex(emails, 0);
+                
+                personDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:(NSString *)phone, kNumber, [NSNumber numberWithBool:NO], kEnrolled, @"", kUsername, (NSString *)email, kEmail, nil];
+            }
+            else
+            {
+                personDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:(NSString *)phone, kNumber, [NSNumber numberWithBool:NO], kEnrolled, @"", kUsername, nil];
+            }
+            
+            
             
             NSString *personName = nil;
             if (ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty) == nil) {

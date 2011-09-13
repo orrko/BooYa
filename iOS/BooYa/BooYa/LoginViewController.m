@@ -40,7 +40,7 @@
 	// the user pressed stop game - so present it's saved registration details
 	if (_appDelegate._stoppedPressed) 
 	{
-		_userNameTxtFld.text = [[NSUserDefaults standardUserDefaults] objectForKey:kUsername];
+		_userNameTxtFld.text = [[NSUserDefaults standardUserDefaults] objectForKey:kUserName];
 		_phoneNumberTxtFld.text =  [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber];
 		_userNameTxtFld.clearButtonMode = UITextFieldViewModeWhileEditing;
 		_phoneNumberTxtFld.clearButtonMode = UITextFieldViewModeWhileEditing;
@@ -125,7 +125,7 @@
 	if ([response objectForKey:@"success"] == [NSNumber numberWithBool:YES])
 	{
 		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kUserRegisterd];
-		[[NSUserDefaults standardUserDefaults] setObject:_userNameTxtFld.text forKey:kUsername];
+		[[NSUserDefaults standardUserDefaults] setObject:_userNameTxtFld.text forKey:kUserName];
 		[[NSUserDefaults standardUserDefaults] setObject:_phoneNumberTxtFld.text forKey:kPhoneNumber];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 		
