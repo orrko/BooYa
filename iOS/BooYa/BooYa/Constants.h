@@ -7,4 +7,29 @@
 //
 
 #define kServerURL @"http://booya.r4r.co.il/ajax.php"
+
+//notifications
+#define kGotAddressBookFromServerNotification @"gotAddressBookFromServerNotification"
+//keys
+#define kUsername @"username"
+#define kEnrolled @"enrolled"
+#define kNumber @"number"
+
 #define kUserRegisterd @"UserRegisterd"
+#define kUserName @"userName"
+#define kPhoneNumber @"phoneNumber"
+
+typedef enum {
+	kPauseOrResume = 1,	
+	kStop,
+	kPoints,
+	kInfo
+}kButtonTag;
+
+typedef enum {
+	kPauseBG = 1,	
+	kResumeBG,
+	kStopBG,
+	kPointsBG,
+	kInfoBG
+}kBGTag;

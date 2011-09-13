@@ -19,6 +19,7 @@
 @synthesize _commManager;
 @synthesize _deviceToken;
 @synthesize _jsonString;
+@synthesize _stoppedPressed;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

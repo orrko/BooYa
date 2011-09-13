@@ -17,5 +17,6 @@
 }
 
 - (void)loadLoginView;
+- (IBAction)stuffButtonPressed:(UIButton *)bttn;
 
 @end

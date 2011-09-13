@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2848221C141DDC220037D1D5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848221A141DDC220037D1D5 /* LoginViewController.m */; };
 		2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2848221B141DDC220037D1D5 /* LoginViewController.xib */; };
+		28C1F6EA141F4A16000756CF /* StuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C1F6E8141F4A16000756CF /* StuffViewController.m */; };
+		28C1F6EB141F4A16000756CF /* StuffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F6E9141F4A16000756CF /* StuffViewController.xib */; };
 		CA19FA46141CE90C007D8670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA45141CE90C007D8670 /* UIKit.framework */; };
 		CA19FA48141CE90C007D8670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA47141CE90C007D8670 /* Foundation.framework */; };
 		CA19FA4A141CE90C007D8670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA49141CE90C007D8670 /* CoreGraphics.framework */; };
@@ -49,6 +51,9 @@
 		28482219141DDC220037D1D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		2848221A141DDC220037D1D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2848221B141DDC220037D1D5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		28C1F6E7141F4A16000756CF /* StuffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuffViewController.h; sourceTree = "<group>"; };
+		28C1F6E8141F4A16000756CF /* StuffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuffViewController.m; sourceTree = "<group>"; };
+		28C1F6E9141F4A16000756CF /* StuffViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StuffViewController.xib; sourceTree = "<group>"; };
 		CA19FA41141CE90C007D8670 /* BooYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA19FA45141CE90C007D8670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA19FA47141CE90C007D8670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +138,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C1F77C141F6C0F000756CF /* Png */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Png;
+			sourceTree = "<group>";
+		};
+		28C1F77D141F6C24000756CF /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA277D9D141CF72800BB14EC /* ConnectionManager.h */,
+				CA277D9E141CF72800BB14EC /* ConnectionManager.m */,
+			);
+			name = ConnectionManager;
+			sourceTree = "<group>";
+		};
 		CA19FA36141CE90B007D8670 = {
 			isa = PBXGroup;
 			children = (
@@ -169,9 +190,9 @@
 		CA19FA4B141CE90C007D8670 /* BooYa */ = {
 			isa = PBXGroup;
 			children = (
+				28C1F77D141F6C24000756CF /* ConnectionManager */,
+				28C1F77C141F6C0F000756CF /* Png */,
 				CA277DA6141CF99D00BB14EC /* JSON */,
-				CA277D9D141CF72800BB14EC /* ConnectionManager.h */,
-				CA277D9E141CF72800BB14EC /* ConnectionManager.m */,
 				CA277D70141CF65300BB14EC /* ASIHTTPRequest */,
 				CA19FA65141CE913007D8670 /* iPad */,
 				CA19FA54141CE90C007D8670 /* BooYaAppDelegate.h */,
@@ -189,6 +210,9 @@
 				CA277DBA141DD3A700BB14EC /* BooYaCellView.h */,
 				CA277DBB141DD3A800BB14EC /* BooYaCellView.m */,
 				CA277DBD141DD3BC00BB14EC /* BooYaCellView.xib */,
+				28C1F6E7141F4A16000756CF /* StuffViewController.h */,
+				28C1F6E8141F4A16000756CF /* StuffViewController.m */,
+				28C1F6E9141F4A16000756CF /* StuffViewController.xib */,
 				CA19FA4C141CE90C007D8670 /* Supporting Files */,
 				CA277DB7141CFB8F00BB14EC /* Constants.h */,
 			);
@@ -318,6 +342,7 @@
 				CA277D5F141CEFD100BB14EC /* BooYaViewController.xib in Resources */,
 				CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */,
 				2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */,
+				28C1F6EB141F4A16000756CF /* StuffViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +374,7 @@
 				CA277DB6141CF9AA00BB14EC /* SBJsonWriter.m in Sources */,
 				CA277DBC141DD3A800BB14EC /* BooYaCellView.m in Sources */,
 				2848221C141DDC220037D1D5 /* LoginViewController.m in Sources */,
+				28C1F6EA141F4A16000756CF /* StuffViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
