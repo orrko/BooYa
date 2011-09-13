@@ -23,7 +23,9 @@
         <activity android:name=".StuffActivity">
         </activity>  
         <activity android:name=".StatsActivity">
-        </activity>             
+        </activity> 
+        <activity android:name="com.c2dm.RegisterActivity">
+        </activity>                   
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

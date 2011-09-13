@@ -3,10 +3,8 @@ package com.onoapps.BooYa;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -17,13 +15,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import com.onoapps.BooYa.R;
-
-import android.R.integer;
-import android.R.string;
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -32,18 +25,15 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.Contacts;
 import android.provider.Contacts.People;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
 public class RootActivity extends Activity {
 
 	private ArrayList<ContactData> contactsArr;
 	private ContactData newContact;
-	private StringBuilder strBuilder;
 	private ArrayList<String> phoneNumbersArr; 
 	
 	private Activity activity;
@@ -56,7 +46,8 @@ public class RootActivity extends Activity {
 	ContactsList myContacts;
 	
 	/** Called when the activity is first created. */
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
@@ -97,7 +88,6 @@ public class RootActivity extends Activity {
 	        if (cur.getCount() > 0) {
 	        
 	        contactsArr = new ArrayList<ContactData>();	
-	        strBuilder = new StringBuilder();
 	        phoneNumbersArr = new ArrayList<String>();
 	              
 		     while (cur.moveToNext()) {
