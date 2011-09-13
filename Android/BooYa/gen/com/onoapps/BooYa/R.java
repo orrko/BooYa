@@ -14,14 +14,19 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int phoneNumber=0x7f050003;
-        public static final int registerBtn=0x7f050002;
-        public static final int textView1=0x7f050000;
-        public static final int userName=0x7f050001;
+        public static final int button1=0x7f050003;
+        public static final int imageButton1=0x7f050001;
+        public static final int name=0x7f050000;
+        public static final int phoneNumber=0x7f050006;
+        public static final int registerBtn=0x7f050005;
+        public static final int textView1=0x7f050002;
+        public static final int userName=0x7f050004;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int register=0x7f030001;
+        public static final int booyalist=0x7f030000;
+        public static final int list_view_row=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int register=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
