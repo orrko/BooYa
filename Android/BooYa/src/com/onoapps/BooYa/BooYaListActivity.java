@@ -20,7 +20,7 @@ import android.widget.ListView;
 
 public class BooYaListActivity extends ListActivity {
 
-	 private ContactsList myContacts;
+	   private ContactsList myContacts;
 	 private BooYaListAdapter adapter;
 	 
 	@Override
