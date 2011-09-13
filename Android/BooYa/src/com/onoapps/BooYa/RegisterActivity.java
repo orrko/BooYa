@@ -33,7 +33,7 @@ public class RegisterActivity extends Activity {
 	private EditText userName;
 	private EditText phoneNumber;
 	private ImageButton registerBtn;
-	
+	//orrs comment
 	private Activity activity;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
