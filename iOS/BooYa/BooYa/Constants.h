@@ -16,3 +16,5 @@
 #define kNumber @"number"
 
 #define kUserRegisterd @"UserRegisterd"
+#define kUserName @"userName"
+#define kPhoneNumber @"phoneNumber"

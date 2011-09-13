@@ -29,7 +29,7 @@
 		[self loadLoginView];
 	}
     
-    self.title = @"BooYa";
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)loadLoginView
@@ -48,11 +48,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+}
+
 - (IBAction)buttonPushed:(id)sender {
     UIButton *button = (UIButton *)sender;
     
     switch (button.tag) {
-        case 0:
+        case 0: //BooYA
         {
             BooYaViewController *booyaVC = [[BooYaViewController alloc] initWithNibName:@"BooYaViewController" bundle:nil];
             [self.navigationController pushViewController:booyaVC animated:YES];
@@ -60,15 +62,15 @@
         }
             break;
             
-        case 1:
+        case 1://Board
             
             break;
         
-        case 2:
+        case 2://Stats
             
             break;
             
-        case 3:
+        case 3://More
             
             break;
     }
@@ -105,7 +107,7 @@
 	NSLog(@"In Login dismiss");
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yo!" 
 													message:@"Can we pleeeease use your contact list (it's the only way to play BooYA!)." 
-												   delegate:nil
+												   delegate:self
 										  cancelButtonTitle:@"Ok"
 										  otherButtonTitles:@"No",nil];
 	[alert show];
@@ -119,13 +121,18 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	// NO - button pressed
-	if (buttonIndex == 0) 
+	if (buttonIndex == 1) 
 	{
 		NSLog(@"NO - stay in log in screen");
 	}
 	else 
 	{ // Yes - go to home screen
-		[_loginVC.view removeFromSuperview];
+        [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionTransitionCurlUp animations:^(void) {
+            [_loginVC.view removeFromSuperview];
+        } completion:^(BOOL finished) {
+            
+        }];
+		
 	}
 
 }

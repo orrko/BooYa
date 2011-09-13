@@ -10,6 +10,11 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>icon.png</string>
+		<string>icon@2x.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.onoapps.BooYa</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -37,5 +42,20 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF Slapstick Comic Bold Oblique.ttf</string>
+		<string>SF Slapstick Comic Bold.ttf</string>
+		<string>SF Slapstick Comic Oblique.ttf</string>
+		<string>SF Slapstick Comic Shaded Oblique.ttf</string>
+		<string>SF Slapstick Comic Shaded.ttf</string>
+		<string>SF Slapstick Comic.ttf</string>
+	</array>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
 </dict>
 </plist>

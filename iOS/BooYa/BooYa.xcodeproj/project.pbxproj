@@ -19,6 +19,16 @@
 		CA19FA5C141CE90C007D8670 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA19FA5B141CE90C007D8670 /* RootViewController.m */; };
 		CA19FA5F141CE90C007D8670 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA19FA5D141CE90C007D8670 /* RootViewController.xib */; };
 		CA19FA68141CE915007D8670 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA19FA66141CE915007D8670 /* MainWindow-iPad.xib */; };
+		CA24E543141F596A00CD376F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA24E542141F596A00CD376F /* Default.png */; };
+		CA24E546141F597900CD376F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA24E545141F597900CD376F /* Default@2x.png */; };
+		CA24E549141F612000CD376F /* BooYAMainBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA24E547141F612000CD376F /* BooYAMainBackground@2x.png */; };
+		CA24E54A141F612000CD376F /* BooYAMainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CA24E548141F612000CD376F /* BooYAMainBackground.png */; };
+		CA24E552141F68A900CD376F /* SF Slapstick Comic Bold Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA24E54C141F68A900CD376F /* SF Slapstick Comic Bold Oblique.ttf */; };
+		CA24E553141F68A900CD376F /* SF Slapstick Comic Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA24E54D141F68A900CD376F /* SF Slapstick Comic Bold.ttf */; };
+		CA24E554141F68A900CD376F /* SF Slapstick Comic Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA24E54E141F68A900CD376F /* SF Slapstick Comic Oblique.ttf */; };
+		CA24E555141F68A900CD376F /* SF Slapstick Comic Shaded Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA24E54F141F68A900CD376F /* SF Slapstick Comic Shaded Oblique.ttf */; };
+		CA24E556141F68A900CD376F /* SF Slapstick Comic Shaded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA24E550141F68A900CD376F /* SF Slapstick Comic Shaded.ttf */; };
+		CA24E557141F68A900CD376F /* SF Slapstick Comic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA24E551141F68A900CD376F /* SF Slapstick Comic.ttf */; };
 		CA277D5E141CEFD100BB14EC /* BooYaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277D5C141CEFD100BB14EC /* BooYaViewController.m */; };
 		CA277D5F141CEFD100BB14EC /* BooYaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA277D5D141CEFD100BB14EC /* BooYaViewController.xib */; };
 		CA277D65141CF17B00BB14EC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA277D64141CF17B00BB14EC /* AddressBook.framework */; };
@@ -43,6 +53,8 @@
 		CA277DB6141CF9AA00BB14EC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277DB1141CF9AA00BB14EC /* SBJsonWriter.m */; };
 		CA277DBC141DD3A800BB14EC /* BooYaCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA277DBB141DD3A800BB14EC /* BooYaCellView.m */; };
 		CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA277DBD141DD3BC00BB14EC /* BooYaCellView.xib */; };
+		CAEFDCF6141F47F60071EABA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEFDCF5141F47F60071EABA /* icon.png */; };
+		CAEFDCF8141F47FC0071EABA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEFDCF7141F47FC0071EABA /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +76,16 @@
 		CA19FA5B141CE90C007D8670 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CA19FA5E141CE90C007D8670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		CA19FA67141CE915007D8670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		CA24E542141F596A00CD376F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CA24E545141F597900CD376F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CA24E547141F612000CD376F /* BooYAMainBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYAMainBackground@2x.png"; sourceTree = "<group>"; };
+		CA24E548141F612000CD376F /* BooYAMainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BooYAMainBackground.png; sourceTree = "<group>"; };
+		CA24E54C141F68A900CD376F /* SF Slapstick Comic Bold Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Slapstick Comic Bold Oblique.ttf"; sourceTree = "<group>"; };
+		CA24E54D141F68A900CD376F /* SF Slapstick Comic Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Slapstick Comic Bold.ttf"; sourceTree = "<group>"; };
+		CA24E54E141F68A900CD376F /* SF Slapstick Comic Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Slapstick Comic Oblique.ttf"; sourceTree = "<group>"; };
+		CA24E54F141F68A900CD376F /* SF Slapstick Comic Shaded Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Slapstick Comic Shaded Oblique.ttf"; sourceTree = "<group>"; };
+		CA24E550141F68A900CD376F /* SF Slapstick Comic Shaded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Slapstick Comic Shaded.ttf"; sourceTree = "<group>"; };
+		CA24E551141F68A900CD376F /* SF Slapstick Comic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Slapstick Comic.ttf"; sourceTree = "<group>"; };
 		CA277D5B141CEFD100BB14EC /* BooYaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooYaViewController.h; sourceTree = "<group>"; };
 		CA277D5C141CEFD100BB14EC /* BooYaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooYaViewController.m; sourceTree = "<group>"; };
 		CA277D5D141CEFD100BB14EC /* BooYaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooYaViewController.xib; sourceTree = "<group>"; };
@@ -112,6 +134,8 @@
 		CA277DBA141DD3A700BB14EC /* BooYaCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooYaCellView.h; sourceTree = "<group>"; };
 		CA277DBB141DD3A800BB14EC /* BooYaCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooYaCellView.m; sourceTree = "<group>"; };
 		CA277DBD141DD3BC00BB14EC /* BooYaCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooYaCellView.xib; sourceTree = "<group>"; };
+		CAEFDCF5141F47F60071EABA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		CAEFDCF7141F47FC0071EABA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +160,8 @@
 		CA19FA36141CE90B007D8670 = {
 			isa = PBXGroup;
 			children = (
+				CA24E545141F597900CD376F /* Default@2x.png */,
+				CA24E542141F596A00CD376F /* Default.png */,
 				CA19FA4B141CE90C007D8670 /* BooYa */,
 				CA19FA44141CE90C007D8670 /* Frameworks */,
 				CA19FA42141CE90C007D8670 /* Products */,
@@ -198,6 +224,8 @@
 		CA19FA4C141CE90C007D8670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA24E54B141F689A00CD376F /* Font */,
+				CAEFDCF4141F47D00071EABA /* Images */,
 				CA19FA4D141CE90C007D8670 /* BooYa-Info.plist */,
 				CA19FA4E141CE90C007D8670 /* InfoPlist.strings */,
 				CA19FA51141CE90C007D8670 /* main.m */,
@@ -212,6 +240,19 @@
 				CA19FA66141CE915007D8670 /* MainWindow-iPad.xib */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		CA24E54B141F689A00CD376F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CA24E54C141F68A900CD376F /* SF Slapstick Comic Bold Oblique.ttf */,
+				CA24E54D141F68A900CD376F /* SF Slapstick Comic Bold.ttf */,
+				CA24E54E141F68A900CD376F /* SF Slapstick Comic Oblique.ttf */,
+				CA24E54F141F68A900CD376F /* SF Slapstick Comic Shaded Oblique.ttf */,
+				CA24E550141F68A900CD376F /* SF Slapstick Comic Shaded.ttf */,
+				CA24E551141F68A900CD376F /* SF Slapstick Comic.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		CA277D70141CF65300BB14EC /* ASIHTTPRequest */ = {
@@ -259,6 +300,17 @@
 				CA277DB1141CF9AA00BB14EC /* SBJsonWriter.m */,
 			);
 			name = JSON;
+			sourceTree = "<group>";
+		};
+		CAEFDCF4141F47D00071EABA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA24E547141F612000CD376F /* BooYAMainBackground@2x.png */,
+				CA24E548141F612000CD376F /* BooYAMainBackground.png */,
+				CAEFDCF7141F47FC0071EABA /* icon@2x.png */,
+				CAEFDCF5141F47F60071EABA /* icon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +370,18 @@
 				CA277D5F141CEFD100BB14EC /* BooYaViewController.xib in Resources */,
 				CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */,
 				2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */,
+				CAEFDCF6141F47F60071EABA /* icon.png in Resources */,
+				CAEFDCF8141F47FC0071EABA /* icon@2x.png in Resources */,
+				CA24E543141F596A00CD376F /* Default.png in Resources */,
+				CA24E546141F597900CD376F /* Default@2x.png in Resources */,
+				CA24E549141F612000CD376F /* BooYAMainBackground@2x.png in Resources */,
+				CA24E54A141F612000CD376F /* BooYAMainBackground.png in Resources */,
+				CA24E552141F68A900CD376F /* SF Slapstick Comic Bold Oblique.ttf in Resources */,
+				CA24E553141F68A900CD376F /* SF Slapstick Comic Bold.ttf in Resources */,
+				CA24E554141F68A900CD376F /* SF Slapstick Comic Oblique.ttf in Resources */,
+				CA24E555141F68A900CD376F /* SF Slapstick Comic Shaded Oblique.ttf in Resources */,
+				CA24E556141F68A900CD376F /* SF Slapstick Comic Shaded.ttf in Resources */,
+				CA24E557141F68A900CD376F /* SF Slapstick Comic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +459,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: orr kowarsky (FDWNJ22MBN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: orr kowarsky (FDWNJ22MBN)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noam Mayafit (2QMEHXJ6KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noam Mayafit (2QMEHXJ6KG)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -411,6 +475,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "BooYA!";
 				PROVISIONING_PROFILE = "50A2ADAA-13D0-4297-921B-F71A43DD3020";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50A2ADAA-13D0-4297-921B-F71A43DD3020";
 				SDKROOT = iphoneos;
@@ -431,6 +496,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "BooYA!";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -483,8 +549,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PROVISIONING_PROFILE = "376CB1C9-C1C0-4F04-84D9-ED775EDAA981";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "376CB1C9-C1C0-4F04-84D9-ED775EDAA981";
+				PRODUCT_NAME = "BooYA!";
+				PROVISIONING_PROFILE = "623D536F-76E0-4084-A57C-FADF40812EB7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "623D536F-76E0-4084-A57C-FADF40812EB7";
 				SDKROOT = iphoneos;
 			};
 			name = Adhoc;
@@ -492,11 +559,15 @@
 		CA277D69141CF59500BB14EC /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OnO Apps Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OnO Apps Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BooYa/BooYa-Prefix.pch";
 				INFOPLIST_FILE = "BooYa/BooYa-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "623D536F-76E0-4084-A57C-FADF40812EB7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "623D536F-76E0-4084-A57C-FADF40812EB7";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

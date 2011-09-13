@@ -114,8 +114,36 @@
 	if ([response objectForKey:@"success"] == [NSNumber numberWithBool:YES])
 	{
 		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kUserRegisterd];
+        [[NSUserDefaults standardUserDefaults] setObject:_userNameTxtFld.text forKey:kUsername];
+        [[NSUserDefaults standardUserDefaults] setObject:_phoneNumberTxtFld.text forKey:kPhoneNumber];
 		[[NSUserDefaults standardUserDefaults] synchronize];
-		[self.delegate loginDismiss];
+        
+        SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+        NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
+        
+        int i = 0;
+        for (NSMutableDictionary *person in [response objectForKey:@"data"]) {
+            @synchronized(self)
+            {
+                NSString *key = [[[_appDelegate._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];
+                NSString *number = [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] objectForKey:kNumber];
+                if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
+                    [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
+                    [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
+                }
+                i++;
+            }
+        }
+        
+        //sort
+        [_appDelegate._addressBookArray sortUsingComparator:(NSComparator)^(NSDictionary *obj1, NSDictionary *obj2){
+            NSString *name1 = [[obj1 allKeys] objectAtIndex:0];
+            NSString *name2 = [[obj2 allKeys] objectAtIndex:0];
+            return [name1 caseInsensitiveCompare:name2]; }];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:kGotAddressBookFromServerNotification object:nil];
+        
+        [self.delegate loginDismiss];
 	}
 	else 
 	{

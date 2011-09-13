@@ -32,13 +32,23 @@
 	
 #endif
 	
-	
+	if([launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]){
+		
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BooYA!" 
+                                                        message:[[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"aps"] objectForKey:@"alert"]
+                                                       delegate:self
+                                              cancelButtonTitle:@"Nahh" 
+                                              otherButtonTitles:@"Back@YA!!!", nil];
+        [alert show];
+        [alert release];
+    }
 	
 	_commManager = [ConnectionManager sharedManager];
     
 	// first user enter need to load the login screen
 	
     self._addressBookArray = [[NSMutableArray alloc] init];
+    
     //get address booo
     [NSThread detachNewThreadSelector:@selector(loadAddressBook) toTarget:self withObject:nil];
     
@@ -63,8 +73,14 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-	
-    
+	NSLog(@"%@", userInfo);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BooYA!" 
+                                                    message:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] 
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK" 
+                                          otherButtonTitles:@"Back@YA!!!", nil];
+    [alert show];
+    [alert release];
 }
 
 #pragma mark -
@@ -86,12 +102,16 @@
     	else {
             CFStringRef phone = nil;
     		for (int j = 0; j < nPhones; j++) {
-                if([(NSString *)ABMultiValueCopyValueAtIndex(phones, j) isEqualToString:@"_$!<Mobile>!$_"]) {
+                if([(NSString *)ABMultiValueCopyLabelAtIndex(phones, j) isEqualToString:@"_$!<Mobile>!$_"]) {
                     phone = ABMultiValueCopyValueAtIndex(phones, j);
                     break;
                 }
     		}
-//            NSDictionary *personDict = [NSDictionary dictionaryWithObjectsAndKeys:numbersArray, @"numbers", [NSNumber numberWithBool:NO], @"enrolled", @"", @"username", nil];
+            if (phone == nil) {
+                ABAddressBookRemoveRecord(addressBook, person, NULL);
+                continue;
+            }
+            NSMutableDictionary *personDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:(NSString *)phone, kNumber, [NSNumber numberWithBool:NO], kEnrolled, @"", kUsername, nil];
             
             NSString *personName = nil;
             if (ABRecordCopyValue((ABRecordRef)person,kABPersonFirstNameProperty) == nil) {
@@ -111,6 +131,7 @@
     
     [self performSelectorOnMainThread:@selector(sendAddressBookToServer:) withObject:self._addressBookArray waitUntilDone:NO];
     
+    
     [pool drain];
 }
 
@@ -118,14 +139,18 @@
 {
     //create array of numbers
     NSMutableArray *numbers = [NSMutableArray array];
-    for (NSDictionary *person in self._addressBookArray) {
+    for (NSMutableDictionary *person in self._addressBookArray) {
         NSString *key = [[person allKeys] objectAtIndex:0];
         NSString *personNumber = [[person objectForKey:key] objectForKey:kNumber];
         [numbers addObject:personNumber];
     }
     SBJsonWriter *string = [[SBJsonWriter alloc] init];
-    self._jsonString = [string stringWithObject:addressBook];
-    [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:[NSDictionary dictionaryWithObjectsAndKeys:self._jsonString, @"list", @"checkEnrolled", @"funcName", nil]];
+    self._jsonString = [string stringWithObject:numbers];
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:kUserRegisterd] != nil) {
+        [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:[NSMutableDictionary dictionaryWithObjectsAndKeys:self._jsonString, @"list", @"checkEnrolled", @"funcName", nil]];
+    }
+    [string release];
 }
 
 -(void)requestFailed:(ASIHTTPRequest *)request
@@ -139,7 +164,7 @@
     NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
     
     int i = 0;
-    for (NSDictionary *person in [response objectForKey:@"data"]) {
+    for (NSMutableDictionary *person in [response objectForKey:@"data"]) {
         @synchronized(self)
         {
             NSString *key = [[[self._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];

@@ -18,8 +18,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _appDelegate = (BooYaAppDelegate *)[[UIApplication sharedApplication] delegate];
+        _comManager = [ConnectionManager sharedManager];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:kGotAddressBookFromServerNotification object:nil];
-        _dataSource = _appDelegate._addressBookArray;
+        _dataSource = [[NSMutableArray alloc] initWithArray:_appDelegate._addressBookArray];
     }
     return self;
 }
@@ -41,7 +42,58 @@
     UIButton *button = (UIButton *)sender;
     int index = button.tag;
     
+    if ([[button titleForState:UIControlStateNormal] isEqualToString:@"Invite"]) {
+        //send invitation
+    }
+    else if([[button titleForState:UIControlStateNormal] isEqualToString:@"BooYa"]){
+        //send BooYa
+        NSDictionary *person = [_dataSource objectAtIndex:index];
+        NSDictionary *key = [[person allKeys] objectAtIndex:0];
+        NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"sendBooYaMessage", @"funcName", @"phoneNumber", @"idTypeSrc", [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber], @"idStrSrc", @"phoneNumber", @"idTypeTarget", [[person objectForKey:key] objectForKey:kNumber], @"idStrTarget", @"", @"booYaId", nil];
+        
+        [_comManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
+        
+    }
+}
+
+- (IBAction)backButtonPushed:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)filterButtonPushed:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    switch (button.tag) {
+        case 0://booya
+            if (_dataSource) {
+                [_dataSource release];
+            }
+            _dataSource = [[NSMutableArray alloc] init];
+            for (NSDictionary *person in _appDelegate._addressBookArray) {
+                if ([[person objectForKey:[[person allKeys] objectAtIndex:0]] objectForKey:kEnrolled] == [NSNumber numberWithBool:YES]) {
+                    [_dataSource addObject:person];
+                }
+            }
+            break;
+        case 1://invitees
+            if (_dataSource) {
+                [_dataSource release];
+            }
+            _dataSource = [[NSMutableArray alloc] init];
+            for (NSDictionary *person in _appDelegate._addressBookArray) {
+                if ([[person objectForKey:[[person allKeys] objectAtIndex:0]] objectForKey:kEnrolled] == [NSNumber numberWithBool:NO]) {
+                    [_dataSource addObject:person];
+                }
+            }
+            break;
+        case 2://all
+            if (_dataSource) {
+                [_dataSource release];
+            }
+            _dataSource = [[NSMutableArray alloc] initWithArray:_appDelegate._addressBookArray];
+            break;
+    }
     
+    [_tableView reloadData];
 }
 
 #pragma mark -
@@ -80,6 +132,7 @@
     {
         [[(BooYaCellView *)cell _BooYaButton] setTitle:@"Invite" forState:UIControlStateNormal];
     }
+    [[(BooYaCellView *)cell _BooYaButton] setTag:indexPath.row];
     
     // Configure the cell.
     return cell;
@@ -140,6 +193,18 @@
 }
 
 #pragma mark -
+#pragma mark ASIHTTPRequest
+-(void)requestFailed:(ASIHTTPRequest *)request
+{
+    
+}
+
+-(void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSLog(@"%@", [request responseString]);
+}
+
+#pragma mark -
 
 - (void)didReceiveMemoryWarning
 {
@@ -160,7 +225,8 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+   // return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 - (void)dealloc {

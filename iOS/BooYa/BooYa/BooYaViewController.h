@@ -8,16 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "BooYaAppDelegate.h"
+#import "ConnectionManager.h"
+#import "ASIHTTPRequest.h"
 
-@interface BooYaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface BooYaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, ASIHTTPRequestDelegate>
 {
     BooYaAppDelegate *_appDelegate;
     UITableView     *_tableView;
     NSMutableArray  *_dataSource;
+    ConnectionManager *_comManager;
 }
 @property (nonatomic, retain) IBOutlet UITableView *_tableView;
 
 -(void)reloadTableView;
 - (IBAction)booYaButtonPushed:(id)sender;
+- (IBAction)backButtonPushed:(id)sender;
+- (IBAction)filterButtonPushed:(id)sender;
 
 @end
