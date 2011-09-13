@@ -55,9 +55,9 @@
 	};
 	2848221A141DDC220037D1D5 /* LoginViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2049, 2652}}";
-			sepNavSelRange = "{3940, 91}";
-			sepNavVisRange = "{3340, 359}";
+			sepNavIntBoundsRect = "{{0, 0}, {2049, 2379}}";
+			sepNavSelRange = "{1484, 0}";
+			sepNavVisRange = "{851, 1474}";
 		};
 	};
 	28482265141DE4590037D1D5 /* PBXTextBookmark */ = {
@@ -114,7 +114,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 1716}}";
 			sepNavSelRange = "{2854, 0}";
-			sepNavVisRange = "{2241, 854}";
+			sepNavVisRange = "{2241, 896}";
 			sepNavWindowFrame = "{{15, 58}, {750, 719}}";
 		};
 	};
@@ -891,6 +891,16 @@
 		vrLen = 644;
 		vrLoc = 0;
 	};
+	28C1F804141F8948000756CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C1F6E8141F4A16000756CF /* StuffViewController.m */;
+		name = "StuffViewController.m: 106";
+		rLen = 0;
+		rLoc = 2854;
+		rType = 0;
+		vrLen = 214;
+		vrLoc = 2744;
+	};
 	CA19FA38141CE90B007D8670 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 28482204141DDBDB0037D1D5 /* BooYa */;
@@ -1032,6 +1042,7 @@
 			28C1F7FB141F8807000756CF /* PBXTextBookmark */ = 28C1F7FB141F8807000756CF /* PBXTextBookmark */;
 			28C1F7FC141F8807000756CF /* PBXTextBookmark */ = 28C1F7FC141F8807000756CF /* PBXTextBookmark */;
 			28C1F7FD141F8807000756CF /* PBXTextBookmark */ = 28C1F7FD141F8807000756CF /* PBXTextBookmark */;
+			28C1F804141F8948000756CF /* PBXTextBookmark */ = 28C1F804141F8948000756CF /* PBXTextBookmark */;
 		};
 		sourceControlManager = 28482216141DDBFA0037D1D5 /* Source Control */;
 		userBuildSettings = {

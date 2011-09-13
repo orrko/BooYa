@@ -1,8 +1,5 @@
-627cf185a7e6317648f23fa0ed036b8d 36a25ed92a7f5d2d1bb92554b7f2cb8d ffffffffffffffffffffffffffffffff 476 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
-00000000000000000000000000000000 b9f44c8dc0a09573e1049712ff7f26c7 ffffffffffffffffffffffffffffffff 102 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM
-dc8a03e85a15a35f1fd9359e14455c0a 4b2bf20914ce9365bcab4fb5ea44db67 ffffffffffffffffffffffffffffffff 912268 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa
-818acfe215f2298e8ae050f07ceb9031 798f051d9ee0dc9a41c60af4ea3c6bcd ffffffffffffffffffffffffffffffff 478092 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa
-4cc381bfb5d3e199c6e83728d197c8a9 684c48a864d4b7d2121758b253056f5f ffffffffffffffffffffffffffffffff 429836 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa
+627cf185a7e62f7748f23fa0ed036a99 36a25ed92a7f5d2d1bb92554b7f2cb8d ffffffffffffffffffffffffffffffff 476 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
+000000004e6f518f0000000000007853 bbcb647bc6868c9d755d8de86c209e99 ffffffffffffffffffffffffffffffff 4345 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/StuffViewController.nib
 871099f64040abfb5ba9e0c6fe91d830 dce9ece55929a25735b8609fe3249042 ffffffffffffffffffffffffffffffff 49536 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/StuffViewController.o
 cc16dbb44761c10b115ff3caacdf73b2 92615ddc38ce4934afa1069fe3c50a58 ffffffffffffffffffffffffffffffff 49152 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o
 871099f60c83226b5ba9e0c6fe91d961 b9e71d8b5b92fde32685d335c25e3d54 ffffffffffffffffffffffffffffffff 73224 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/LoginViewController.o
@@ -48,8 +45,8 @@ cc16dbb44761b109115ff3caacdf77ec 0d2c750076cc409ca021f96f8e48d17b ffffffffffffff
 871099f64041972d5ba9e0c6fe91d113 a76ac9eb3eaabc400f74529b8791081e ffffffffffffffffffffffffffffffff 3156 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/main.o
 cc16dbb44760fddd115ff3caacdf7a91 1d185c55bb9353b3a565c0be57d0df1b ffffffffffffffffffffffffffffffff 3096 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/main.o
 daf6d68b1ed4638d3c386a587b7d1503 afbf85eb5381abbc9ff6bcddf330d583 ffffffffffffffffffffffffffffffff 671 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent
+00000000000000000000000000000000 b9f44c8dc0a09573e1049712ff7f26c7 ffffffffffffffffffffffffffffffff 102 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM
 00000000000000000000000000000000 2e6ba7e7d26f4770787a2eb859789a40 ffffffffffffffffffffffffffffffff 10043 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/embedded.mobileprovision
-000000004e6f4f8e0000000000007947 bbcb647bc6868c9d755d8de86c209e99 ffffffffffffffffffffffffffffffff 4341 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/StuffViewController.nib
 000000004e6e1e65000000000000635f 498455bc296c3986a8be6aa0e6804826 ffffffffffffffffffffffffffffffff 3312 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/LoginViewController.nib
 000000004e6da3c90000000000003ca4 dc8e43d71ce6ce18fe4288985da965ff ffffffffffffffffffffffffffffffff 4367 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYaCellView.nib
 000000004e6da3c9000000000000258d 9e919869cb9613f1fa28edab1adf8817 ffffffffffffffffffffffffffffffff 1848 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYaViewController.nib
@@ -57,7 +54,10 @@ daf6d68b1ed4638d3c386a587b7d1503 afbf85eb5381abbc9ff6bcddf330d583 ffffffffffffff
 000000004e6f15d90000000000005adc 8f7dbba2624fc50ed414353ac1e3575e ffffffffffffffffffffffffffffffff 3476 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/en.lproj/RootViewController.nib
 000000004e6da3c90000000000005fdc 95e7a32623f50ba2245d17e8dc6386ff ffffffffffffffffffffffffffffffff 2454 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/en.lproj/MainWindow.nib
 000000004e6da3c9000000000000002d 535927b575ec383c6f75f341e68f1664 ffffffffffffffffffffffffffffffff 42 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/en.lproj/InfoPlist.strings
+dc8a03e85a15a35f1fd9359e14455c0a 4b2bf20914ce9365bcab4fb5ea44db67 ffffffffffffffffffffffffffffffff 928880 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa
+818acfe215f2298e8ae050f07ceb9031 798f051d9ee0dc9a41c60af4ea3c6bcd ffffffffffffffffffffffffffffffff 478092 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa
 0000000002de4d8b0000000000000526 871099f6403363895ba9e0c6fe91dff6 ffffffffffffffffffffffffffffffff 8238808 /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch.gch
+4cc381bfb5d3e199c6e83728d197c8a9 684c48a864d4b7d2121758b253056f5f ffffffffffffffffffffffffffffffff 429836 /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa
 0000000002de4d8b0000000000000526 cc16dbb447120979115ff3caacdf7474 ffffffffffffffffffffffffffffffff 7751384 /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch.gch
 00000000000000000000000000000000 daf6d68b1ed4638d3c386a587b7d1503 ffffffffffffffffffffffffffffffff 8 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/PkgInfo
 00000000000000000000000000000000 daf6d68b1ed4638d3c386a587b7d1503 ffffffffffffffffffffffffffffffff 1088 /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/Info.plist
