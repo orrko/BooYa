@@ -27,5 +27,6 @@
 + (id) sharedManager;
 - (void)grabURLInBackground:(NSString *)urlString andDelegate:(id)dlg postDict:(NSDictionary *)postDict;
 - (void)stopConnection;
+- (BOOL)checkReachability;
 
 @end
