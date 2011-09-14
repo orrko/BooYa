@@ -1,7 +1,7 @@
 TBooYa
 v7
 r0
-t337611034.113822
+t337671698.208477
 cCheck dependencies
 cCpResource build/Debug-iphoneos/BooYa.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/Info.plist BooYa/BooYa-Info.plist
@@ -29,10 +29,10 @@ cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/SBJs
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYaCellView.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaCellView.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/LoginViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m normal armv6 objective-c com.apple.compilers.llvmgcc42
-cLd /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa normal armv6
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/main.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYaAppDelegate.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaAppDelegate.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/RootViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa normal armv6
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYaViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/ASIAuthenticationDialog.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ASIAuthenticationDialog.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/ASIInputStream.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ASIInputStream.m normal armv7 objective-c com.apple.compilers.llvmgcc42
@@ -63,6 +63,20 @@ cCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.xib
 cCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaCellView.xib
 cCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib
 cCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.xib
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03.png BooYa/BooYA-03.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03@2x.png BooYa/BooYA-03@2x.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04.png BooYa/BooYA-04.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04@2x.png BooYa/BooYA-04@2x.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05.png BooYa/BooYA-05.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05@2x.png BooYa/BooYA-05@2x.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06.png BooYa/BooYA-06.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06@2x.png BooYa/BooYA-06@2x.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07.png BooYa/BooYA-07.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07@2x.png BooYa/BooYA-07@2x.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08.png BooYa/BooYA-08.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08@2x.png BooYa/BooYA-08@2x.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon.png BooYa/icon.png
+cCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon@2x.png BooYa/icon@2x.png
 cProcessProductPackaging "/Users/amit/Library/MobileDevice/Provisioning Profiles/50A2ADAA-13D0-4297-921B-F71A43DD3020.mobileprovision" /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/embedded.mobileprovision
 cTouch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
 cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent
@@ -360,6 +374,66 @@ c000000004E6DA3C90000000000000678
 t1315808201
 s1656
 
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-03.png
+c000000004E6F351100000000000248D9
+t1315910929
+s149721
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-03@2x.png
+c000000004E6F2F8C000000000001FFB3
+t1315909516
+s130995
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-04.png
+c000000004E6F3511000000000002BABC
+t1315910929
+s178876
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-04@2x.png
+c000000004E6F2F8C000000000002219D
+t1315909516
+s139677
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-05.png
+c000000004E6F3511000000000002A46F
+t1315910929
+s173167
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-05@2x.png
+c000000004E6F2F8C000000000001FD85
+t1315909516
+s130437
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-06.png
+c000000004E6F3511000000000002CEA4
+t1315910929
+s183972
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-06@2x.png
+c000000004E6F2F8C0000000000025159
+t1315909516
+s151897
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-07.png
+c000000004E6F3511000000000002D31E
+t1315910929
+s185118
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-07@2x.png
+c000000004E6F2F8C00000000000240DF
+t1315909516
+s147679
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-08.png
+c000000004E6F351100000000000294EF
+t1315910929
+s169199
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-08@2x.png
+c000000004E6F2F8C000000000002ABFE
+t1315909516
+s175102
+
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYa-Prefix.pch
 c000000004E6DA3C9000000000000013C
 t1315808201
@@ -455,17 +529,17 @@ i<JSON/NSObject+SBJSON.h>
 i<JSON/NSString+SBJSON.h>
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.h
-c000000004E6E1E650000000000000284
-t1315839589
-s644
+c000000004E703E6A00000000000002EF
+t1315978858
+s751
 i<UIKit/UIKit.h>
 i"BooYaAppDelegate.h"
 i"ASIHTTPRequest.h"
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m
-c000000004E6F3B860000000000001834
-t1315912582
-s6196
+c000000004E703E890000000000001DF1
+t1315978889
+s7665
 i"ConnectionManager.h"
 i"SBJsonParser.h"
 i"SBJsonWriter.h"
@@ -473,9 +547,9 @@ i"LoginViewController.h"
 i"Constants.h"
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib
-c000000004E6E1E65000000000000635F
-t1315839589
-s25439
+c000000004E703D070000000000006B86
+t1315978503
+s27526
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/NSObject+SBJSON.h
 c000000004E6DA3C9000000000000085F
@@ -585,9 +659,9 @@ i<UIKit/UIKit.h>
 i"BooYaAppDelegate.h"
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m
-c000000004E6F507E0000000000000D44
-t1315917950
-s3396
+c000000004E6F56630000000000001294
+t1315919459
+s4756
 i"StuffViewController.h"
 i"Constants.h"
 
@@ -615,6 +689,26 @@ N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/iPad/en.lproj/MainWindow-iPad.xib
 c000000004E6DA3C90000000000006240
 t1315808201
 s25152
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/icon.png
+c000000004E6F3511000000000000242F
+t1315910929
+s9263
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/icon@2x.png
+c000000004E6F2F940000000000004137
+t1315909524
+s16695
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/loginBg.png
+c000000004E393540000000000000E756
+t1312372032
+s59222
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/loginBg@2x.png
+c000000004E393540000000000001CFF9
+t1312372032
+s118777
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m
 c000000004E6DA3C90000000000000162
@@ -659,8 +753,8 @@ t1315911486
 s57716
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa
-t1315917951
-s429836
+t1315978892
+s434760
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa.LinkFileList
 c000000004E6F373C0000000000000A83
@@ -684,8 +778,8 @@ t1315911487
 s25284
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/LoginViewController.o
-t1315917916
-s72616
+t1315978891
+s76624
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/NSObject+SBJSON.o
 t1315911487
@@ -700,8 +794,8 @@ t1315911487
 s33332
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/RootViewController.o
-t1315917916
-s56328
+t1315978891
+s56360
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/SBJsonBase.o
 t1315911487
@@ -716,8 +810,8 @@ t1315911488
 s23684
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o
-t1315917950
-s49152
+t1315919476
+s53972
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/main.o
 t1315911486
@@ -756,8 +850,8 @@ t1315911489
 s60516
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa
-t1315917951
-s478092
+t1315978892
+s482912
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa.LinkFileList
 c000000004E6F373C0000000000000A83
@@ -781,8 +875,8 @@ t1315911490
 s26340
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/LoginViewController.o
-t1315917917
-s73224
+t1315978892
+s77136
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/NSObject+SBJSON.o
 t1315911490
@@ -797,8 +891,8 @@ t1315911490
 s35084
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/RootViewController.o
-t1315917917
-s56764
+t1315978892
+s56796
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/SBJsonBase.o
 t1315911490
@@ -813,24 +907,72 @@ t1315911491
 s24792
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/StuffViewController.o
-t1315917950
-s49536
+t1315919476
+s54468
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/main.o
 t1315911488
 s3156
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
-t1315918234
-s476
+t1315978898
+s952
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM
-t1315917951
+t1315978893
 s102
 
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03.png
+t1315978893
+s151790
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03@2x.png
+t1315978894
+s130412
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04.png
+t1315978894
+s172011
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04@2x.png
+t1315978894
+s130641
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05.png
+t1315978894
+s168201
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05@2x.png
+t1315978895
+s120683
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06.png
+t1315978895
+s181689
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06@2x.png
+t1315978895
+s145416
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07.png
+t1315978895
+s180221
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07@2x.png
+t1315978896
+s139852
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08.png
+t1315978896
+s174782
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08@2x.png
+t1315978896
+s157439
+
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa
-t1315917951
-s928880
+t1315978892
+s925280
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYaCellView.nib
 t1315911495
@@ -845,8 +987,8 @@ t1315911484
 s1088
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/LoginViewController.nib
-t1315911495
-s3312
+t1315978893
+s3814
 
 N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/PkgInfo
 t1315911484
@@ -880,6 +1022,22 @@ N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/en.lproj/R
 t1315911494
 s3476
 
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon.png
+t1315978896
+s9419
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon@2x.png
+t1315978896
+s17910
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/loginBg.png
+t2
+s0
+
+N/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/loginBg@2x.png
+t2
+s0
+
 N/Users/amit/Library/MobileDevice/Provisioning Profiles/50A2ADAA-13D0-4297-921B-F71A43DD3020.mobileprovision
 c000000004E6E0078000000000000273B
 t1315831928
@@ -900,16 +1058,15 @@ s1283
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies337611028#337611028#0(288"[WARN]iOS deployment target '4.3' for architecture 'armv6' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.[WARN]iOS deployment target '4.3' for architecture 'armv7' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.2(22@137"iOS deployment target '4.3' for architecture 'armv6' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.337611028#18446744073709551615#0#0(1@0"0(22@137"iOS deployment target '4.3' for architecture 'armv7' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.337611028#18446744073709551615#0#0(1@0"0(0#1#0"8620835584#0"0#
+lSLF07#2@18"Check dependencies337671689#337671690#0(288"[WARN]iOS deployment target '4.3' for architecture 'armv6' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.[WARN]iOS deployment target '4.3' for architecture 'armv7' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.2(22@137"iOS deployment target '4.3' for architecture 'armv6' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.337671690#18446744073709551615#0#0(1@0"0(22@137"iOS deployment target '4.3' for architecture 'armv7' and variant 'normal' is greater than the maximum value '4.2.99' for the iOS 4.2 SDK.337671690#18446744073709551615#0#0(1@0"0(0#1#0"8629964832#0"0#
 
 CCodeSign /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
-s337611032.988869
-e337611034.113780
+s337671696.900051
+e337671698.208315
 r1
 xCodeSign
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
-o/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app: replacing existing signature
-lSLF07#2@39"CodeSign build/Debug-iphoneos/BooYa.app337611032#337611034#0(99"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app: replacing existing signature0(0#0#68"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app8630586624#634"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: orr kowarsky (FDWNJ22MBN)" --resource-rules=/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/ResourceRules.plist --entitlements /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app0#
+lSLF07#2@39"CodeSign build/Debug-iphoneos/BooYa.app337671696#337671698#0(0"0(0#0#68"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app8628137568#634"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: orr kowarsky (FDWNJ22MBN)" --resource-rules=/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/ResourceRules.plist --entitlements /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/ASIAuthenticationDialog.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ASIAuthenticationDialog.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 s337604286.306358
@@ -1068,8 +1225,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@71"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ConnectionManager.m337604287#337604287#0(0"0(0#0#63"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ConnectionManager.m8607309984#1803"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ConnectionManager.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/ConnectionManager.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/LoginViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m normal armv6 objective-c com.apple.compilers.llvmgcc42
-s337610716.427742
-e337610716.875843
+s337671690.430757
+e337671691.274397
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/LoginViewController.o
@@ -1078,7 +1235,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m337610716#337610716#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m8621376864#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/LoginViewController.o0#
+lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m337671690#337671691#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m8623546752#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/LoginViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/NSObject+SBJSON.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/NSObject+SBJSON.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 s337604287.717142
@@ -1120,8 +1277,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@66"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/Reachability.m337604287#337604287#0(0"0(0#0#58"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/Reachability.m8620740512#1793"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/Reachability.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/Reachability.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/RootViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m normal armv6 objective-c com.apple.compilers.llvmgcc42
-s337610716.133662
-e337610716.425686
+s337671690.366940
+e337671691.245799
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/RootViewController.o
@@ -1130,7 +1287,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@72"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m337610716#337610716#0(0"0(0#0#64"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m8621454304#1805"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/RootViewController.o0#
+lSLF07#2@72"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m337671690#337671691#0(0"0(0#0#64"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m8633636768#1805"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/RootViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/SBJsonBase.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonBase.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 s337604287.874318
@@ -1172,8 +1329,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@66"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonWriter.m337604288#337604288#0(0"0(0#0#58"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonWriter.m8622377408#1793"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonWriter.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/SBJsonWriter.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m normal armv6 objective-c com.apple.compilers.llvmgcc42
-s337610750.594996
-e337610750.867744
+s337612275.719360
+e337612276.019896
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o
@@ -1182,7 +1339,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m337610750#337610750#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m8621499552#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o0#
+lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m337612275#337612276#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m8629841824#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv6 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-berwfwakepsoheblsyvsvbtzexml/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/StuffViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/main.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 s337604286.046214
@@ -1354,8 +1511,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@71"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ConnectionManager.m337604290#337604290#0(0"0(0#0#63"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ConnectionManager.m8619751872#1803"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/ConnectionManager.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/ConnectionManager.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/LoginViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-s337610717.444169
-e337610717.906593
+s337671692.337336
+e337671692.516241
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/LoginViewController.o
@@ -1364,7 +1521,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m337610717#337610717#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m8624106816#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/LoginViewController.o0#
+lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m337671692#337671692#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m8610062336#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/LoginViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/NSObject+SBJSON.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/NSObject+SBJSON.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 s337604290.534118
@@ -1406,8 +1563,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@66"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/Reachability.m337604290#337604290#0(0"0(0#0#58"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/Reachability.m8624236672#1793"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/Reachability.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/Reachability.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/RootViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-s337610716.876008
-e337610717.440985
+s337671691.246196
+e337671692.335781
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/RootViewController.o
@@ -1416,7 +1573,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@72"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m337610716#337610717#0(0"0(0#0#64"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m8616306688#1805"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/RootViewController.o0#
+lSLF07#2@72"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m337671691#337671692#0(0"0(0#0#64"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m8638341696#1805"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/RootViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/RootViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/SBJsonBase.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonBase.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 s337604290.679039
@@ -1458,8 +1615,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@66"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonWriter.m337604290#337604291#0(0"0(0#0#58"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonWriter.m8623552800#1793"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/SBJsonWriter.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/SBJsonWriter.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/StuffViewController.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-s337610750.673669
-e337610750.877703
+s337612275.772748
+e337612276.022575
 r1
 xCompileC
 xbuild/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/StuffViewController.o
@@ -1468,7 +1625,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m337610750#337610750#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m8623777312#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/StuffViewController.o0#
+lSLF07#2@73"Compile /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m337612275#337612276#0(0"0(0#0#65"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m8629020192#1807"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-generated-files.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-own-target-headers.hmap -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-all-target-headers.hmap -iquote /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa-project-headers.hmap -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -I/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/include -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources/armv7 -I/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/Zs/Zs5IxHkpGruJdWXZ-iaK3k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BooYa-Prefix-gqiqlxrvoiodcgdveoakpamjbjcl/BooYa-Prefix.pch -c /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.m -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/StuffViewController.o0#
 
 CCompileC build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/main.o /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/main.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 s337604288.708645
@@ -1501,13 +1658,13 @@ x/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.xib
 lSLF07#2@40"CompileXIB BooYa/BooYaViewController.xib337604294#337604294#0(0"0(0#0#67"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.xib8620930560#561"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYaViewController.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYaViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
 
 CCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib
-s337604294.768228
-e337604295.300199
+s337671693.041001
+e337671693.867142
 r1
 xCompileXIB
 x/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib
 oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@40"CompileXIB BooYa/LoginViewController.xib337604294#337604295#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#67"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib8624005216#561"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/LoginViewController.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+lSLF07#2@40"CompileXIB BooYa/LoginViewController.xib337671693#337671693#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#67"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib8638285120#561"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/LoginViewController.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/LoginViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
 
 CCompileXIB /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/StuffViewController.xib
 s337611028.962247
@@ -1543,6 +1700,138 @@ xCompileXIB
 x/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/iPad/en.lproj/MainWindow-iPad.xib
 lSLF07#2@50"CompileXIB BooYa/iPad/en.lproj/MainWindow-iPad.xib337604294#337604294#0(0"0(0#0#77"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/iPad/en.lproj/MainWindow-iPad.xib8621065920#576"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/en.lproj/MainWindow-iPad.nib /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/iPad/en.lproj/MainWindow-iPad.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
 
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03.png BooYa/BooYA-03.png
+s337671693.041915
+e337671693.945751
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03.png
+xBooYa/BooYA-03.png
+lSLF07#2@74"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-03.png BooYa/BooYA-03.png337671693#337671693#0(0"0(0#0#56"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-03.png8638102048#565"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-03.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03@2x.png BooYa/BooYA-03@2x.png
+s337671693.867339
+e337671694.476966
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03@2x.png
+xBooYa/BooYA-03@2x.png
+lSLF07#2@80"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-03@2x.png BooYa/BooYA-03@2x.png337671693#337671694#0(0"0(0#0#59"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-03@2x.png8637931424#571"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-03@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-03@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04.png BooYa/BooYA-04.png
+s337671693.945851
+e337671694.253491
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04.png
+xBooYa/BooYA-04.png
+lSLF07#2@74"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-04.png BooYa/BooYA-04.png337671693#337671694#0(0"0(0#0#56"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-04.png8637694336#565"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-04.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04@2x.png BooYa/BooYA-04@2x.png
+s337671694.253587
+e337671694.820554
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04@2x.png
+xBooYa/BooYA-04@2x.png
+lSLF07#2@80"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-04@2x.png BooYa/BooYA-04@2x.png337671694#337671694#0(0"0(0#0#59"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-04@2x.png8637218816#571"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-04@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-04@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05.png BooYa/BooYA-05.png
+s337671694.477064
+e337671694.782815
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05.png
+xBooYa/BooYA-05.png
+lSLF07#2@74"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-05.png BooYa/BooYA-05.png337671694#337671694#0(0"0(0#0#56"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-05.png8636890944#565"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-05.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05@2x.png BooYa/BooYA-05@2x.png
+s337671694.782913
+e337671695.341897
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05@2x.png
+xBooYa/BooYA-05@2x.png
+lSLF07#2@80"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-05@2x.png BooYa/BooYA-05@2x.png337671694#337671695#0(0"0(0#0#59"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-05@2x.png8633920576#571"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-05@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-05@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06.png BooYa/BooYA-06.png
+s337671694.820649
+e337671695.145959
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06.png
+xBooYa/BooYA-06.png
+lSLF07#2@74"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-06.png BooYa/BooYA-06.png337671694#337671695#0(0"0(0#0#56"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-06.png8633424864#565"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-06.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06@2x.png BooYa/BooYA-06@2x.png
+s337671695.146058
+e337671695.765094
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06@2x.png
+xBooYa/BooYA-06@2x.png
+lSLF07#2@80"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-06@2x.png BooYa/BooYA-06@2x.png337671695#337671695#0(0"0(0#0#59"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-06@2x.png8632822560#571"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-06@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-06@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07.png BooYa/BooYA-07.png
+s337671695.342004
+e337671695.662586
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07.png
+xBooYa/BooYA-07.png
+lSLF07#2@74"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-07.png BooYa/BooYA-07.png337671695#337671695#0(0"0(0#0#56"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-07.png8632398720#565"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-07.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07@2x.png BooYa/BooYA-07@2x.png
+s337671695.662737
+e337671696.262154
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07@2x.png
+xBooYa/BooYA-07@2x.png
+lSLF07#2@80"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-07@2x.png BooYa/BooYA-07@2x.png337671695#337671696#0(0"0(0#0#59"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-07@2x.png8631799904#571"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-07@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-07@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08.png BooYa/BooYA-08.png
+s337671695.765198
+e337671696.143729
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08.png
+xBooYa/BooYA-08.png
+lSLF07#2@74"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-08.png BooYa/BooYA-08.png337671695#337671696#0(0"0(0#0#56"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-08.png8631343328#565"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-08.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08@2x.png BooYa/BooYA-08@2x.png
+s337671696.143837
+e337671696.861104
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08@2x.png
+xBooYa/BooYA-08@2x.png
+lSLF07#2@80"CopyPNGFile build/Debug-iphoneos/BooYa.app/BooYA-08@2x.png BooYa/BooYA-08@2x.png337671696#337671696#0(0"0(0#0#59"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-08@2x.png8631197248#571"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/BooYA-08@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYA-08@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon.png BooYa/icon.png
+s337671696.262375
+e337671696.293064
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon.png
+xBooYa/icon.png
+lSLF07#2@66"CopyPNGFile build/Debug-iphoneos/BooYa.app/icon.png BooYa/icon.png337671696#337671696#0(0"0(0#0#52"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/icon.png8630741824#557"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/icon.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon@2x.png BooYa/icon@2x.png
+s337671696.293250
+e337671696.364657
+r1
+xCopyPNGFile
+x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon@2x.png
+xBooYa/icon@2x.png
+lSLF07#2@72"CopyPNGFile build/Debug-iphoneos/BooYa.app/icon@2x.png BooYa/icon@2x.png337671696#337671696#0(0"0(0#0#55"/Users/amit/Documents/BooYa/iOS/BooYa/BooYa/icon@2x.png8630355680#563"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/amit/Documents/BooYa/iOS/BooYa/BooYa/icon@2x.png /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/icon@2x.png0#
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/loginBg.png BooYa/loginBg.png
+r0
+
+CCopyPNGFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/loginBg@2x.png BooYa/loginBg@2x.png
+r0
+
 CCopyStringsFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/en.lproj/InfoPlist.strings BooYa/en.lproj/InfoPlist.strings
 s337604292.011876
 e337604292.930814
@@ -1562,43 +1851,43 @@ x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceR
 lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist337604284#337604284#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8618156352#490"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app0#
 
 CCreateUniversalBinary /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa normal "armv6 armv7"
-s337610751.319658
-e337610751.377279
+s337671692.776976
+e337671692.842483
 r1
 xCreateUniversalBinary
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa
 xnormal
 xarmv6 armv7
-lSLF07#2@79"CreateUniversalBinary build/Debug-iphoneos/BooYa.app/BooYa normal "armv6 armv7"337610751#337610751#0(0"0(0#0#49"/Users/amit/Documents/BooYa/iOS/BooYa/armv6 armv78632018912#498"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa -output /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa0#
+lSLF07#2@79"CreateUniversalBinary build/Debug-iphoneos/BooYa.app/BooYa normal "armv6 armv7"337671692#337671692#0(0"0(0#0#49"/Users/amit/Documents/BooYa/iOS/BooYa/armv6 armv78638919616#498"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa -output /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa0#
 
 CGenerateDSYMFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa
-s337610751.377398
-e337610751.660790
+s337671692.842587
+e337671693.040499
 r1
 xGenerateDSYMFile
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa
-lSLF07#2@89"GenerateDSYMFile build/Debug-iphoneos/BooYa.app.dSYM build/Debug-iphoneos/BooYa.app/BooYa337610751#337610751#0(0"0(0#0#74"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa8629944672#353"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM0#
+lSLF07#2@89"GenerateDSYMFile build/Debug-iphoneos/BooYa.app.dSYM build/Debug-iphoneos/BooYa.app/BooYa337671692#337671693#0(0"0(0#0#74"/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa8637915616#353"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/BooYa -o /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app.dSYM0#
 
 CLd /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa normal armv6
-s337610750.867842
-e337610751.319509
+s337671691.274493
+e337671692.486184
 r1
 xLd
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa
 xnormal
 xarmv6
-lSLF07#2@114"Link /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa337610750#337610751#0(0"0(0#0#0"8619555392#971"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -filelist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework CFNetwork -framework CoreGraphics -lz.1.2.3 -framework MobileCoreServices -framework SystemConfiguration -framework AddressBook -framework UIKit -framework Foundation -prebind -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa0#
+lSLF07#2@114"Link /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa337671691#337671692#0(0"0(0#0#0"8633586016#971"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -filelist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework CFNetwork -framework CoreGraphics -lz.1.2.3 -framework MobileCoreServices -framework SystemConfiguration -framework AddressBook -framework UIKit -framework Foundation -prebind -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv6/BooYa0#
 
 CLd /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa normal armv7
-s337610750.877808
-e337610751.312603
+s337671692.516345
+e337671692.776868
 r1
 xLd
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa
 xnormal
 xarmv7
-lSLF07#2@114"Link /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa337610750#337610751#0(0"0(0#0#0"8618377120#971"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -filelist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework CFNetwork -framework CoreGraphics -lz.1.2.3 -framework MobileCoreServices -framework SystemConfiguration -framework AddressBook -framework UIKit -framework Foundation -prebind -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa0#
+lSLF07#2@114"Link /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa337671692#337671692#0(0"0(0#0#0"8638790304#971"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -F/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos -filelist /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework CFNetwork -framework CoreGraphics -lz.1.2.3 -framework MobileCoreServices -framework SystemConfiguration -framework AddressBook -framework UIKit -framework Foundation -prebind -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/Objects-normal/armv7/BooYa0#
 
 CProcessInfoPlistFile /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app/Info.plist BooYa/BooYa-Info.plist
 s337604284.938470
@@ -1654,10 +1943,10 @@ x/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.bu
 lSLF07#2@169"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent337604295#337604295#0(0"0(0#0#94"/Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent8609530912#424"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/amit/Documents/BooYa/iOS/BooYa/build/BooYa.build/Debug-iphoneos/BooYa.build/BooYa.xcent0#
 
 CTouch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
-s337611032.919210
-e337611032.988679
+s337671696.861315
+e337671696.899834
 r1
 xTouch
 x/Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app
-lSLF07#2@74"Touch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app337611032#337611032#0(0"0(0#0#0"8604933664#260"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app0#
+lSLF07#2@74"Touch /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app337671696#337671696#0(0"0(0#0#0"8629591552#260"    cd /Users/amit/Documents/BooYa/iOS/BooYa    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/amit/Documents/BooYa/iOS/BooYa/build/Debug-iphoneos/BooYa.app0#
 

@@ -11,6 +11,20 @@
 		2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2848221B141DDC220037D1D5 /* LoginViewController.xib */; };
 		28C1F6EA141F4A16000756CF /* StuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C1F6E8141F4A16000756CF /* StuffViewController.m */; };
 		28C1F6EB141F4A16000756CF /* StuffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F6E9141F4A16000756CF /* StuffViewController.xib */; };
+		28C1F84114207384000756CF /* BooYA-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83314207383000756CF /* BooYA-03.png */; };
+		28C1F84214207384000756CF /* BooYA-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83414207384000756CF /* BooYA-03@2x.png */; };
+		28C1F84314207384000756CF /* BooYA-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83514207384000756CF /* BooYA-04.png */; };
+		28C1F84414207384000756CF /* BooYA-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83614207384000756CF /* BooYA-04@2x.png */; };
+		28C1F84514207384000756CF /* BooYA-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83714207384000756CF /* BooYA-05.png */; };
+		28C1F84614207384000756CF /* BooYA-05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83814207384000756CF /* BooYA-05@2x.png */; };
+		28C1F84714207384000756CF /* BooYA-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83914207384000756CF /* BooYA-06.png */; };
+		28C1F84814207384000756CF /* BooYA-06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83A14207384000756CF /* BooYA-06@2x.png */; };
+		28C1F84914207384000756CF /* BooYA-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83B14207384000756CF /* BooYA-07.png */; };
+		28C1F84A14207384000756CF /* BooYA-07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83C14207384000756CF /* BooYA-07@2x.png */; };
+		28C1F84B14207384000756CF /* BooYA-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83D14207384000756CF /* BooYA-08.png */; };
+		28C1F84C14207384000756CF /* BooYA-08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83E14207384000756CF /* BooYA-08@2x.png */; };
+		28C1F84D14207384000756CF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F83F14207384000756CF /* icon.png */; };
+		28C1F84E14207384000756CF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C1F84014207384000756CF /* icon@2x.png */; };
 		CA19FA46141CE90C007D8670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA45141CE90C007D8670 /* UIKit.framework */; };
 		CA19FA48141CE90C007D8670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA47141CE90C007D8670 /* Foundation.framework */; };
 		CA19FA4A141CE90C007D8670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19FA49141CE90C007D8670 /* CoreGraphics.framework */; };
@@ -54,6 +68,20 @@
 		28C1F6E7141F4A16000756CF /* StuffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuffViewController.h; sourceTree = "<group>"; };
 		28C1F6E8141F4A16000756CF /* StuffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuffViewController.m; sourceTree = "<group>"; };
 		28C1F6E9141F4A16000756CF /* StuffViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StuffViewController.xib; sourceTree = "<group>"; };
+		28C1F83314207383000756CF /* BooYA-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-03.png"; sourceTree = "<group>"; };
+		28C1F83414207384000756CF /* BooYA-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-03@2x.png"; sourceTree = "<group>"; };
+		28C1F83514207384000756CF /* BooYA-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-04.png"; sourceTree = "<group>"; };
+		28C1F83614207384000756CF /* BooYA-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-04@2x.png"; sourceTree = "<group>"; };
+		28C1F83714207384000756CF /* BooYA-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-05.png"; sourceTree = "<group>"; };
+		28C1F83814207384000756CF /* BooYA-05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-05@2x.png"; sourceTree = "<group>"; };
+		28C1F83914207384000756CF /* BooYA-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-06.png"; sourceTree = "<group>"; };
+		28C1F83A14207384000756CF /* BooYA-06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-06@2x.png"; sourceTree = "<group>"; };
+		28C1F83B14207384000756CF /* BooYA-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-07.png"; sourceTree = "<group>"; };
+		28C1F83C14207384000756CF /* BooYA-07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-07@2x.png"; sourceTree = "<group>"; };
+		28C1F83D14207384000756CF /* BooYA-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-08.png"; sourceTree = "<group>"; };
+		28C1F83E14207384000756CF /* BooYA-08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BooYA-08@2x.png"; sourceTree = "<group>"; };
+		28C1F83F14207384000756CF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		28C1F84014207384000756CF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		CA19FA41141CE90C007D8670 /* BooYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA19FA45141CE90C007D8670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA19FA47141CE90C007D8670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +169,20 @@
 		28C1F77C141F6C0F000756CF /* Png */ = {
 			isa = PBXGroup;
 			children = (
+				28C1F83314207383000756CF /* BooYA-03.png */,
+				28C1F83414207384000756CF /* BooYA-03@2x.png */,
+				28C1F83514207384000756CF /* BooYA-04.png */,
+				28C1F83614207384000756CF /* BooYA-04@2x.png */,
+				28C1F83714207384000756CF /* BooYA-05.png */,
+				28C1F83814207384000756CF /* BooYA-05@2x.png */,
+				28C1F83914207384000756CF /* BooYA-06.png */,
+				28C1F83A14207384000756CF /* BooYA-06@2x.png */,
+				28C1F83B14207384000756CF /* BooYA-07.png */,
+				28C1F83C14207384000756CF /* BooYA-07@2x.png */,
+				28C1F83D14207384000756CF /* BooYA-08.png */,
+				28C1F83E14207384000756CF /* BooYA-08@2x.png */,
+				28C1F83F14207384000756CF /* icon.png */,
+				28C1F84014207384000756CF /* icon@2x.png */,
 			);
 			name = Png;
 			sourceTree = "<group>";
@@ -343,6 +385,20 @@
 				CA277DBE141DD3BD00BB14EC /* BooYaCellView.xib in Resources */,
 				2848221D141DDC220037D1D5 /* LoginViewController.xib in Resources */,
 				28C1F6EB141F4A16000756CF /* StuffViewController.xib in Resources */,
+				28C1F84114207384000756CF /* BooYA-03.png in Resources */,
+				28C1F84214207384000756CF /* BooYA-03@2x.png in Resources */,
+				28C1F84314207384000756CF /* BooYA-04.png in Resources */,
+				28C1F84414207384000756CF /* BooYA-04@2x.png in Resources */,
+				28C1F84514207384000756CF /* BooYA-05.png in Resources */,
+				28C1F84614207384000756CF /* BooYA-05@2x.png in Resources */,
+				28C1F84714207384000756CF /* BooYA-06.png in Resources */,
+				28C1F84814207384000756CF /* BooYA-06@2x.png in Resources */,
+				28C1F84914207384000756CF /* BooYA-07.png in Resources */,
+				28C1F84A14207384000756CF /* BooYA-07@2x.png in Resources */,
+				28C1F84B14207384000756CF /* BooYA-08.png in Resources */,
+				28C1F84C14207384000756CF /* BooYA-08@2x.png in Resources */,
+				28C1F84D14207384000756CF /* icon.png in Resources */,
+				28C1F84E14207384000756CF /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

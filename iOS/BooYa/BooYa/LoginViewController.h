@@ -24,11 +24,13 @@
 	
 	IBOutlet UITextField	*_phoneNumberTxtFld;
 	IBOutlet UITextField	*_userNameTxtFld;
+	IBOutlet UIImageView	*_bgImageView;
 
 }
 
 @property (nonatomic, assign) id<LoginProtocol> delegate;
 
 - (BOOL) validateCountryCode: (NSString *) candidate;
+- (void)loginBGAndTxtFldGoUp:(BOOL)up byNumOfRows:(CGFloat)numOfRows;
 
 @end
