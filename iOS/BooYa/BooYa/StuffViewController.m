@@ -93,22 +93,72 @@
 
 - (IBAction)actionButtonPressed:(UIButton *)bttn
 {
+	UIAlertView *alert;
+	
 	switch (_bgImageView.tag) 
 	{
 		case kPauseBG:
-			NSLog(@"Go to Me, Myself BooYA");
+			alert = [[UIAlertView alloc] initWithTitle:@"Pause playing" 
+															message:@"It's no biigie but we would love you to stay, so we ask again..." 
+														   delegate:self
+												  cancelButtonTitle:@"Yes, I'm a bit tired"
+												  otherButtonTitles:@"No way, I'm still in!",nil];
+
 		break;
 		
 		case kResumeBG:
-			NSLog(@"Continue Playing - stay in this screen");
+			alert = [[UIAlertView alloc] initWithTitle:@"Resume playing" 
+															message:@"" 
+														   delegate:self
+												  cancelButtonTitle:@"YES"
+												  otherButtonTitles:@"NO",nil];
 		break;
 			
 		case kStopBG:
-			[self.navigationController popViewControllerAnimated:YES];
+			alert = [[UIAlertView alloc] initWithTitle:@"Stop playing" 
+															message:@"Not that we have a problem with that, but are you sure you want to leave us? We will miss you..." 
+														   delegate:self
+												  cancelButtonTitle:@"Yes I want to ditch you guys"
+												  otherButtonTitles:@"Not leaving, just playing with you...",nil];
+			
+			[alert setTag:kStopBG];
+			
 		break;
 			
 		default:
 			break;
+	}
+	[alert show];
+	[alert release];
+}
+
+#pragma mark -
+#pragma mark UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	// Only if pressed yes
+	if (buttonIndex == 0) 
+	{
+		switch (alertView.tag) 
+		{
+			
+			case kPauseBG:
+				NSLog(@"Go to Me, Myself BooYA");
+			break;
+				
+			case kResumeBG:
+				NSLog(@"Continue Playing - stay in this screen");
+			break;
+
+			case kStopBG:
+				_appDelegate._stoppedPressed = YES;
+				[self.navigationController popViewControllerAnimated:YES];
+			break;
+				
+			default:
+				break;
+		}
 	}
 }
 

@@ -61,9 +61,16 @@
 #pragma mark -
 #pragma mark UITextFieldDelegate
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+	[self loginBGAndTxtFldGoUp:YES byNumOfRows:1];
+}
+
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
 	
+	[self loginBGAndTxtFldGoUp:NO byNumOfRows:0];
 	
 	NSLog(@"in textFieldShouldReturn");
 	
@@ -104,6 +111,48 @@
     NSPredicate *Test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", Regex]; 
 	
     return [Test evaluateWithObject:candidate];
+}
+
+- (void)loginBGAndTxtFldGoUp:(BOOL)up byNumOfRows:(CGFloat)numOfRows
+{
+	if (up) 
+	{
+		[_bgImageView setFrame:CGRectMake(_bgImageView.frame.origin.x,
+										  0 - 44 * (numOfRows - 1),
+										  _bgImageView.frame.size.width,
+										  _bgImageView.frame.size.height)];
+		
+		[_userNameTxtFld setFrame:CGRectMake(_userNameTxtFld.frame.origin.x,
+										  0 - 44 * (numOfRows - 1),
+										  _userNameTxtFld.frame.size.width,
+										  _userNameTxtFld.frame.size.height)];
+		
+		[_phoneNumberTxtFld setFrame:CGRectMake(_phoneNumberTxtFld.frame.origin.x,
+										  0 - 44 * (numOfRows - 1),
+										  _phoneNumberTxtFld.frame.size.width,
+										  _phoneNumberTxtFld.frame.size.height)];
+		
+		
+	}
+	else { // return to original place
+		
+		[_bgImageView setFrame:CGRectMake(_bgImageView.frame.origin.x,
+										  0,
+										  _bgImageView.frame.size.width,
+										  _bgImageView.frame.size.height)];
+		
+		[_userNameTxtFld setFrame:CGRectMake(_userNameTxtFld.frame.origin.x,
+										  0,
+										  _userNameTxtFld.frame.size.width,
+										  _userNameTxtFld.frame.size.height)];
+		
+		[_phoneNumberTxtFld setFrame:CGRectMake(_phoneNumberTxtFld.frame.origin.x,
+										  0,
+										  _phoneNumberTxtFld.frame.size.width,
+										  _phoneNumberTxtFld.frame.size.height)];
+		
+	}
+	
 }
 
 #pragma mark -
