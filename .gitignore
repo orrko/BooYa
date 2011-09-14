@@ -4,7 +4,8 @@
 *.xib
 
 build/
-
+/iOS/BooYa/build/
+.gitignore
 *.pbxproj
 *.pbxuser
 *.perspective
