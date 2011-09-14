@@ -9,7 +9,7 @@ public class ContactData {
 	private String userName;
 	private String phone;
 	private Boolean isBooYa;
-	private integer score;
+	private int score;
 	
 	public ContactData(String name, String phoneNumber){
 		this.fName = name;
@@ -36,6 +36,10 @@ public class ContactData {
 		 this.isBooYa = _isBooYa;
 	}
 	
+	public void setScore(int _score) {	
+		 this.score =  _score;
+	}
+	
 	
 	public String getUserName() {	
 		return this.userName;
@@ -55,6 +59,10 @@ public class ContactData {
 	
 	public Boolean getIsBooYa() {
 		return this.isBooYa;
+	}
+	
+	public int getScore() {	
+		 return this.score;
 	}
 	
 	

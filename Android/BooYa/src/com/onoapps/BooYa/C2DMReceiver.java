@@ -1,4 +1,4 @@
-package com.c2dm;
+package com.onoapps.BooYa;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -48,6 +48,7 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 		Log.e("C2DM", "Registration ID arrived: Fantastic!!!");
 		Log.e("C2DM", registrationId);
 		
+	
 		TelephonyManager tManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 		String uid = tManager.getDeviceId();
 	
@@ -66,8 +67,8 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 			BufferedReader rd = new BufferedReader(new InputStreamReader(
 					response.getEntity().getContent()));
 
-//			String line = "";
-//			while ((line = rd.readLine()) != null) {
+			String line = "";
+			while ((line = rd.readLine()) != null) {
 //				Log.e("HttpResponse", line);
 //				if (line.startsWith("Auth=")) {
 //					Editor edit = prefManager.edit();
@@ -76,8 +77,8 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 //					String s = prefManager.getString(AUTH, "n/a");
 //					Toast.makeText(this, s, Toast.LENGTH_LONG).show();
 //				}
-//
-//			}
+
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -116,15 +117,15 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 			NotificationManager mNotificationManager = (NotificationManager) getSystemService(ns);
 			
 			int icon = R.drawable.icon;
-			CharSequence tickerText = "MSG";
+			CharSequence tickerText = "BooYa...";
 			long when = System.currentTimeMillis();
 
 			Notification notification = new Notification(icon, tickerText, when);
 			
 			context = getApplicationContext();
-			CharSequence contentTitle = "Message for you...";
+			CharSequence contentTitle = "BooYa for you...";
 			CharSequence contentText = extras.get("payload").toString();
-			Intent notificationIntent = new Intent(this, RegisterActivity.class);
+			Intent notificationIntent = new Intent(this, RootActivity.class);
 			PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
 			notification.setLatestEventInfo(context, contentTitle, contentText, contentIntent);
@@ -134,9 +135,7 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 //			Intent i = new Intent(this, RegisterActivity.class);
 //			i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //			startActivity(i);
-			//Toast.makeText(this,extras.get("payload").toString(), Toast.LENGTH_LONG);
-			
-					
+			//Toast.makeText(this,extras.get("payload").toString(), Toast.LENGTH_LONG);				
 		}
 	}
 

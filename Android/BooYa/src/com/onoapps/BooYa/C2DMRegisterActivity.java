@@ -1,4 +1,4 @@
-package com.c2dm;
+package com.onoapps.BooYa;
 
 import com.onoapps.BooYa.R;
 
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class RegisterActivity extends Activity {
+public class C2DMRegisterActivity extends Activity {
 		
 	private TextView txt;
 	

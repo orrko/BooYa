@@ -35,6 +35,9 @@ public class RegisterActivity extends Activity {
 	private ImageButton registerBtn;
 	//orrs comment
 	private Activity activity;
+	
+	private static String C2DM_EMAIL_ACCOUNT = "onoappsbooya@gmail.com";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -58,6 +61,10 @@ public class RegisterActivity extends Activity {
 					Toast.makeText(activity,"Please fill phone number", Toast.LENGTH_LONG);
 				}
 				else {
+				
+					
+					// Register to C2DM service
+					C2DMessaging.register(activity, C2DM_EMAIL_ACCOUNT);
 					
 					// Post to WebServer
 					HttpClient client = new DefaultHttpClient();

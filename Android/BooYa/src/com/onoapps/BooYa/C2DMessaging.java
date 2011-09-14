@@ -1,4 +1,4 @@
-package com.c2dm;
+package com.onoapps.BooYa;
 
 /*
  * Copyright 2010 Google Inc.
@@ -105,7 +105,6 @@ public class C2DMessaging {
         Editor editor = prefs.edit();
         editor.putLong(BACKOFF, backoff);
         editor.commit();
-
     }
 
     // package

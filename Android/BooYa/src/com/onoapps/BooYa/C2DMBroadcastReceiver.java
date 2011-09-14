@@ -1,4 +1,4 @@
-package com.c2dm;
+package com.onoapps.BooYa;
 
 /*
  */

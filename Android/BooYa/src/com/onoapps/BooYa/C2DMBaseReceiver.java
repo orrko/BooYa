@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.c2dm;
+package com.onoapps.BooYa;
 
 import java.io.IOException;
 
