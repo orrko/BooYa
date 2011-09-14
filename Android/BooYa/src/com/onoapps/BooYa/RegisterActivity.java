@@ -103,6 +103,8 @@ public class RegisterActivity extends Activity {
 				        SharedPreferences.Editor editor = app_preferences.edit();
 				        if((Boolean)jObject.get("success") == true){
 				        	editor.putBoolean("LOG_IN_FLAG", true);
+				        	editor.putString("kUserName", userName.getText().toString());
+				        	editor.putString("kPhonenumber", phoneNumber.getText().toString());
 				        }else{
 				        	editor.putBoolean("LOG_IN_FLAG", false);
 				        }
