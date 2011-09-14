@@ -21,9 +21,11 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
@@ -48,40 +50,46 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 		Log.e("C2DM", "Registration ID arrived: Fantastic!!!");
 		Log.e("C2DM", registrationId);
 		
-	
-		TelephonyManager tManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-		String uid = tManager.getDeviceId();
-	
-		HttpClient client = new DefaultHttpClient();
-		HttpPost post = new HttpPost(
-				"http://r4r.co.il/and/Reg.php");
-
-		try {
-
-			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
-			nameValuePairs.add(new BasicNameValuePair("RegId",registrationId));
-			nameValuePairs.add(new BasicNameValuePair("DeviceId",uid));
-	
-			post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-			HttpResponse response = client.execute(post);
-			BufferedReader rd = new BufferedReader(new InputStreamReader(
-					response.getEntity().getContent()));
-
-			String line = "";
-			while ((line = rd.readLine()) != null) {
-//				Log.e("HttpResponse", line);
-//				if (line.startsWith("Auth=")) {
-//					Editor edit = prefManager.edit();
-//					edit.putString(AUTH, line.substring(5));
-//					edit.commit();
-//					String s = prefManager.getString(AUTH, "n/a");
-//					Toast.makeText(this, s, Toast.LENGTH_LONG).show();
-//				}
-
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		// Save the RegisterId to SharedPreferences and send it to RegisteryActivity
+        SharedPreferences app_preferences = 
+        	PreferenceManager.getDefaultSharedPreferences(context);
+        
+		SharedPreferences.Editor editor = app_preferences.edit();
+		editor.putString("C2DMRegId",registrationId);
+		
+//		TelephonyManager tManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+//		String uid = tManager.getDeviceId();
+//	
+//		HttpClient client = new DefaultHttpClient();
+//		HttpPost post = new HttpPost(
+//				"http://r4r.co.il/and/Reg.php");
+//
+//		try {
+//
+//			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+//			nameValuePairs.add(new BasicNameValuePair("RegId",registrationId));
+//			nameValuePairs.add(new BasicNameValuePair("DeviceId",uid));
+//	
+//			post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+//			HttpResponse response = client.execute(post);
+//			BufferedReader rd = new BufferedReader(new InputStreamReader(
+//					response.getEntity().getContent()));
+//
+//			String line = "";
+//			while ((line = rd.readLine()) != null) {
+////				Log.e("HttpResponse", line);
+////				if (line.startsWith("Auth=")) {
+////					Editor edit = prefManager.edit();
+////					edit.putString(AUTH, line.substring(5));
+////					edit.commit();
+////					String s = prefManager.getString(AUTH, "n/a");
+////					Toast.makeText(this, s, Toast.LENGTH_LONG).show();
+////				}
+//
+//			}
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	};
 
 	@Override

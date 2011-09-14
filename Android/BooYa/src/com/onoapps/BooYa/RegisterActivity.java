@@ -33,8 +33,10 @@ public class RegisterActivity extends Activity {
 	private EditText userName;
 	private EditText phoneNumber;
 	private ImageButton registerBtn;
-	//orrs comment
+	
 	private Activity activity;
+	
+	private String c2dmRegId;
 	
 	private static String C2DM_EMAIL_ACCOUNT = "onoappsbooya@gmail.com";
 	
@@ -51,6 +53,10 @@ public class RegisterActivity extends Activity {
 		
 		registerBtn.setOnClickListener(new View.OnClickListener() {
 			
+	        // Get the app's shared preferences
+	        SharedPreferences app_preferences = 
+	        	PreferenceManager.getDefaultSharedPreferences(activity);
+			
 			@Override
 			public void onClick(View v) {
 				//inputs: user name, phone number by the user
@@ -66,6 +72,9 @@ public class RegisterActivity extends Activity {
 					// Register to C2DM service
 					C2DMessaging.register(activity, C2DM_EMAIL_ACCOUNT);
 					
+					// Get the RegisterId from SharedPreferences
+					c2dmRegId = app_preferences.getString("C2DMRegId", "No C2DM RegId Yet");
+					
 					// Post to WebServer
 					HttpClient client = new DefaultHttpClient();
 					HttpPost post = new HttpPost(
@@ -77,7 +86,7 @@ public class RegisterActivity extends Activity {
 						nameValuePairs.add(new BasicNameValuePair("funcName","androidRegistration"));
 						nameValuePairs.add(new BasicNameValuePair("userName",userName.getText().toString()));
 						nameValuePairs.add(new BasicNameValuePair("phoneNumber",phoneNumber.getText().toString()));
-						nameValuePairs.add(new BasicNameValuePair("registrationId","wallawalla12345"));
+						nameValuePairs.add(new BasicNameValuePair("registrationId",c2dmRegId));
 				
 						post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 						Log.i("nameValuePairs", nameValuePairs.get(0).getName() +":"+nameValuePairs.get(0).getValue() );
@@ -94,11 +103,7 @@ public class RegisterActivity extends Activity {
 						}
 									
 						JSONObject jObject = new JSONObject(builder.toString());
-							
-				        // Get the app's shared preferences
-				        SharedPreferences app_preferences = 
-				        	PreferenceManager.getDefaultSharedPreferences(activity);
-						
+													
 				        // Set the "LOG_IN_FLAG" according to registration results
 				        SharedPreferences.Editor editor = app_preferences.edit();
 				        if((Boolean)jObject.get("success") == true){
