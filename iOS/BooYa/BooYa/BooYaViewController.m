@@ -223,7 +223,7 @@
     NSString *key = [[person allKeys] objectAtIndex:0];
     
     [(BooYaCellView *)cell _nameLabel].text = key;
-    [(BooYaCellView *)cell _userNameLabel].text = [[person objectForKey:key] objectForKey:kUsername];
+    [(BooYaCellView *)cell _rankLabel].text = [[person objectForKey:key] objectForKey:kUsername];
     
     if ([[person objectForKey:key] objectForKey:kEnrolled] == [NSNumber numberWithBool:YES]) {
         [[(BooYaCellView *)cell _BooYaButton] setTitle:@"BooYa" forState:UIControlStateNormal];

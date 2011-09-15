@@ -45,7 +45,7 @@
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
-	<false/>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SF Slapstick Comic Bold Oblique.ttf</string>
