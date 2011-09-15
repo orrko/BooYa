@@ -63,14 +63,14 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-	[self loginBGAndTxtFldGoUp:YES byNumOfRows:1];
+	//[self loginBGAndTxtFldGoUp:YES byNumOfRows:1];
 }
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
 	
-	[self loginBGAndTxtFldGoUp:NO byNumOfRows:0];
+	//[self loginBGAndTxtFldGoUp:NO byNumOfRows:0];
 	
 	NSLog(@"in textFieldShouldReturn");
 	
@@ -190,6 +190,7 @@
 				if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
 					[[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
 					[[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
+                    [[[_appDelegate._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"rank"] forKey:kRank];
 				}
 				i++;
 			}

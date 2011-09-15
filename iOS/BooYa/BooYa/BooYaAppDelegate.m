@@ -10,6 +10,7 @@
 #import <AddressBook/AddressBook.h>
 #import "SBJsonParser.h"
 #import "SBJsonWriter.h"
+#import "RootViewController.h"
 
 @implementation BooYaAppDelegate
 
@@ -20,6 +21,7 @@
 @synthesize _deviceToken;
 @synthesize _jsonString;
 @synthesize _stoppedPressed;
+@synthesize _facebook;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -34,17 +36,47 @@
 #endif
 	
 	if([launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]){
+		if ([[[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"aps"] objectForKey:@"alert"] rangeOfString:@"joined"].location != NSNotFound) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"A new social player is in town" 
+                                                            message:[[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"aps"] objectForKey:@"alert"]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK" 
+                                                  otherButtonTitles:@"Lets BooYA! him!!!", nil];
+            [alert setTag:1];
+            if (_alertUserInfo) {
+                [_alertUserInfo release];
+                _alertUserInfo = nil;
+            }
+            _alertUserInfo = [[NSDictionary alloc] initWithDictionary:[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]];
+            [alert show];
+            [alert release];
+        }
+        else
+        {
+            BOOL typeIsLoud = ([[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"booYaType"] isEqualToString:@"loud"] ? YES : NO);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:(typeIsLoud ? @"Not so good, not so bad" : @"Oh mama")
+                                                            message:(typeIsLoud ? [NSString stringWithFormat:@"Ok, so you've been a good friend and by not responding on time %@ got more points.",[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"userName"]] : [NSString stringWithFormat:@"Great response, great points.\nAdd __ points to your pile.\nWanna send %@ a BooYA! back??\nYou can do so straight from here - hit the Back@YA! button.",[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"userName"]] )
+                                                           delegate:(typeIsLoud ? nil : self)
+                                                  cancelButtonTitle:(typeIsLoud ? @"OK" : @"Nahh") 
+                                                  otherButtonTitles:(typeIsLoud ? nil : @"Back@YA!!!"), nil];
+            [alert setTag:3];
+            if (_alertUserInfo) {
+                [_alertUserInfo release];
+                _alertUserInfo = nil;
+            }
+            _alertUserInfo = [[NSDictionary alloc] initWithDictionary:[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]];
+            [alert show];
+            [alert release];
+        }
 		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BooYA!" 
-                                                        message:[[[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"aps"] objectForKey:@"alert"]
-                                                       delegate:self
-                                              cancelButtonTitle:@"Nahh" 
-                                              otherButtonTitles:@"Back@YA!!!", nil];
-        [alert show];
-        [alert release];
     }
 	
 	_commManager = [ConnectionManager sharedManager];
+    
+    //reset booya's on server
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber] != nil) {
+        [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:nil postDict:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"catchBooya", @"funcName", [[NSUserDefaults standardUserDefaults] objectForKey:kUserName], @"userName", nil]];
+    }
     
 	// first user enter need to load the login screen
 	
@@ -52,6 +84,14 @@
     
     //get address booo
     [NSThread detachNewThreadSelector:@selector(loadAddressBook) toTarget:self withObject:nil];
+    
+    _facebook = [[Facebook alloc] initWithAppId:@"190714141001784" andDelegate:self];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        _facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        _facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
     
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
@@ -75,13 +115,126 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 	NSLog(@"%@", userInfo);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BooYA!" 
-                                                    message:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] 
-                                                   delegate:self
-                                          cancelButtonTitle:@"OK" 
-                                          otherButtonTitles:@"Back@YA!!!", nil];
-    [alert show];
-    [alert release];
+    if ([[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] rangeOfString:@"joined"].location != NSNotFound) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"A new social player is in town" 
+                                                        message:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] 
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK" 
+                                              otherButtonTitles:@"Lets BooYA! him!!!", nil];
+        [alert setTag:1];
+        if (_alertUserInfo) {
+            [_alertUserInfo release];
+            _alertUserInfo = nil;
+        }
+        _alertUserInfo = [[NSDictionary alloc] initWithDictionary:userInfo];
+        [alert show];
+        [alert release];
+    }
+    else
+    {
+        //sound file for the push
+        if (_player != nil) {
+            [_player release];
+            _player = nil;
+        }
+        NSString *pathForSoundFile = [[NSBundle mainBundle] pathForResource:[[(NSString *)[[userInfo objectForKey:@"aps"] objectForKey:@"sound"] componentsSeparatedByString:@"."]objectAtIndex:0] ofType:@"wav"];
+        NSURL *soundFile = [[NSURL alloc] initFileURLWithPath:pathForSoundFile];
+        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFile error:NULL];
+        [soundFile release];
+        //set loop one time
+        [_player setNumberOfLoops:0];
+        [_player prepareToPlay];
+        [_player play];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil 
+                                                        message:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"]
+                                                       delegate:self
+                                              cancelButtonTitle:nil 
+                                              otherButtonTitles:@"Awesome", nil];
+        [alert setTag:4];
+        if (_alertUserInfo) {
+            [_alertUserInfo release];
+            _alertUserInfo = nil;
+        }
+        _alertUserInfo = [[NSDictionary alloc] initWithDictionary:userInfo];
+        [alert show];
+        [alert release];
+        
+        if ([[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber] != nil) {
+            [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:nil postDict:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"catchBooya", @"funcName", [[NSUserDefaults standardUserDefaults] objectForKey:kUserName], @"userName", nil]];
+        }
+    }
+}
+
+#pragma mark -
+#pragma mark alert view
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != 0) {
+        if (alertView.tag == 1) {//user pushed on the "joined" alert
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%@ will never see it comin'", [_alertUserInfo objectForKey:@"userName"]] 
+                                                            message:[NSString stringWithFormat:@"Hit the BooYA! button and hope that %@ is a snoozer (so you will get points) and not a sharpie (then you are in deep sh@!%$\").", [_alertUserInfo objectForKey:@"userName"]] 
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Nahh" 
+                                                  otherButtonTitles:@"BooYA!", nil];
+            [alert setTag:2];
+            [alert show];
+            [alert release];
+        }
+        else if(alertView.tag == 2)//user pushed BooYA!
+        {
+            //send BooYa
+            NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"sendBooYaMessage", @"funcName", @"userName", @"idTypeSrc", [[NSUserDefaults standardUserDefaults] objectForKey:kUserName], @"idStrSrc", @"userName", @"idTypeTarget", [_alertUserInfo objectForKey:@"userName"], @"idStrTarget", @"", @"booYaId", nil];
+            
+            [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
+            
+            [(RootViewController *)[[navigationController viewControllers] objectAtIndex:0] startSplashBooYa];
+            [_alertUserInfo release];
+            _alertUserInfo = nil;
+        }
+        else if(alertView.tag == 3){//user pushed Back@YA
+            //send BooYa
+            NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"sendBooYaMessage", @"funcName", @"userName", @"idTypeSrc", [[NSUserDefaults standardUserDefaults] objectForKey:kUserName], @"idStrSrc", @"userName", @"idTypeTarget", [_alertUserInfo objectForKey:@"userName"], @"idStrTarget", [_alertUserInfo objectForKey:@"booYaId"], @"booYaId", nil];
+            
+            [_commManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
+            
+            [(RootViewController *)[[navigationController viewControllers] objectAtIndex:0] startSplashBooYa];
+            [_alertUserInfo release];
+            _alertUserInfo = nil;
+        }
+        else if(alertView.tag == 4){//user got push in app and pushed response
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oh mama"
+//                                                            message:[NSString stringWithFormat:@"Great response, great points.\nAdd %@ points to your pile.\nWanna send %@ a BooYA! back??\nYou can do so straight from here - hit the Back@YA! button.", [_alertUserInfo objectForKey:@"score"], [_alertUserInfo objectForKey:@"userName"]]
+//                                                           delegate:self
+//                                                  cancelButtonTitle:@"Nahh" 
+//                                                  otherButtonTitles:@"Back@YA!!!", nil];
+//            [alert setTag:3];
+//            [alert show];
+//            [alert release];
+        }
+    }
+    else if(buttonIndex == 0)
+    {
+       // [_alertUserInfo release];
+       // _alertUserInfo = nil;
+        
+        if (alertView.tag == 4) {//user got push in app and pushed refuse
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oh mama"
+                                                            message:[NSString stringWithFormat:@"Great response, great points.\nAdd %@ points to your pile.\nWanna send %@ a BooYA! back??\nYou can do so straight from here - hit the Back@YA! button.", [_alertUserInfo objectForKey:@"score"], [_alertUserInfo objectForKey:@"userName"]]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Nahh" 
+                                                  otherButtonTitles:@"Back@YA!!!", nil];
+            [alert setTag:3];
+            [alert show];
+            [alert release];
+        }
+    }
+}
+
+-(void)alertViewCancel:(UIAlertView *)alertView
+{
+   // [_alertUserInfo release];
+   // _alertUserInfo = nil;
 }
 
 #pragma mark -
@@ -171,35 +324,51 @@
 
 -(void)requestFailed:(ASIHTTPRequest *)request
 {
-    
+    if([[[request userInfo] objectForKey:@"funcName"] isEqualToString:@"sendBooYaMessage"]){
+        [(RootViewController *)[[navigationController viewControllers] objectAtIndex:0] stopSplashBooYa];
+    }
 }
 
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
-    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
-    NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
-    
-    int i = 0;
-    for (NSMutableDictionary *person in [response objectForKey:@"data"]) {
-        @synchronized(self)
-        {
-            NSString *key = [[[self._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];
-            NSString *number = [[[self._addressBookArray objectAtIndex:i] objectForKey:key] objectForKey:kNumber];
-            if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
-                [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
-                [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
+    if ([[[request userInfo] objectForKey:@"funcName"] isEqualToString:@"checkEnrolled"]) {
+        SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+        NSMutableDictionary *response = [jsonParser objectWithString:[request responseString]];
+        
+        int i = 0;
+        for (NSMutableDictionary *person in [response objectForKey:@"data"]) {
+            @synchronized(self)
+            {
+                NSString *key = [[[self._addressBookArray objectAtIndex:i] allKeys] objectAtIndex:0];
+                NSString *number = [[[self._addressBookArray objectAtIndex:i] objectForKey:key] objectForKey:kNumber];
+                if ([number isEqualToString:[person objectForKey:@"phoneNum"]]) {
+                    [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"enrolled"] forKey:kEnrolled];
+                    [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"userName"] forKey:kUsername];
+                    [[[self._addressBookArray objectAtIndex:i] objectForKey:key] setObject:[person objectForKey:@"rank"] forKey:kRank];
+                }
+                i++;
             }
-            i++;
         }
+        
+        //sort
+        [self._addressBookArray sortUsingComparator:(NSComparator)^(NSDictionary *obj1, NSDictionary *obj2){
+            NSString *name1 = [[obj1 allKeys] objectAtIndex:0];
+            NSString *name2 = [[obj2 allKeys] objectAtIndex:0];
+            return [name1 caseInsensitiveCompare:name2]; }];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:kGotAddressBookFromServerNotification object:nil];
+    }
+    else if([[[request userInfo] objectForKey:@"funcName"] isEqualToString:@"sendBooYaMessage"]){
+        [(RootViewController *)[[navigationController viewControllers] objectAtIndex:0] stopSplashBooYa];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WooHoo!" 
+                                                        message:@"BooYA! sent"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK" 
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
     }
     
-    //sort
-    [self._addressBookArray sortUsingComparator:(NSComparator)^(NSDictionary *obj1, NSDictionary *obj2){
-        NSString *name1 = [[obj1 allKeys] objectAtIndex:0];
-        NSString *name2 = [[obj2 allKeys] objectAtIndex:0];
-        return [name1 caseInsensitiveCompare:name2]; }];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:kGotAddressBookFromServerNotification object:nil];
 }
 
 #pragma mark -
@@ -244,8 +413,45 @@
      */
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+    return [_facebook handleOpenURL:url]; 
+}
+
+- (void)fbDidLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[_facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[_facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+    
+    [self sendPostToFacebook];
+    
+}
+
+-(void)sendPostToFacebook
+{
+    NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                   @"190714141001784", @"app_id",
+                                   @"http://developers.facebook.com/docs/reference/dialogs/", @"link",
+                                   @"http://www.onoapps.com/images/BooYA_FB_Image.png", @"picture",
+                                   @"BooYA! for iOS and Android", @"name",
+                                   [NSString stringWithFormat:@"This is my score %@ and I'm ranked %@.", @"", @""], @"caption",
+                                   @"Dialogs provide a simple, consistent interface for apps to interact with users.", @"description",
+                                   nil];
+    
+    [_facebook dialog:@"feed" andParams:params andDelegate:self];
+}
+
 - (void)dealloc
 {
+    if (_player) {
+        [_player release];
+        _player = nil;
+    }
+    if (_alertUserInfo) {
+        [_alertUserInfo release];
+        _alertUserInfo = nil;
+    }
     self._addressBookArray = nil;
     [_window release];
     [_navigationController release];

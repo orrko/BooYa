@@ -9,8 +9,10 @@
 #import "RootViewController.h"
 #import "BooYaViewController.h"
 #import "StuffViewController.h"
+#import "StatsViewController.h"
 
 @implementation RootViewController
+@synthesize _splashBooYaImage;
 
 
 #pragma mark -
@@ -19,7 +21,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	NSMutableArray *splashAnimationArray = [NSMutableArray array];
+    for (int i = 1; i <= 20; i++) {
+        [splashAnimationArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"BooYA_%d.png", i]]];
+    }
+    for (int i = 1; i <= 20; i++) {
+        [splashAnimationArray addObject:[UIImage imageNamed:@"BooYA_20.png"]];
+    }
+    [_splashBooYaImage setAnimationImages:splashAnimationArray];
+    [_splashBooYaImage setAnimationDuration:[splashAnimationArray count]*1/30];
+    [_splashBooYaImage setAnimationRepeatCount:1000];
+    
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:)
 //												 name: kReachabilityChangedNotification object:nil];
 	
@@ -31,6 +43,18 @@
 	}
     
     [self.navigationController setNavigationBarHidden:YES];
+}
+
+-(void)startSplashBooYa
+{
+    [_splashBooYaImage startAnimating];
+    [_splashBooYaImage setHidden:NO];
+}
+
+-(void)stopSplashBooYa
+{
+    [_splashBooYaImage stopAnimating];
+    [_splashBooYaImage setHidden:YES];
 }
 
 - (void)loadLoginView
@@ -73,7 +97,11 @@
             break;
         
         case 2://Stats
-            
+        {
+            StatsViewController *statViewController = [[StatsViewController alloc] initWithNibName:@"StatsViewController" bundle:nil];
+            [self.navigationController pushViewController:statViewController animated:YES];
+            [statViewController release];
+        }
             break;
             
         case 3://More
@@ -81,11 +109,6 @@
             StuffViewController *stuffViewController = [[StuffViewController alloc] initWithNibName:@"StuffViewController" bundle:nil];
             [self.navigationController pushViewController:stuffViewController animated:YES];
             [stuffViewController release];
-            
-            UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
-            self.navigationItem.backBarButtonItem = backButton;
-            [backButton release];
-            backButton = nil;
         } 
             break;
     }
@@ -173,6 +196,7 @@
 
 - (void)viewDidUnload
 {
+    [self set_splashBooYaImage:nil];
     [super viewDidUnload];
 
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
@@ -181,6 +205,7 @@
 
 - (void)dealloc
 {
+    [_splashBooYaImage release];
     [super dealloc];
 }
 

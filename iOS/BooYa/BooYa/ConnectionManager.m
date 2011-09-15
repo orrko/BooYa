@@ -8,7 +8,6 @@
 
 #import "ConnectionManager.h"
 #import "Reachability.h"
-#import "JSON.h"
 
 static ConnectionManager *sharedConnectionManager = nil;
 
@@ -77,6 +76,7 @@ static ConnectionManager *sharedConnectionManager = nil;
 	[_request setTimeOutSeconds:30];
 	
     [_request setDelegate:dlg];
+    [_request setUserInfo:[NSDictionary dictionaryWithObject:[postDict objectForKey:@"funcName"] forKey:@"funcName"]];
 	//[_request startAsynchronous];
 	[_queue addOperation:_request]; //queue is an NSOperationQueue
 	[_queue go];

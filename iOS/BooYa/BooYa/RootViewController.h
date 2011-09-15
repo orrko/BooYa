@@ -14,9 +14,14 @@
 {
     BooYaAppDelegate		*_appDelegate;
 	LoginViewController		*_loginVC;
+    UIImageView *_splashBooYaImage;
 }
+
+@property (nonatomic, retain) IBOutlet UIImageView *_splashBooYaImage;
 
 - (void)loadLoginView;
 - (IBAction)buttonPushed:(id)sender;
+- (void)startSplashBooYa;
+- (void)stopSplashBooYa;
 
 @end

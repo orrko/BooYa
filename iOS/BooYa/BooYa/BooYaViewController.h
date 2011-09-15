@@ -17,6 +17,7 @@
     BooYaAppDelegate *_appDelegate;
     UITableView     *_tableView;
     UILabel *_rankLabel;
+    UIImageView *_splashImage;
     NSMutableArray  *_dataSource;
     ConnectionManager *_comManager;
     BOOL    _sendGetUserStat;
@@ -24,6 +25,7 @@
 }
 @property (nonatomic, retain) IBOutlet UITableView *_tableView;
 @property (nonatomic, retain) IBOutlet UILabel *_rankLabel;
+@property (nonatomic, retain) IBOutlet UIImageView *_splashImage;
 
 -(void)reloadTableView;
 - (IBAction)booYaButtonPushed:(id)sender;

@@ -10,11 +10,11 @@
 
 @interface BooYaCellView : UITableViewCell {
     UILabel *_nameLabel;
-    UILabel *_userNameLabel;
+    UILabel *_rankLabel;
     UIButton *_BooYaButton;
 }
 
-@property (nonatomic, retain) IBOutlet UILabel *_userNameLabel;
+@property (nonatomic, retain) IBOutlet UILabel *_rankLabel;
 @property (nonatomic, retain) IBOutlet UIButton *_BooYaButton;
 @property (nonatomic, retain) IBOutlet UILabel *_nameLabel;
 

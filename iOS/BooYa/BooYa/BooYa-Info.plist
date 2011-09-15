@@ -54,8 +54,19 @@
 		<string>SF Slapstick Comic Shaded Oblique.ttf</string>
 		<string>SF Slapstick Comic Shaded.ttf</string>
 		<string>SF Slapstick Comic.ttf</string>
+		<string>MyriadPro-Regular.otf</string>
+		<string>MyriadPro-Bold.otf</string>
 	</array>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb190714141001784</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

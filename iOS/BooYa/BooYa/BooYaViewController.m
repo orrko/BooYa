@@ -14,6 +14,7 @@
 @implementation BooYaViewController
 @synthesize _tableView;
 @synthesize _rankLabel;
+@synthesize _splashImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,12 +36,25 @@
     // Do any additional setup after loading the view from its nib.
     
     //Check rank
+    _rankLabel.font = [UIFont fontWithName:@"SFSlapstickComic-Bold" size:22.0];
+    
     _sendGetUserStat = YES;
     NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:kUserName];
     NSString *phone = [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber];
-    NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"getUserStat", @"funcName", username, @"userName", phone, @"phoneNumber", nil];
+    NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"getUserStat", @"funcName", username, @"userName", phone, @"phoneNumber",nil];
     
     [_comManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
+    
+    NSMutableArray *splashAnimationArray = [NSMutableArray array];
+    for (int i = 1; i <= 20; i++) {
+        [splashAnimationArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"BooYA_%d.png", i]]];
+    }
+    for (int i = 1; i <= 20; i++) {
+        [splashAnimationArray addObject:[UIImage imageNamed:@"BooYA_20.png"]];
+    }
+    [_splashImage setAnimationImages:splashAnimationArray];
+    [_splashImage setAnimationDuration:[splashAnimationArray count]*1/30];
+    [_splashImage setAnimationRepeatCount:1000];
 }
 
 -(void)reloadTableView
@@ -55,63 +69,25 @@
     if ([[button titleForState:UIControlStateNormal] isEqualToString:@"Invite"]) {
         //send invitation
         if ([MFMessageComposeViewController canSendText]) { //we have the ability to send sms
-            MFMessageComposeViewController *sms = [[MFMessageComposeViewController alloc] init];
-            [sms setMessageComposeDelegate:self];
-            [sms setBody:@"This is a test sms from BooYA!!!"];
             NSDictionary *person = [_dataSource objectAtIndex:index];
             NSString *key = [[person allKeys] objectAtIndex:0];
+            
+            MFMessageComposeViewController *sms = [[MFMessageComposeViewController alloc] init];
+            [sms setMessageComposeDelegate:self];
+            [sms setBody:@"Hi, have you ever heard someone saying \"I'm having too much fun\"? BooYA! is one FUN-tastic app: www.itunes....."];
             [sms setRecipients:[NSArray arrayWithObject:[[person objectForKey:key] objectForKey:kNumber]]];
             [self presentModalViewController:sms animated:YES];
             [sms release];
         }
         else //send email
         {
-             if ([[_dataSource objectAtIndex:index] objectForKey:[[[[_dataSource objectAtIndex:index] allKeys] objectAtIndex:0] objectForKey:kEmail]] != nil) {
-                 Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
-                 
-                 if (nil != mailClass) {
-                     if ([mailClass canSendMail]) {
-                         MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
-                         mailComposer.mailComposeDelegate = self;
-                         [mailComposer setToRecipients:[NSArray arrayWithObject:[[_dataSource objectAtIndex:index] objectForKey:[[[[_dataSource objectAtIndex:index] allKeys] objectAtIndex:0] objectForKey:kEmail]]]];
-                         [mailComposer setTitle:@""];
-                         [mailComposer setSubject:@"Couldn't find a stock"];
-                         NSString *messageBody = [NSString stringWithFormat:@"<html><body><p dir=\"LTR\">Please add stock name %@ to your database. Thanks.</p></body></html>", @""];
-                         [mailComposer setMessageBody:messageBody isHTML:YES];
-                         [self presentModalViewController:mailComposer animated:YES];
-                         [mailComposer release];			
-                     }
-                     else {
-                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No email configuration found" 
-                                                                         message:@"Please configure your email settings in order to send mail." 
-                                                                        delegate:nil 
-                                                               cancelButtonTitle:@"OK" 
-                                                               otherButtonTitles:nil];
-                         [alert show];
-                         [alert release];
-                     }
-                 }
-                 else
-                 {
-                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Can't send Email or SMS from this device!" 
-                                                                     message:nil 
-                                                                    delegate:nil 
-                                                           cancelButtonTitle:@"OK" 
-                                                           otherButtonTitles:nil];
-                     [alert show];
-                     [alert release];
-                 }
-             }
-             else
-             {
-                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Can't send Email or SMS to this user. No info found." 
-                                                                 message:nil 
-                                                                delegate:nil 
-                                                       cancelButtonTitle:@"OK" 
-                                                       otherButtonTitles:nil];
-                 [alert show];
-                 [alert release];
-             }
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Can't send SMS on this device" 
+                                                             message:nil 
+                                                            delegate:nil 
+                                                   cancelButtonTitle:@"OK" 
+                                                   otherButtonTitles:nil];
+             [alert show];
+             [alert release];
         }
     }
     else if([[button titleForState:UIControlStateNormal] isEqualToString:@"BooYa"]){
@@ -122,6 +98,9 @@
         NSDictionary *postDict = [NSDictionary dictionaryWithObjectsAndKeys:@"sendBooYaMessage", @"funcName", @"phoneNumber", @"idTypeSrc", [[NSUserDefaults standardUserDefaults] objectForKey:kPhoneNumber], @"idStrSrc", @"phoneNumber", @"idTypeTarget", [[person objectForKey:key] objectForKey:kNumber], @"idStrTarget", @"", @"booYaId", nil];
         
         [_comManager grabURLInBackground:[NSString stringWithFormat:@"%@", kServerURL] andDelegate:self postDict:postDict];
+        
+        _splashImage.hidden = NO;
+        [_splashImage startAnimating];
         
     }
 }
@@ -209,6 +188,11 @@
     return [_dataSource count];
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 40;
+}
+
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -218,19 +202,30 @@
     if (cell == nil) {
         cell = (BooYaCellView *)[[[NSBundle mainBundle] loadNibNamed:@"BooYaCellView" owner:self options:nil] objectAtIndex:0];
     }
-    
+
     NSDictionary *person = [_dataSource objectAtIndex:indexPath.row];
     NSString *key = [[person allKeys] objectAtIndex:0];
     
     [(BooYaCellView *)cell _nameLabel].text = key;
-    [(BooYaCellView *)cell _userNameLabel].text = [[person objectForKey:key] objectForKey:kUsername];
+    [(BooYaCellView *)cell _nameLabel].font = [UIFont fontWithName:@"MyriadPro-Bold" size:15];
+    if ([[[person objectForKey:key] objectForKey:kRank] intValue] == -1) {
+        [(BooYaCellView *)cell _rankLabel].text = @"";
+    }
+    else
+    {
+        [(BooYaCellView *)cell _rankLabel].text = [NSString stringWithFormat:@"%d", [[[person objectForKey:key] objectForKey:kRank] intValue]];
+    }
+    
+    [(BooYaCellView *)cell _rankLabel].font = [UIFont fontWithName:@"SFSlapstickComic-Bold" size:17];
     
     if ([[person objectForKey:key] objectForKey:kEnrolled] == [NSNumber numberWithBool:YES]) {
         [[(BooYaCellView *)cell _BooYaButton] setTitle:@"BooYa" forState:UIControlStateNormal];
+        [[(BooYaCellView *)cell _BooYaButton] setImage:[UIImage imageNamed:@"BooYAIcon.png"] forState:UIControlStateNormal];
     }
     else
     {
         [[(BooYaCellView *)cell _BooYaButton] setTitle:@"Invite" forState:UIControlStateNormal];
+        [[(BooYaCellView *)cell _BooYaButton] setImage:[UIImage imageNamed:@"InviteIcon.png"] forState:UIControlStateNormal];
     }
     [[(BooYaCellView *)cell _BooYaButton] setTag:indexPath.row];
     
@@ -311,13 +306,16 @@
                                               otherButtonTitles:nil];
         [alert show];
         [alert release];
+        
+        _splashImage.hidden = YES;
+        [_splashImage stopAnimating];
     }
     else if(_sendGetUserStat)
     {
         _sendGetUserStat = NO;
         SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
         NSDictionary *result = [jsonParser objectWithString:[request responseString]];
-        _rankLabel.text = [NSString stringWithFormat:@"Your Rank is: %@", [result objectForKey:@"rank"]];
+        _rankLabel.text = [NSString stringWithFormat:@"%@", [result objectForKey:@"rank"]];
         
     }
     
@@ -337,6 +335,7 @@
 {
     [self set_tableView:nil];
     [self set_rankLabel:nil];
+    [self set_splashImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -353,6 +352,7 @@
     [_dataSource release];
     [_tableView release];
     [_rankLabel release];
+    [_splashImage release];
     [super dealloc];
 }
 @end

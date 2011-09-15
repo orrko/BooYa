@@ -9,7 +9,7 @@
 #import "BooYaCellView.h"
 
 @implementation BooYaCellView
-@synthesize _userNameLabel;
+@synthesize _rankLabel;
 @synthesize _BooYaButton;
 @synthesize _nameLabel;
 
@@ -31,7 +31,7 @@
 
 - (void)dealloc {
     [_nameLabel release];
-    [_userNameLabel release];
+    [_rankLabel release];
     [_BooYaButton release];
     [super dealloc];
 }
