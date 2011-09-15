@@ -13,15 +13,22 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+
+import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.ListView;
 
 public class BooYaListActivity extends ListActivity {
 
-	   private ContactsList myContacts;
+	 private ContactsList myContacts;
 	 private BooYaListAdapter adapter;
+	 private ContactData contactData;
 	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,17 +46,48 @@ public class BooYaListActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		
 		// Get the selected contact from the list
-		ContactData contactData = (ContactData)adapter.getItem(position);
+		contactData = (ContactData)adapter.getItem(position);
 		
 		// Send BooYa To Contact or Invite if 
 		if(contactData.getIsBooYa()){
 			
-			//TODO: get the my phone number and my user name from shared pref
-			sendPushToContact("0505460243",contactData.getPhone(), "");
-
+	        SharedPreferences app_preferences = 
+	        	PreferenceManager.getDefaultSharedPreferences(this);
+	        
+	        // Get the value for the my user name from SharedPreferences
+	        String phoneNumber = app_preferences.getString("kPhonenumber", null);
+	        
+	        sendPushToContact(phoneNumber,contactData.getPhone(), "");
+	        
 		}else{
 			
-			//TODO:invite to BooYa
+			// Show alert dialog to user if he wants to send an sms text message
+			DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+			    @Override
+			    public void onClick(DialogInterface dialog, int which) {
+			        switch (which){
+			        case DialogInterface.BUTTON_POSITIVE:
+			            //Yes button clicked -> Send the invite sms
+			        	SmsManager sm = SmsManager.getDefault();
+						 
+						sm.sendTextMessage(contactData.getPhone() , null, "Hi" + contactData.getFName()
+								+ ", have you ever heard someone saying \"I'm having too much fun\"? + "
+								+  "BooYA! is one FUN-tastic app: www..." , null, null); 
+			            break;
+
+			        case DialogInterface.BUTTON_NEGATIVE:
+			            //No button clicked -> Do nothing
+			            break;
+			        }
+			    }
+			};
+
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			
+			builder.setMessage("Are you sure you want to send an invite SMS?")
+				.setPositiveButton("Yes", dialogClickListener)
+			    .setNegativeButton("No", dialogClickListener).show();
+		
 		}		
 	}
 

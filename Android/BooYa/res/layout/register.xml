@@ -3,8 +3,8 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="textPersonName" android:layout_alignParentTop="true" android:layout_marginTop="43dp" android:id="@+id/userName" android:layout_alignLeft="@+id/registerBtn" android:layout_alignRight="@+id/registerBtn"></EditText>
-    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="phone" android:layout_below="@+id/userName" android:layout_alignLeft="@+id/userName" android:layout_marginTop="18dp" android:id="@+id/phoneNumber" android:layout_alignRight="@+id/userName"></EditText>
-    <ImageButton android:id="@+id/registerBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:layout_below="@+id/phoneNumber" android:layout_centerHorizontal="true" android:layout_marginTop="86dp"></ImageButton>
+    android:background="@drawable/register_full">
+    <ImageButton android:id="@+id/registerBtn" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="26dp" android:background="@drawable/regsiter_go_fot_it"></ImageButton>
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="phone" android:width="200dp" android:id="@+id/phoneNumber" android:background="#00000000" android:layout_above="@+id/registerBtn" android:layout_alignLeft="@+id/userName" android:textSize="20dp" android:textColor="@android:color/black" android:layout_marginBottom="60dp"></EditText>
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="textPersonName" android:width="200dp" android:id="@+id/userName" android:background="#00000000" android:layout_alignParentLeft="true" android:layout_marginLeft="60dp" android:textSize="20dp" android:textColor="@android:color/black" android:layout_marginTop="230dp"></EditText>
 </RelativeLayout>

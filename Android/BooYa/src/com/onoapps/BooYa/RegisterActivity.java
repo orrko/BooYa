@@ -37,6 +37,7 @@ public class RegisterActivity extends Activity {
 	private Activity activity;
 	
 	private String c2dmRegId;
+	private String phoneNumbersArr;
 	
 	private static String C2DM_EMAIL_ACCOUNT = "onoappsbooya@gmail.com";
 	
@@ -51,29 +52,33 @@ public class RegisterActivity extends Activity {
 		phoneNumber = (EditText)findViewById(R.id.phoneNumber);
 		registerBtn = (ImageButton)findViewById(R.id.registerBtn);
 		
+		// TODO: When pressing back button get out from application and not go back to RootActivity
+		
+		// Register to C2DM service
+		C2DMessaging.register(this, C2DM_EMAIL_ACCOUNT);
+		
 		registerBtn.setOnClickListener(new View.OnClickListener() {
-			
+				
 	        // Get the app's shared preferences
-	        SharedPreferences app_preferences = 
+	        SharedPreferences app_preferences = //getSharedPreferences("BooYa", MODE_PRIVATE);
 	        	PreferenceManager.getDefaultSharedPreferences(activity);
 			
 			@Override
 			public void onClick(View v) {
 				//inputs: user name, phone number by the user
 				if(userName.getText().equals("")){
-					Toast.makeText(activity,"Please fill user name", Toast.LENGTH_LONG);
+					Toast.makeText(activity,"Please fill user name", Toast.LENGTH_LONG).show();
 				}
 				else if(phoneNumber.getText().equals("")){
-					Toast.makeText(activity,"Please fill phone number", Toast.LENGTH_LONG);
+					Toast.makeText(activity,"Please fill phone number", Toast.LENGTH_LONG).show();
 				}
 				else {
-				
-					
-					// Register to C2DM service
-					C2DMessaging.register(activity, C2DM_EMAIL_ACCOUNT);
-					
+									
 					// Get the RegisterId from SharedPreferences
 					c2dmRegId = app_preferences.getString("C2DMRegId", "No C2DM RegId Yet");
+					
+					// Get my phone numbers array from SharedPreferences
+					phoneNumbersArr = app_preferences.getString("PhoneNumbersArr","Empty Contact List");
 					
 					// Post to WebServer
 					HttpClient client = new DefaultHttpClient();
@@ -81,17 +86,15 @@ public class RegisterActivity extends Activity {
 							"http://booya.r4r.co.il/ajax.php");
 
 					try {
-
+						
 						List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 						nameValuePairs.add(new BasicNameValuePair("funcName","androidRegistration"));
 						nameValuePairs.add(new BasicNameValuePair("userName",userName.getText().toString()));
 						nameValuePairs.add(new BasicNameValuePair("phoneNumber",phoneNumber.getText().toString()));
 						nameValuePairs.add(new BasicNameValuePair("registrationId",c2dmRegId));
+						nameValuePairs.add(new BasicNameValuePair("list",phoneNumbersArr));
 				
 						post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-						Log.i("nameValuePairs", nameValuePairs.get(0).getName() +":"+nameValuePairs.get(0).getValue() );
-						Log.i("nameValuePairs", nameValuePairs.get(1).getName() +":"+nameValuePairs.get(1).getValue() );
-						Log.i("nameValuePairs", nameValuePairs.get(2).getName() +":"+nameValuePairs.get(2).getValue() );
 
 						HttpResponse response = client.execute(post);
 						BufferedReader rd = new BufferedReader(new InputStreamReader(

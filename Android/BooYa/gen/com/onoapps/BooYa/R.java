@@ -11,34 +11,46 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int memyselfandbooyapage=0x7f020001;
-        public static final int stats_bg=0x7f020002;
-        public static final int stats_score=0x7f020003;
+        public static final int facebook_icon=0x7f020000;
+        public static final int facebookshare=0x7f020001;
+        public static final int icon=0x7f020002;
+        public static final int memyselfandbooyapage=0x7f020003;
+        public static final int register_bg=0x7f020004;
+        public static final int register_full=0x7f020005;
+        public static final int regsiter_go_fot_it=0x7f020006;
+        public static final int root_bg=0x7f020007;
+        public static final int root_booyaboard=0x7f020008;
+        public static final int root_booyadapeople=0x7f020009;
+        public static final int root_me_myself=0x7f02000a;
+        public static final int root_stuff=0x7f02000b;
+        public static final int stats_bg=0x7f02000c;
+        public static final int stats_score=0x7f02000d;
     }
     public static final class id {
-        public static final int booYaBoardBtn=0x7f050007;
-        public static final int button1=0x7f050006;
-        public static final int button2=0x7f05000c;
-        public static final int editText1=0x7f05000a;
-        public static final int imageButton1=0x7f050004;
-        public static final int imageView1=0x7f050011;
-        public static final int linearLayout1=0x7f05000b;
-        public static final int messgaeTxt=0x7f05000d;
-        public static final int name=0x7f050003;
-        public static final int phoneNumber=0x7f050010;
-        public static final int registerBtn=0x7f05000f;
-        public static final int scoreBoardImg_id=0x7f050000;
-        public static final int score_board_txt_id=0x7f050002;
-        public static final int statsBtn=0x7f050009;
-        public static final int stats_ranking_id=0x7f050012;
-        public static final int stats_recieved_id=0x7f050015;
-        public static final int stats_scoreTxtView_id=0x7f050013;
-        public static final int stats_sent_id=0x7f050014;
-        public static final int stuffBtn=0x7f050008;
-        public static final int textView1=0x7f050005;
-        public static final int userName=0x7f05000e;
-        public static final int usernameBoard_id=0x7f050001;
+        public static final int booYaBoardBtn=0x7f060007;
+        public static final int button1=0x7f060005;
+        public static final int button2=0x7f06000c;
+        public static final int deActivateBtn=0x7f060017;
+        public static final int editText1=0x7f06000a;
+        public static final int imageButton1=0x7f060004;
+        public static final int imageView1=0x7f060011;
+        public static final int linearLayout1=0x7f06000b;
+        public static final int messgaeTxt=0x7f06000d;
+        public static final int name=0x7f060003;
+        public static final int phoneNumber=0x7f06000f;
+        public static final int postToFacebookBtn=0x7f060016;
+        public static final int registerBtn=0x7f06000e;
+        public static final int scoreBoardImg_id=0x7f060000;
+        public static final int score_board_txt_id=0x7f060002;
+        public static final int statsBtn=0x7f060009;
+        public static final int stats_ranking_id=0x7f060012;
+        public static final int stats_recieved_id=0x7f060015;
+        public static final int stats_scoreTxtView_id=0x7f060013;
+        public static final int stats_sent_id=0x7f060014;
+        public static final int stuffBtn=0x7f060008;
+        public static final int textView1=0x7f060006;
+        public static final int userName=0x7f060010;
+        public static final int usernameBoard_id=0x7f060001;
     }
     public static final class layout {
         public static final int board_list_row=0x7f030000;
@@ -49,13 +61,29 @@ public final class R {
         public static final int pushregistery=0x7f030005;
         public static final int register=0x7f030006;
         public static final int stats_layout2=0x7f030007;
+        public static final int stuff=0x7f030008;
+    }
+    public static final class raw {
+        public static final int lose=0x7f040000;
+        public static final int loud_booya01=0x7f040001;
+        public static final int loud_booya02=0x7f040002;
+        public static final int loud_booya03=0x7f040003;
+        public static final int loud_booya04=0x7f040004;
+        public static final int loud_booya05=0x7f040005;
+        public static final int silent_booya01=0x7f040006;
+        public static final int silent_booya02=0x7f040007;
+        public static final int silent_booya03=0x7f040008;
+        public static final int silent_booya04=0x7f040009;
+        public static final int silent_booya05=0x7f04000a;
+        public static final int win=0x7f04000b;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int booya_board=0x7f040003;
-        public static final int booya_da_people=0x7f040002;
-        public static final int hello=0x7f040000;
-        public static final int stats=0x7f040005;
-        public static final int stuff=0x7f040004;
+        public static final int app_name=0x7f050001;
+        public static final int booya_board=0x7f050003;
+        public static final int booya_da_people=0x7f050002;
+        public static final int deactivate=0x7f050006;
+        public static final int hello=0x7f050000;
+        public static final int stats=0x7f050005;
+        public static final int stuff=0x7f050004;
     }
 }

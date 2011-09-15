@@ -10,6 +10,7 @@ public class ContactData {
 	private String phone;
 	private Boolean isBooYa;
 	private int score;
+	private String rank;
 	
 	public ContactData(String name, String phoneNumber){
 		this.fName = name;
@@ -32,6 +33,10 @@ public class ContactData {
 		 this.phone = _phone;
 	}
 	
+	public void setRank(String _rank) {
+		 this.rank = _rank;
+	}
+	
 	public void setIsBooYa(Boolean _isBooYa) {
 		 this.isBooYa = _isBooYa;
 	}
@@ -43,6 +48,10 @@ public class ContactData {
 	
 	public String getUserName() {	
 		return this.userName;
+	}
+	
+	public String getRank() {	
+		return this.rank;
 	}
 	
 	public String getFName() {	

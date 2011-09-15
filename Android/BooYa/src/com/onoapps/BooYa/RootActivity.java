@@ -79,6 +79,30 @@ public class RootActivity extends Activity {
         	
         	startActivity(i);
         }
+        else{
+        	// Send reset request
+        	// Post to WebServer
+			HttpClient client = new DefaultHttpClient();
+			HttpPost post = new HttpPost(
+					"http://booya.r4r.co.il/ajax.php");
+			
+	        // Get the value for the my user name from SharedPreferences
+	        String phoneNumber = app_preferences.getString("kPhonenumber", null);
+						
+			try {
+
+				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+				nameValuePairs.add(new BasicNameValuePair("funcName","catchBooya"));
+				nameValuePairs.add(new BasicNameValuePair("phoneNumber",phoneNumber));
+				
+				post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+				
+				HttpResponse response = client.execute(post);
+														     															
+			} catch (IOException e) {
+				e.printStackTrace();
+			}	     
+        }
         
 		ContentResolver cr = getContentResolver();
 		
@@ -139,12 +163,17 @@ public class RootActivity extends Activity {
 		     // Build Json array of phone numbers to post the web server.
 		     JSONArray jSonArr = new JSONArray(phoneNumbersArr);
      
+				// Save the phoneNumbersArr to SharedPreferences and send it to RegisteryActivity (to post it)		                
+				SharedPreferences.Editor editor = app_preferences.edit();
+				editor.putString("PhoneNumbersArr",jSonArr.toString());
+				
+				editor.commit(); // Very important
+				
 				// Post to WebServer
 				HttpClient client = new DefaultHttpClient();
 				HttpPost post = new HttpPost(
 						"http://booya.r4r.co.il/ajax.php");
-
-					
+							
 				try {
 
 					List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -175,6 +204,7 @@ public class RootActivity extends Activity {
 							// Set true or False if the user register to booya application.
 							contactsArr.get(i).setUserName(jObjContactData.get("userName").toString());
 							contactsArr.get(i).setIsBooYa((Boolean)jObjContactData.get("enrolled"));
+							contactsArr.get(i).setRank(jObjContactData.get("rank").toString());
 						}
 						else{
 							
@@ -184,21 +214,7 @@ public class RootActivity extends Activity {
 					
 					// Set the global ContactList
 					myContacts.setContacts(contactsArr);
-					
-//			        // Get the app's shared preferences
-//			        SharedPreferences app_preferences = 
-//			        	PreferenceManager.getDefaultSharedPreferences(activity);
-					
-			        // Set the "LOG_IN_FLAG" according to registration results
-//			        SharedPreferences.Editor editor = app_preferences.edit();
-//			        if((Boolean)jObject.get("success") == true){
-//			        	editor.putBoolean("LOG_IN_FLAG", true);
-//			        }else{
-//			        	editor.putBoolean("LOG_IN_FLAG", false);
-//			        }
-//			        
-//			        editor.commit(); // Very important
-											
+																
 				} catch (IOException e) {
 					e.printStackTrace();
 				} catch (JSONException e1){

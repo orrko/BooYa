@@ -24,6 +24,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
@@ -51,45 +52,14 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 		Log.e("C2DM", registrationId);
 		
 		// Save the RegisterId to SharedPreferences and send it to RegisteryActivity
-        SharedPreferences app_preferences = 
+        SharedPreferences app_preferences = //getSharedPreferences("BooYa", MODE_PRIVATE);
         	PreferenceManager.getDefaultSharedPreferences(context);
-        
+                
 		SharedPreferences.Editor editor = app_preferences.edit();
 		editor.putString("C2DMRegId",registrationId);
 		
-//		TelephonyManager tManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-//		String uid = tManager.getDeviceId();
-//	
-//		HttpClient client = new DefaultHttpClient();
-//		HttpPost post = new HttpPost(
-//				"http://r4r.co.il/and/Reg.php");
-//
-//		try {
-//
-//			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
-//			nameValuePairs.add(new BasicNameValuePair("RegId",registrationId));
-//			nameValuePairs.add(new BasicNameValuePair("DeviceId",uid));
-//	
-//			post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-//			HttpResponse response = client.execute(post);
-//			BufferedReader rd = new BufferedReader(new InputStreamReader(
-//					response.getEntity().getContent()));
-//
-//			String line = "";
-//			while ((line = rd.readLine()) != null) {
-////				Log.e("HttpResponse", line);
-////				if (line.startsWith("Auth=")) {
-////					Editor edit = prefManager.edit();
-////					edit.putString(AUTH, line.substring(5));
-////					edit.commit();
-////					String s = prefManager.getString(AUTH, "n/a");
-////					Toast.makeText(this, s, Toast.LENGTH_LONG).show();
-////				}
-//
-//			}
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+		editor.commit(); // Very important
+			
 	};
 
 	@Override
@@ -133,17 +103,81 @@ public class C2DMReceiver extends C2DMBaseReceiver {
 			context = getApplicationContext();
 			CharSequence contentTitle = "BooYa for you...";
 			CharSequence contentText = extras.get("payload").toString();
+			CharSequence contentTextBooYaId = extras.get("booYaId").toString();
+			CharSequence contentTextBooYaType = extras.get("booYaType").toString();
+			CharSequence contentTextUserName = extras.get("userName").toString();
+			CharSequence contentTextSound = extras.get("sound").toString();
+			
 			Intent notificationIntent = new Intent(this, RootActivity.class);
 			PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
 			notification.setLatestEventInfo(context, contentTitle, contentText, contentIntent);
-			notification.defaults = Notification.DEFAULT_SOUND;
-			mNotificationManager.notify(HELLO_ID, notification);
 			
-//			Intent i = new Intent(this, RegisterActivity.class);
-//			i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//			startActivity(i);
-			//Toast.makeText(this,extras.get("payload").toString(), Toast.LENGTH_LONG);				
+			//check which sound is to be played
+			
+			//TODO - fix the bad programming below
+			//check if this is a silent or loud booya
+			if (contentTextBooYaType.toString().equalsIgnoreCase("loud")){
+				//we are in the loud booya
+				switch (Integer.parseInt(contentTextSound.toString().subSequence(11, 12).toString())) {
+				case  1:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.loud_booya01);
+					break;
+				case  2:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.loud_booya02);
+					break;
+				case  3:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.loud_booya03);
+					break;
+				case  4:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.loud_booya04);
+					break;
+				case  5:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.loud_booya05);
+					break;
+
+				default:
+					break;
+				}
+			}else if(contentTextBooYaType.toString().equalsIgnoreCase("silent")){
+				//we are in the silent booya
+				switch (Integer.parseInt(contentTextSound.toString().subSequence(13, 14).toString())) {
+				case  1:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.silent_booya01);
+					break;
+				case  2:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.silent_booya02);
+					break;
+				case  3:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.silent_booya03);
+					break;
+				case  4:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.silent_booya04);
+					break;
+				case  5:
+					notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.silent_booya05);
+					break;
+
+				default:
+					break;
+				}
+			}else if(contentTextBooYaType.toString().equalsIgnoreCase("win")){
+				
+				// Sound for win
+				notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.win);
+				
+			}else if(contentTextBooYaType.toString().equalsIgnoreCase("lose")){
+				
+				// Sound for lose
+				notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.lose);
+			}
+						
+			//notification.sound = Uri.parse("android.resource://com.onoapps.BooYa/"+ R.raw.loud_booya01);
+			
+			//notification.defaults = Notification.DEFAULT_SOUND;
+			notification.flags = Notification.FLAG_AUTO_CANCEL;
+			mNotificationManager.notify(HELLO_ID, notification);
+		
 		}
 	}
 
