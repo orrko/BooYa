@@ -72,7 +72,7 @@ static ConnectionManager *sharedConnectionManager = nil;
     for (NSString *key in postDict) {
         [_request setPostValue:[postDict objectForKey:key] forKey:key];
     }
-    
+	
 	[_request setTimeOutSeconds:30];
 	
     [_request setDelegate:dlg];

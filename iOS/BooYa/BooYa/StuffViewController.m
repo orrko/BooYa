@@ -29,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	[(UIButton *)[self.view viewWithTag:kPoints] setEnabled:NO];
+	
 //	UIBarButtonItem *stopPlaying = [[UIBarButtonItem alloc] initWithTitle:@"Stop" style:UIBarButtonItemStyleDone target:self action:@selector(stopButtonPressed)];
 //	self.navigationItem.rightBarButtonItem = stopPlaying;
 //	[stopPlaying release];
@@ -44,123 +46,109 @@
 }
 */
 
+
+#pragma mark -
+#pragma mark Back Button
+
+- (IBAction)backButtonPressed:(UIButton *)bttn
+{	
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark -
 #pragma mark Buttons pressed
 
 - (IBAction)screenButtonPressed:(UIButton *)bttn
 {
+	NSLog(@"button tag : %d",bttn.tag);
 	switch (bttn.tag) 
 	{
-		case kPauseOrResume:
-			[_pauseOrStopBttn setHidden:NO];
-			if (!_onResume) {
-				//[_bgImageView setImage:[UIImage imageNamed:@"Resume.png"]];
-				[_bgImageView setTag:kResumeBG];
-				[_pauseOrStopBttn setTitle:@"Resume" forState:UIControlStateNormal];
-			}
-			else {
-				//[_bgImageView setImage:[UIImage imageNamed:@"Pause.png"]];
-				[_bgImageView setTag:kPauseBG];
-				[_pauseOrStopBttn setTitle:@"Pause" forState:UIControlStateNormal];
-			}
-			_onResume = !_onResume;
-		break;
-
-		case kStop:
-			[_pauseOrStopBttn setHidden:NO];
-			//[_bgImageView setImage:[UIImage imageNamed:@"Stop.png"]];
-			[_bgImageView setTag:kStopBG];
-			[_pauseOrStopBttn setTitle:@"Stop" forState:UIControlStateNormal];
-			
-		break;
-
 		case kPoints:
-			[_pauseOrStopBttn setHidden:YES];
-			//[_bgImageView setImage:[UIImage imageNamed:@"Points.png"]];
-			[_bgImageView setTag:kPointsBG];
+			[_bgImageView setImage:[UIImage imageNamed:@"Points.png"]];
+			[(UIButton *)[self.view viewWithTag:kInfo] setEnabled:YES];
 			break;
 		
 		case kInfo:
-			[_pauseOrStopBttn setHidden:YES];
-			[_bgImageView setTag:kInfoBG];
-			//[_bgImageView setImage:[UIImage imageNamed:@"Info.png"]];
+			[_bgImageView setImage:[UIImage imageNamed:@"Info.png"]];
+			[(UIButton *)[self.view viewWithTag:kPoints] setEnabled:YES];
 			break;
 
 		default:
 			break;
 	}
+	[bttn setEnabled:NO];
 }
 
-- (IBAction)actionButtonPressed:(UIButton *)bttn
-{
-	UIAlertView *alert;
-	
-	switch (_bgImageView.tag) 
-	{
-		case kPauseBG:
-			alert = [[UIAlertView alloc] initWithTitle:@"Pause playing" 
-															message:@"It's no biigie but we would love you to stay, so we ask again..." 
-														   delegate:self
-												  cancelButtonTitle:@"Yes, I'm a bit tired"
-												  otherButtonTitles:@"No way, I'm still in!",nil];
-
-		break;
-		
-		case kResumeBG:
-			alert = [[UIAlertView alloc] initWithTitle:@"Resume playing" 
-															message:@"" 
-														   delegate:self
-												  cancelButtonTitle:@"YES"
-												  otherButtonTitles:@"NO",nil];
-		break;
-			
-		case kStopBG:
-			alert = [[UIAlertView alloc] initWithTitle:@"Stop playing" 
-															message:@"Not that we have a problem with that, but are you sure you want to leave us? We will miss you..." 
-														   delegate:self
-												  cancelButtonTitle:@"Yes I want to ditch you guys"
-												  otherButtonTitles:@"Not leaving, just playing with you...",nil];
-			
-			[alert setTag:kStopBG];
-			
-		break;
-			
-		default:
-			break;
-	}
-	[alert show];
-	[alert release];
-}
+//- (IBAction)actionButtonPressed:(UIButton *)bttn
+//{
+//	UIAlertView *alert;
+//	
+//	switch (_bgImageView.tag) 
+//	{
+//		case kPauseBG:
+//			alert = [[UIAlertView alloc] initWithTitle:@"Pause playing" 
+//															message:@"It's no biigie but we would love you to stay, so we ask again..." 
+//														   delegate:self
+//												  cancelButtonTitle:@"Yes, I'm a bit tired"
+//												  otherButtonTitles:@"No way, I'm still in!",nil];
+//
+//		break;
+//		
+//		case kResumeBG:
+//			alert = [[UIAlertView alloc] initWithTitle:@"Resume playing" 
+//															message:@"" 
+//														   delegate:self
+//												  cancelButtonTitle:@"YES"
+//												  otherButtonTitles:@"NO",nil];
+//		break;
+//			
+//		case kStopBG:
+//			alert = [[UIAlertView alloc] initWithTitle:@"Stop playing" 
+//															message:@"Not that we have a problem with that, but are you sure you want to leave us? We will miss you..." 
+//														   delegate:self
+//												  cancelButtonTitle:@"Yes I want to ditch you guys"
+//												  otherButtonTitles:@"Not leaving, just playing with you...",nil];
+//			
+//			[alert setTag:kStopBG];
+//			
+//		break;
+//			
+//		default:
+//			break;
+//	}
+//	[alert show];
+//	[alert release];
+//}
 
 #pragma mark -
 #pragma mark UIAlertViewDelegate
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-	// Only if pressed yes
-	if (buttonIndex == 0) 
-	{
-		switch (alertView.tag) 
-		{
-			
-			case kPauseBG:
-				NSLog(@"Go to Me, Myself BooYA");
-			break;
-				
-			case kResumeBG:
-				NSLog(@"Continue Playing - stay in this screen");
-			break;
-
-			case kStopBG:
-				_appDelegate._stoppedPressed = YES;
-				[self.navigationController popViewControllerAnimated:YES];
-			break;
-				
-			default:
-				break;
-		}
-	}
-}
+//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+//{
+//	// Only if pressed yes
+//	if (buttonIndex == 0) 
+//	{
+//		switch (alertView.tag) 
+//		{
+//			
+//			case kPauseBG:
+//				NSLog(@"Go to Me, Myself BooYA");
+//			break;
+//				
+//			case kResumeBG:
+//				NSLog(@"Continue Playing - stay in this screen");
+//			break;
+//
+//			case kStopBG:
+//				_appDelegate._stoppedPressed = YES;
+//				[self.navigationController popViewControllerAnimated:YES];
+//			break;
+//				
+//			default:
+//				break;
+//		}
+//	}
+//}
 
 #pragma mark -
 #pragma mark Memory managment

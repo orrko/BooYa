@@ -13,13 +13,13 @@
 	
 	BooYaAppDelegate		*_appDelegate;
 	
-	IBOutlet UIButton		*_pauseOrStopBttn;
 	IBOutlet UIImageView	*_bgImageView;
 	BOOL					_onResume;
 	
 }
 
+- (IBAction)backButtonPressed:(UIButton *)bttn;
 - (IBAction)screenButtonPressed:(UIButton *)bttn;
-- (IBAction)actionButtonPressed:(UIButton *)bttn;
+//- (IBAction)actionButtonPressed:(UIButton *)bttn;
 
 @end

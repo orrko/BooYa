@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "BooYaViewController.h"
+#import "BoardViewController.h"
 #import "StuffViewController.h"
 #import "StatsViewController.h"
 
@@ -93,7 +94,11 @@
             break;
             
         case 1://Board
-            
+		{
+			BoardViewController *boardVC = [[BoardViewController alloc] initWithNibName:@"BoardViewController" bundle:nil];
+			[self.navigationController pushViewController:boardVC animated:YES];
+			[boardVC release];
+		}	
             break;
         
         case 2://Stats

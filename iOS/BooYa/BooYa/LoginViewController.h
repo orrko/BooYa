@@ -25,6 +25,8 @@
 	IBOutlet UITextField	*_phoneNumberTxtFld;
 	IBOutlet UITextField	*_userNameTxtFld;
 	IBOutlet UIImageView	*_bgImageView;
+	
+	IBOutlet UIButton		*_goForItButton;
 
 }
 
@@ -32,5 +34,6 @@
 
 - (BOOL) validateCountryCode: (NSString *) candidate;
 - (void)loginBGAndTxtFldGoUp:(BOOL)up byNumOfRows:(CGFloat)numOfRows;
+- (IBAction)goForItButtonPressed:(UIButton *)bttn;
 
 @end

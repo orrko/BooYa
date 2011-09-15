@@ -21,17 +21,9 @@
 #define kUserName @"userName"
 #define kPhoneNumber @"phoneNumber"
 
-typedef enum {
-	kPauseOrResume = 1,	
-	kStop,
-	kPoints,
-	kInfo
-}kButtonTag;
+#define degreesToRadians(degrees) (M_PI * degrees / 180.0)
 
 typedef enum {
-	kPauseBG = 1,	
-	kResumeBG,
-	kStopBG,
-	kPointsBG,
-	kInfoBG
-}kBGTag;
+	kPoints = 1,
+	kInfo
+}kButtonTag;
